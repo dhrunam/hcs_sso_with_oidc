@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Clients - Organization SSO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .client-card {
+            border-left: 4px solid #0d6efd;
+            transition: transform 0.2s;
+        }
+        .client-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .secret-display {
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        .copy-btn {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .copy-btn:hover {
+            color: #0d6efd;
+        }
+        .badge-client-type {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+        }
+        .grant-type-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.4rem;
+            margin-right: 0.25rem;
+        }
+        .token-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.4rem;
+        }
+        .stats-card {
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        .stats-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-user-shield me-2"></i>Organization SSO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/profile">
+                            <i class="fas fa-user me-1"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="/clients">
+                            <i class="fas fa-list me-1"></i> Clients
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/logout">
+                            <i class="fas fa-sign-out-alt me-1"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h1 class="mb-1">
+                            <i class="fas fa-list me-2"></i>OAuth 2.0 Clients
+                        </h1>
+                        <p class="text-muted mb-0">Manage your OAuth applications and API clients</p>
+                    </div>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newClientModal">
+                        <i class="fas fa-plus me-2"></i>New Client
+                    </button>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="row mb-4">
+                    <div class="col-md-3 mb-3">
+                        <div class="card stats-card bg-primary text-white h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-white p-3 me-3">
+                                        <i class="fas fa-layer-group fa-2x text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white-50 mb-1">Total Clients</h6>
+                                        <h2 class="mb-0" id="totalClients">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <div class="card stats-card bg-success text-white h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-white p-3 me-3">
+                                        <i class="fas fa-lock fa-2x text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white-50 mb-1">Confidential</h6>
+                                        <h2 class="mb-0" id="confidentialClients">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <div class="card stats-card bg-info text-white h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-white p-3 me-3">
+                                        <i class="fas fa-globe fa-2x text-info"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white-50 mb-1">Public</h6>
+                                        <h2 class="mb-0" id="publicClients">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 mb-3">
+                        <div class="card stats-card bg-warning text-dark h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <div class="rounded-circle bg-white p-3 me-3">
+                                        <i class="fas fa-key fa-2x text-warning"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-dark-50 mb-1">Active Tokens</h6>
+                                        <h2 class="mb-0" id="activeTokens">0</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Client List -->
+                <div class="card shadow">
+                    <div class="card-header bg-white border-0 py-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="mb-0">
+                                <i class="fas fa-th-list me-2"></i>Your Applications
+                            </h5>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-sm" id="filterAll">
+                                    All
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm" id="filterConfidential">
+                                    Confidential
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary btn-sm" id="filterPublic">
+                                    Public
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id="clientsList">
+                            <div class="text-center py-5">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-3">Loading your OAuth clients...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Documentation Section -->
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-white border-0">
+                        <h5 class="mb-0">
+                            <i class="fas fa-book me-2"></i>Documentation
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Quick Start Guides:</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" onclick="showGuide('angular')">
+                                    <i class="fab fa-angular me-2"></i>Angular Integration Guide
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" onclick="showGuide('react')">
+                                    <i class="fab fa-react me-2"></i>React Integration Guide
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" onclick="showGuide('django')">
+                                    <i class="fab fa-python me-2"></i>Django DRF Integration
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#" class="text-decoration-none" onclick="showGuide('mobile')">
+                                    <i class="fas fa-mobile-alt me-2"></i>Mobile App Integration
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none" onclick="showGuide('postman')">
+                                    <i class="fas fa-server me-2"></i>API Testing with Postman
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <hr class="my-3">
+                        
+                        <h6>API Endpoints:</h6>
+                        <div class="mb-2">
+                            <small class="text-muted d-block">OIDC Discovery:</small>
+                            <code class="d-block small bg-light p-2 rounded">/.well-known/openid-configuration</code>
+                        </div>
+                        <div class="mb-2">
+                            <small class="text-muted d-block">Token Endpoint:</small>
+                            <code class="d-block small bg-light p-2 rounded">/o/token/</code>
+                        </div>
+                        <div>
+                            <small class="text-muted d-block">User Info:</small>
+                            <code class="d-block small bg-light p-2 rounded">/o/userinfo/</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header bg-white border-0">
+                        <h5 class="mb-0">
+                            <i class="fas fa-shield-alt me-2"></i>Security Best Practices
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-warning small">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>Important:</strong> Never share your client secrets publicly. Store them in environment variables.
+                        </div>
+                        <ul class="small mb-0">
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Use <strong>HTTPS</strong> for all redirect URIs in production
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Enable <strong>PKCE</strong> for public clients (SPAs, mobile apps)
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Rotate client secrets <strong>periodically</strong> (every 90 days)
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Use appropriate <strong>scopes</strong> (minimum required permissions)
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Implement <strong>CORS</strong> properly for web applications
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                Monitor and <strong>audit</strong> client usage regularly
+                            </li>
+                        </ul>
+                        
+                        <hr class="my-3">
+                        
+                        <h6>Client Types:</h6>
+                        <div class="mb-2">
+                            <span class="badge bg-success">Confidential</span>
+                            <small class="text-muted ms-2">Web servers, daemons, APIs (can keep secrets)</small>
+                        </div>
+                        <div>
+                            <span class="badge bg-info">Public</span>
+                            <small class="text-muted ms-2">SPAs, mobile apps, desktop apps (cannot keep secrets)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Client Modal -->
+    <div class="modal fade" id="newClientModal" tabindex="-1" aria-labelledby="newClientModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="newClientModalLabel">
+                        <i class="fas fa-plus-circle me-2"></i>Register New OAuth Client
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newClientForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="clientName" class="form-label">Client Name *</label>
+                                <input type="text" class="form-control" id="clientName" required
+                                       placeholder="e.g., My Angular Application">
+                                <div class="form-text">A descriptive name for your application</div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="clientDescription" class="form-label">Description</label>
+                                <textarea class="form-control" id="clientDescription" rows="2"
+                                          placeholder="Brief description of your application"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="clientType" class="form-label">Client Type *</label>
+                                <select class="form-select" id="clientType" required onchange="toggleClientTypeFields()">
+                                    <option value="">Select type</option>
+                                    <option value="confidential">Confidential (Web servers, APIs)</option>
+                                    <option value="public">Public (SPAs, Mobile apps)</option>
+                                </select>
+                                <div class="form-text" id="clientTypeHelp"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="grantType" class="form-label">Grant Type *</label>
+                                <select class="form-select" id="grantType" required onchange="toggleGrantTypeFields()">
+                                    <option value="">Select grant</option>
+                                    <option value="authorization-code">Authorization Code (recommended)</option>
+                                    <option value="password">Resource Owner Password</option>
+                                    <option value="client-credentials">Client Credentials</option>
+                                    <option value="implicit">Implicit (deprecated)</option>
+                                </select>
+                                <div class="form-text" id="grantTypeHelp"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3" id="redirectUrisGroup">
+                            <label for="redirectUris" class="form-label">Redirect URIs *</label>
+                            <textarea class="form-control" id="redirectUris" rows="3" required
+                                      placeholder="https://yourapp.com/callback&#10;https://yourapp.com/auth/callback"></textarea>
+                            <div class="form-text">One URI per line. Must use HTTPS in production.</div>
+                        </div>
+                        
+                        <div class="mb-3" id="postLogoutUrisGroup" style="display: none;">
+                            <label for="postLogoutUris" class="form-label">Post-Logout Redirect URIs</label>
+                            <textarea class="form-control" id="postLogoutUris" rows="2"
+                                      placeholder="https://yourapp.com/logout"></textarea>
+                            <div class="form-text">Where to redirect after logout (optional)</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Requested Scopes *</label>
+                            <div class="border rounded p-3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="scopeOpenId" checked disabled>
+                                            <label class="form-check-label" for="scopeOpenId">
+                                                <strong>openid</strong> (required for OIDC)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="scopeProfile" checked>
+                                            <label class="form-check-label" for="scopeProfile">
+                                                profile (name, picture)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="scopeEmail" checked>
+                                            <label class="form-check-label" for="scopeEmail">
+                                                email
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="scopeRead">
+                                            <label class="form-check-label" for="scopeRead">
+                                                read (API read access)
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input" type="checkbox" id="scopeWrite">
+                                            <label class="form-check-label" for="scopeWrite">
+                                                write (API write access)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="scopeOffline">
+                                            <label class="form-check-label" for="scopeOffline">
+                                                offline_access (refresh tokens)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skipAuthorization">
+                                    <label class="form-check-label" for="skipAuthorization">
+                                        Skip authorization page
+                                    </label>
+                                    <div class="form-text">For trusted internal applications only</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="requirePKCE" checked>
+                                    <label class="form-check-label" for="requirePKCE">
+                                        Require PKCE (Proof Key for Code Exchange)
+                                    </label>
+                                    <div class="form-text">Recommended for public clients</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="createClientBtn" onclick="createClient()">
+                        <i class="fas fa-plus me-2"></i>Create Client
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Client Details Modal -->
+    <div class="modal fade" id="clientDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-info-circle me-2"></i>Client Details
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="clientDetailsContent">
+                        <!-- Client details will be loaded here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guide Modal -->
+    <div class="modal fade" id="guideModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="guideModalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="guideModalContent"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-muted">Organization SSO OAuth Management &copy; {% now "Y" %}</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <small class="text-muted">
+                        <i class="fas fa-code me-1"></i>Powered by Django OAuth Toolkit
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Client data storage
+        let clients = [];
+        let currentFilter = 'all';
+        
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadClients();
+            setupEventListeners();
+        });
+        
+        // Setup event listeners
+        function setupEventListeners() {
+            // Filter buttons
+            document.getElementById('filterAll').addEventListener('click', () => filterClients('all'));
+            document.getElementById('filterConfidential').addEventListener('click', () => filterClients('confidential'));
+            document.getElementById('filterPublic').addEventListener('click', () => filterClients('public'));
+            
+            // Form validation
+            document.getElementById('clientType').addEventListener('change', toggleClientTypeFields);
+            document.getElementById('grantType').addEventListener('change', toggleGrantTypeFields);
+        }
+        
+        // Load clients from API
+        async function loadClients() {
+            try {
+                const response = await fetch('/o/applications/', {
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    clients = data.results || data;
+                    renderClients();
+                    updateStats();
+                } else {
+                    showError('Failed to load clients');
+                }
+            } catch (error) {
+                console.error('Error loading clients:', error);
+                showError('Failed to load clients. Please refresh the page.');
+            }
+        }
+        
+        // Render clients list
+        function renderClients() {
+            const container = document.getElementById('clientsList');
+            const filteredClients = filterClientsList(currentFilter);
+            
+            if (filteredClients.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-5">
+                        <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">No clients found</h5>
+                        <p class="text-muted">Create your first OAuth client to get started</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newClientModal">
+                            <i class="fas fa-plus me-2"></i>Create First Client
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '<div class="row">';
+            
+            filteredClients.forEach(client => {
+                const isConfidential = client.client_type === 'confidential';
+                const isPublic = client.client_type === 'public';
+                
+                html += `
+                    <div class="col-md-6 mb-4">
+                        <div class="card client-card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h5 class="card-title mb-1">${client.name || 'Unnamed Client'}</h5>
+                                        <div class="d-flex align-items-center mb-2">
+                                            <span class="badge ${isConfidential ? 'bg-success' : 'bg-info'} badge-client-type me-2">
+                                                ${client.client_type}
+                                            </span>
+                                            <span class="badge bg-secondary grant-type-badge">
+                                                ${client.authorization_grant_type.replace('-', ' ')}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-outline-secondary" type="button" 
+                                                data-bs-toggle="dropdown">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#" onclick="showClientDetails('${client.id}')">
+                                                <i class="fas fa-eye me-2"></i>View Details
+                                            </a></li>
+                                            <li><a class="dropdown-item" href="#" onclick="editClient('${client.id}')">
+                                                <i class="fas fa-edit me-2"></i>Edit
+                                            </a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item text-danger" href="#" onclick="deleteClient('${client.id}', '${client.name}')">
+                                                <i class="fas fa-trash me-2"></i>Delete
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <p class="card-text text-muted small mb-3">
+                                    ${client.description || 'No description provided.'}
+                                </p>
+                                
+                                <div class="mb-3">
+                                    <small class="text-muted d-block mb-1">Client ID:</small>
+                                    <div class="d-flex align-items-center">
+                                        <code class="secret-display flex-grow-1">${client.client_id}</code>
+                                        <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                                onclick="copyToClipboard('${client.client_id}')"
+                                                title="Copy Client ID">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                ${isConfidential ? `
+                                <div class="mb-3">
+                                    <small class="text-muted d-block mb-1">Client Secret:</small>
+                                    <div class="d-flex align-items-center">
+                                        <code class="secret-display flex-grow-1">${client.client_secret || '********'}</code>
+                                        ${client.client_secret ? `
+                                        <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                                onclick="copyToClipboard('${client.client_secret}')"
+                                                title="Copy Client Secret">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                        ` : ''}
+                                    </div>
+                                    <small class="text-muted">Keep this secret secure!</small>
+                                </div>
+                                ` : ''}
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">
+                                        Created: ${new Date(client.created).toLocaleDateString()}
+                                    </small>
+                                    <button class="btn btn-sm btn-outline-primary" 
+                                            onclick="showClientDetails('${client.id}')">
+                                        <i class="fas fa-cog me-1"></i> Manage
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            container.innerHTML = html;
+        }
+        
+        // Filter clients list
+        function filterClientsList(filter) {
+            if (filter === 'all') return clients;
+            return clients.filter(client => client.client_type === filter);
+        }
+        
+        // Update stats
+        function updateStats() {
+            const total = clients.length;
+            const confidential = clients.filter(c => c.client_type === 'confidential').length;
+            const publicClients = clients.filter(c => c.client_type === 'public').length;
+            
+            document.getElementById('totalClients').textContent = total;
+            document.getElementById('confidentialClients').textContent = confidential;
+            document.getElementById('publicClients').textContent = publicClients;
+            
+            // Update active tokens (this would come from an API in real implementation)
+            document.getElementById('activeTokens').textContent = '0';
+        }
+        
+        // Filter clients
+        function filterClients(filter) {
+            currentFilter = filter;
+            
+            // Update active button states
+            ['filterAll', 'filterConfidential', 'filterPublic'].forEach(id => {
+                const btn = document.getElementById(id);
+                if (id === `filter${filter.charAt(0).toUpperCase() + filter.slice(1)}`) {
+                    btn.classList.remove('btn-outline-secondary');
+                    btn.classList.add('btn-primary');
+                } else {
+                    btn.classList.remove('btn-primary');
+                    btn.classList.add('btn-outline-secondary');
+                }
+            });
+            
+            renderClients();
+        }
+        
+        // Toggle form fields based on client type
+        function toggleClientTypeFields() {
+            const clientType = document.getElementById('clientType').value;
+            const helpText = document.getElementById('clientTypeHelp');
+            
+            if (clientType === 'confidential') {
+                helpText.innerHTML = '<i class="fas fa-info-circle me-1"></i> For web servers and APIs that can securely store secrets';
+                document.getElementById('postLogoutUrisGroup').style.display = 'block';
+            } else if (clientType === 'public') {
+                helpText.innerHTML = '<i class="fas fa-info-circle me-1"></i> For SPAs, mobile apps, and desktop apps that cannot store secrets';
+                document.getElementById('postLogoutUrisGroup').style.display = 'none';
+            } else {
+                helpText.textContent = '';
+                document.getElementById('postLogoutUrisGroup').style.display = 'none';
+            }
+        }
+        
+        // Toggle form fields based on grant type
+        function toggleGrantTypeFields() {
+            const grantType = document.getElementById('grantType').value;
+            const helpText = document.getElementById('grantTypeHelp');
+            
+            if (grantType === 'authorization-code') {
+                helpText.innerHTML = '<i class="fas fa-check-circle text-success me-1"></i> Recommended for most applications';
+            } else if (grantType === 'password') {
+                helpText.innerHTML = '<i class="fas fa-exclamation-triangle text-warning me-1"></i> Legacy flow, not recommended for new applications';
+            } else if (grantType === 'client-credentials') {
+                helpText.innerHTML = '<i class="fas fa-info-circle me-1"></i> For machine-to-machine communication';
+            } else if (grantType === 'implicit') {
+                helpText.innerHTML = '<i class="fas fa-times-circle text-danger me-1"></i> Deprecated, do not use for new applications';
+            } else {
+                helpText.textContent = '';
+            }
+        }
+        
+        // Create new client
+        async function createClient() {
+            const form = document.getElementById('newClientForm');
+            const btn = document.getElementById('createClientBtn');
+            
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            // Get form data
+            const clientData = {
+                name: document.getElementById('clientName').value,
+                description: document.getElementById('clientDescription').value,
+                client_type: document.getElementById('clientType').value,
+                authorization_grant_type: document.getElementById('grantType').value,
+                redirect_uris: document.getElementById('redirectUris').value,
+                skip_authorization: document.getElementById('skipAuthorization').checked,
+            };
+            
+            // Add post-logout URIs if provided
+            const postLogoutUris = document.getElementById('postLogoutUris').value;
+            if (postLogoutUris) {
+                clientData.post_logout_redirect_uris = postLogoutUris;
+            }
+            
+            // Build scopes string
+            const scopes = ['openid'];
+            if (document.getElementById('scopeProfile').checked) scopes.push('profile');
+            if (document.getElementById('scopeEmail').checked) scopes.push('email');
+            if (document.getElementById('scopeRead').checked) scopes.push('read');
+            if (document.getElementById('scopeWrite').checked) scopes.push('write');
+            if (document.getElementById('scopeOffline').checked) scopes.push('offline_access');
+            clientData.scope = scopes.join(' ');
+            
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Creating...';
+            
+            try {
+                const response = await fetch('/o/applications/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCSRFToken(),
+                    },
+                    body: JSON.stringify(clientData)
+                });
+                
+                if (response.ok) {
+                    const newClient = await response.json();
+                    
+                    // Close modal and reset form
+                    bootstrap.Modal.getInstance(document.getElementById('newClientModal')).hide();
+                    form.reset();
+                    
+                    // Show success message
+                    showSuccess(`Client "${newClient.name}" created successfully!`);
+                    
+                    // Reload clients list
+                    loadClients();
+                    
+                    // Show client details with secret
+                    showNewClientDetails(newClient);
+                } else {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Failed to create client');
+                }
+            } catch (error) {
+                showError(`Failed to create client: ${error.message}`);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-plus me-2"></i>Create Client';
+            }
+        }
+        
+        // Show new client details with secret
+        function showNewClientDetails(client) {
+            const modalContent = document.getElementById('clientDetailsContent');
+            
+            modalContent.innerHTML = `
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <strong>Client created successfully!</strong> Save these credentials securely.
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Client Name</label>
+                            <p class="form-control-plaintext">${client.name}</p>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Client Type</label>
+                            <p>
+                                <span class="badge ${client.client_type === 'confidential' ? 'bg-success' : 'bg-info'}">
+                                    ${client.client_type}
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Grant Type</label>
+                            <p>${client.authorization_grant_type.replace('-', ' ')}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Client ID</label>
+                            <div class="d-flex align-items-center">
+                                <code class="secret-display flex-grow-1">${client.client_id}</code>
+                                <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                        onclick="copyToClipboard('${client.client_id}')">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Client Secret</label>
+                            <div class="d-flex align-items-center">
+                                <code class="secret-display flex-grow-1">${client.client_secret}</code>
+                                <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                        onclick="copyToClipboard('${client.client_secret}')">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                            <div class="alert alert-warning mt-2 small">
+                                <i class="fas fa-exclamation-triangle me-1"></i>
+                                Copy this secret now! It won't be shown again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Redirect URIs</label>
+                    <div class="border rounded p-2 bg-light">
+                        ${client.redirect_uris.split('\n').map(uri => `<code class="d-block">${uri}</code>`).join('')}
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label">Scopes</label>
+                    <p>${client.scope || 'openid'}</p>
+                </div>
+                
+                <div class="alert alert-info">
+                    <h6><i class="fas fa-lightbulb me-2"></i>Next Steps:</h6>
+                    <ol class="mb-0">
+                        <li>Store the client secret in a secure location</li>
+                        <li>Configure your application with these credentials</li>
+                        <li>Test the authentication flow</li>
+                        <li>Monitor usage in the dashboard</li>
+                    </ol>
+                </div>
+            `;
+            
+            const modal = new bootstrap.Modal(document.getElementById('clientDetailsModal'));
+            modal.show();
+        }
+        
+        // Show client details
+        async function showClientDetails(clientId) {
+            try {
+                const response = await fetch(`/o/applications/${clientId}/`);
+                if (response.ok) {
+                    const client = await response.json();
+                    
+                    const modalContent = document.getElementById('clientDetailsContent');
+                    modalContent.innerHTML = `
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h5>${client.name}</h5>
+                                <p class="text-muted">${client.description || 'No description'}</p>
+                            </div>
+                            <div class="col-md-4 text-end">
+                                <span class="badge ${client.client_type === 'confidential' ? 'bg-success' : 'bg-info'}">
+                                    ${client.client_type}
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6><i class="fas fa-key me-2"></i>Credentials</h6>
+                                <div class="mb-3">
+                                    <label class="form-label small">Client ID</label>
+                                    <div class="d-flex align-items-center">
+                                        <code class="secret-display flex-grow-1">${client.client_id}</code>
+                                        <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                                onclick="copyToClipboard('${client.client_id}')">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                ${client.client_secret ? `
+                                <div class="mb-3">
+                                    <label class="form-label small">Client Secret</label>
+                                    <div class="d-flex align-items-center">
+                                        <code class="secret-display flex-grow-1">${client.client_secret}</code>
+                                        <button class="btn btn-sm btn-outline-secondary ms-2 copy-btn" 
+                                                onclick="copyToClipboard('${client.client_secret}')">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                ` : ''}
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h6><i class="fas fa-cog me-2"></i>Configuration</h6>
+                                <div class="mb-2">
+                                    <small class="text-muted">Grant Type:</small>
+                                    <p>${client.authorization_grant_type.replace('-', ' ')}</p>
+                                </div>
+                                <div class="mb-2">
+                                    <small class="text-muted">Created:</small>
+                                    <p>${new Date(client.created).toLocaleString()}</p>
+                                </div>
+                                <div>
+                                    <small class="text-muted">Updated:</small>
+                                    <p>${new Date(client.updated).toLocaleString()}</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6><i class="fas fa-link me-2"></i>Redirect URIs</h6>
+                            <div class="border rounded p-2 bg-light">
+                                ${client.redirect_uris.split('\n').map(uri => `<code class="d-block">${uri}</code>`).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3">
+                            <h6><i class="fas fa-shield-alt me-2"></i>Scopes</h6>
+                            <div class="d-flex flex-wrap gap-1">
+                                ${(client.scope || 'openid').split(' ').map(scope => `
+                                    <span class="badge bg-secondary">${scope}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                    
+                    const modal = new bootstrap.Modal(document.getElementById('clientDetailsModal'));
+                    modal.show();
+                }
+            } catch (error) {
+                showError('Failed to load client details');
+            }
+        }
+        
+        // Delete client
+        function deleteClient(clientId, clientName) {
+            if (confirm(`Are you sure you want to delete "${clientName}"? This action cannot be undone.`)) {
+                fetch(`/o/applications/${clientId}/`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-CSRFToken': getCSRFToken(),
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        showSuccess(`Client "${clientName}" deleted successfully`);
+                        loadClients();
+                    } else {
+                        showError('Failed to delete client');
+                    }
+                })
+                .catch(error => {
+                    showError('Failed to delete client');
+                });
+            }
+        }
+        
+        // Edit client (placeholder function)
+        function editClient(clientId) {
+            alert('Edit functionality would be implemented here');
+            // In a real implementation, you would:
+            // 1. Fetch client details
+            // 2. Populate the form in the modal
+            // 3. Handle the update
+        }
+        
+        // Show integration guides
+        function showGuide(type) {
+            const modalTitle = document.getElementById('guideModalTitle');
+            const modalContent = document.getElementById('guideModalContent');
+            
+            const guides = {
+                angular: {
+                    title: 'Angular Integration Guide',
+                    content: `
+                        <h5>Angular OAuth 2.0 / OIDC Integration</h5>
+                        <h6>1. Install Required Packages</h6>
+                        <pre><code>npm install angular-oauth2-oidc</code></pre>
+                        
+                        <h6>2. Configure OAuth Module</h6>
+                        <pre><code>// auth-config.ts
+export const authConfig: AuthConfig = {
+  issuer: '${window.location.origin}/o',
+  redirectUri: window.location.origin + '/callback',
+  clientId: 'YOUR_CLIENT_ID',
+  responseType: 'code',
+  scope: 'openid profile email',
+  showDebugInformation: true,
+  requireHttps: false // true in production
+};</code></pre>
+                        
+                        <h6>3. Implement Auth Service</h6>
+                        <pre><code>// auth.service.ts
+import { OAuthService } from 'angular-oauth2-oidc';
+
+@Injectable()
+export class AuthService {
+  constructor(private oauthService: OAuthService) {
+    this.oauthService.configure(authConfig);
+    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+  }
+  
+  login() {
+    this.oauthService.initCodeFlow();
+  }
+  
+  logout() {
+    this.oauthService.logOut();
+  }
+}</code></pre>
+                        
+                        <h6>4. Create HTTP Interceptor</h6>
+                        <pre><code>// auth.interceptor.ts
+intercept(req: HttpRequest<any>, next: HttpHandler) {
+  const token = this.oauthService.getAccessToken();
+  if (token) {
+    req = req.clone({
+      headers: req.headers.set('Authorization', 'Bearer ' + token)
+    });
+  }
+  return next.handle(req);
+}</code></pre>
+                    `
+                },
+                react: {
+                    title: 'React Integration Guide',
+                    content: `
+                        <h5>React OAuth 2.0 / OIDC Integration</h5>
+                        <h6>1. Install Required Packages</h6>
+                        <pre><code>npm install react-oauth2-code-pkce</code></pre>
+                        
+                        <h6>2. Create Auth Context</h6>
+                        <pre><code>// AuthContext.jsx
+import { createContext, useContext } from 'react';
+import { Auth } from 'react-oauth2-code-pkce';
+
+const auth = new Auth({
+  authorizationUrl: '${window.location.origin}/o/authorize/',
+  tokenUrl: '${window.location.origin}/o/token/',
+  clientId: 'YOUR_CLIENT_ID',
+  redirectUri: window.location.origin + '/callback',
+  scope: 'openid profile email',
+});</code></pre>
+                        
+                        <h6>3. Create Protected Route</h6>
+                        <pre><code>// ProtectedRoute.jsx
+const ProtectedRoute = ({ children }) => {
+  const { token } = useAuth();
+  
+  if (!token) {
+    auth.login();
+    return <div>Redirecting to login...</div>;
+  }
+  
+  return children;
+};</code></pre>
+                    `
+                },
+                django: {
+                    title: 'Django DRF Integration Guide',
+                    content: `
+                        <h5>Django REST Framework Integration</h5>
+                        <h6>1. Install Required Packages</h6>
+                        <pre><code>pip install djangorestframework django-oauth-toolkit</code></pre>
+                        
+                        <h6>2. Configure Django Settings</h6>
+                        <pre><code># settings.py
+INSTALLED_APPS = [
+    'rest_framework',
+    'oauth2_provider',
+]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    ],
+}</code></pre>
+                        
+                        <h6>3. Create Authentication Class</h6>
+                        <pre><code># authentication.py
+from oauth2_provider.contrib.rest_framework import OAuth2Authentication
+
+class SSOAuthentication(OAuth2Authentication):
+    def authenticate(self, request):
+        auth = super().authenticate(request)
+        if auth:
+            user, token = auth
+            # Add custom logic here
+            return user, token
+        return None</code></pre>
+                    `
+                }
+            };
+            
+            if (guides[type]) {
+                modalTitle.textContent = guides[type].title;
+                modalContent.innerHTML = guides[type].content;
+                new bootstrap.Modal(document.getElementById('guideModal')).show();
+            }
+        }
+        
+        // Utility functions
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showSuccess('Copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+        
+        function getCSRFToken() {
+            const name = 'csrftoken';
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        
+        function showSuccess(message) {
+            // Create toast notification
+            const toast = document.createElement('div');
+            toast.className = 'toast align-items-center text-white bg-success border-0';
+            toast.setAttribute('role', 'alert');
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <i class="fas fa-check-circle me-2"></i>${message}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" 
+                            data-bs-dismiss="toast"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+            
+            toast.addEventListener('hidden.bs.toast', () => {
+                document.body.removeChild(toast);
+            });
+        }
+        
+        function showError(message) {
+            // Create toast notification
+            const toast = document.createElement('div');
+            toast.className = 'toast align-items-center text-white bg-danger border-0';
+            toast.setAttribute('role', 'alert');
+            toast.innerHTML = `
+                <div class="d-flex">
+                    <div class="toast-body">
+                        <i class="fas fa-exclamation-circle me-2"></i>${message}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" 
+                            data-bs-dismiss="toast"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+            
+            toast.addEventListener('hidden.bs.toast', () => {
+                document.body.removeChild(toast);
+            });
+        }
+        
+        // Auto-save form data (optional feature)
+        function autoSaveForm() {
+            const form = document.getElementById('newClientForm');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            localStorage.setItem('draftClientForm', JSON.stringify(data));
+        }
+        
+        // Load draft form data
+        function loadDraftForm() {
+            const draft = localStorage.getItem('draftClientForm');
+            if (draft) {
+                const data = JSON.parse(draft);
+                Object.keys(data).forEach(key => {
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.value = data[key];
+                    }
+                });
+            }
+        }
+        
+        // Clear draft form
+        function clearDraftForm() {
+            localStorage.removeItem('draftClientForm');
+        }
+        
+        // Initialize auto-save
+        document.querySelectorAll('#newClientForm input, #newClientForm textarea, #newClientForm select').forEach(element => {
+            element.addEventListener('input', autoSaveForm);
+            element.addEventListener('change', autoSaveForm);
+        });
+        
+        // Load draft on page load
+        window.addEventListener('load', loadDraftForm);
+        
+        // Clear draft when modal is closed
+        document.getElementById('newClientModal').addEventListener('hidden.bs.modal', clearDraftForm);
+    </script>
+</body>
+</html>

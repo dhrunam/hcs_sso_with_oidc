@@ -1,0 +1,103 @@
+ERROR 2026-02-06 10:52:25,412 apps 30367 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-06 10:52:25,412 apps 30367 8310350016 ✅ Social authentication app initialized successfully
+ERROR 2026-02-06 10:52:25,829 apps 30440 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-06 10:52:25,829 apps 30440 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-06 10:52:25,834 autoreload 30440 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-06 10:53:46,240 autoreload 30440 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-06 10:53:46,990 apps 30755 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-06 10:53:46,990 apps 30755 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-06 10:53:46,998 autoreload 30755 8310350016 Watching for file changes with StatReloader
+WARNING 2026-02-06 10:55:52,086 log 30755 6127251456 Not Found: /
+WARNING 2026-02-06 10:55:52,087 log 30755 6127251456 "GET / HTTP/1.1" 404 3897
+WARNING 2026-02-06 10:55:52,245 log 30755 6127251456 Not Found: /favicon.ico
+WARNING 2026-02-06 10:55:52,245 log 30755 6127251456 "GET /favicon.ico HTTP/1.1" 404 4002
+WARNING 2026-02-06 10:56:27,310 log 30755 6127251456 Not Found: /social/
+WARNING 2026-02-06 10:56:27,310 log 30755 6127251456 "GET /social/ HTTP/1.1" 404 5019
+WARNING 2026-02-06 10:57:05,524 log 30755 6127251456 Not Found: /social/login
+WARNING 2026-02-06 10:57:05,525 log 30755 6127251456 "GET /social/login HTTP/1.1" 404 5040
+WARNING 2026-02-06 10:57:19,807 log 30755 6127251456 Not Found: /social/login/google
+WARNING 2026-02-06 10:57:19,809 log 30755 6127251456 "GET /social/login/google HTTP/1.1" 404 5068
+WARNING 2026-02-06 10:58:12,960 log 30755 6127251456 Not Found: /social/login/google-oauth2
+WARNING 2026-02-06 10:58:12,961 log 30755 6127251456 "GET /social/login/google-oauth2 HTTP/1.1" 404 5096
+ERROR 2026-02-06 10:58:24,168 log 30755 6127251456 Internal Server Error: /social/login/google-oauth2/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/social_django/utils.py", line 58, in wrapper
+    return func(request, backend, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/social_django/utils.py", line 32, in wrapper
+    uri = reverse(redirect_uri, args=(backend,))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'complete' not found. 'complete' is not a valid view function or pattern name.
+ERROR 2026-02-06 10:58:24,193 log 30755 6127251456 "GET /social/login/google-oauth2/ HTTP/1.1" 500 98626
+WARNING 2026-02-06 10:59:02,552 log 30755 6127251456 Not Found: /users/
+WARNING 2026-02-06 10:59:02,553 log 30755 6127251456 "GET /users/ HTTP/1.1" 404 3981
+WARNING 2026-02-06 10:59:19,923 log 30755 6127251456 Unauthorized: /api/users/
+WARNING 2026-02-06 10:59:19,923 log 30755 6127251456 "GET /api/users/ HTTP/1.1" 401 5136
+INFO 2026-02-06 10:59:19,941 log 30755 6177730560 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-02-06 10:59:19,946 log 30755 6211383296 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-02-06 10:59:19,948 log 30755 6194556928 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-02-06 10:59:19,953 log 30755 6177730560 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-02-06 10:59:19,957 log 30755 6194556928 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-02-06 10:59:19,957 log 30755 6211383296 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-02-06 10:59:19,958 log 30755 6177730560 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-02-06 10:59:19,961 log 30755 6194556928 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-02-06 10:59:19,964 log 30755 6160904192 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-02-06 10:59:19,964 log 30755 6127251456 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-02-06 10:59:19,972 log 30755 6144077824 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-02-06 10:59:19,973 log 30755 6127251456 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+ERROR 2026-02-07 05:53:23,982 apps 50397 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:53:23,983 apps 50397 8310350016 ✅ Social authentication app initialized successfully
+ERROR 2026-02-07 05:53:24,379 apps 50412 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:53:24,379 apps 50412 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 05:53:24,384 autoreload 50412 8310350016 Watching for file changes with StatReloader
+ERROR 2026-02-07 05:53:51,896 apps 50750 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:53:51,896 apps 50750 8310350016 ✅ Social authentication app initialized successfully
+ERROR 2026-02-07 05:53:52,284 apps 50752 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:53:52,284 apps 50752 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 05:53:52,289 autoreload 50752 8310350016 Watching for file changes with StatReloader
+WARNING 2026-02-07 05:54:19,828 log 30755 6127251456 Unauthorized: /api/users/
+WARNING 2026-02-07 05:54:19,829 log 30755 6127251456 "GET /api/users/ HTTP/1.1" 401 5136
+INFO 2026-02-07 05:54:19,883 log 30755 6144077824 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,884 log 30755 6127251456 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,886 log 30755 6160904192 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,888 log 30755 6177730560 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,888 log 30755 6144077824 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,888 log 30755 6194556928 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,888 log 30755 6127251456 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,889 log 30755 6211383296 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,891 log 30755 6160904192 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,892 log 30755 6177730560 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,894 log 30755 6144077824 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-07 05:54:19,899 log 30755 6144077824 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2026-02-07 05:54:20,700 log 30755 6144077824 Unauthorized: /api/users/
+WARNING 2026-02-07 05:54:20,700 log 30755 6144077824 "GET /api/users/ HTTP/1.1" 401 5136
+ERROR 2026-02-07 05:54:47,645 apps 51286 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:54:47,645 apps 51286 8310350016 ✅ Social authentication app initialized successfully
+ERROR 2026-02-07 05:54:48,054 apps 51289 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:54:48,054 apps 51289 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 05:54:48,059 autoreload 51289 8310350016 Watching for file changes with StatReloader
+WARNING 2026-02-07 05:54:58,719 log 30755 6144077824 Unauthorized: /api/users/
+WARNING 2026-02-07 05:54:58,720 log 30755 6144077824 "GET /api/users/ HTTP/1.1" 401 5136
+ERROR 2026-02-07 05:55:22,987 apps 51587 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:55:22,988 apps 51587 8310350016 ✅ Social authentication app initialized successfully
+ERROR 2026-02-07 05:55:23,380 apps 51589 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 05:55:23,380 apps 51589 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 05:55:23,385 autoreload 51589 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 06:23:20,978 autoreload 30755 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 06:23:21,894 apps 58248 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 06:23:21,894 apps 58248 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 06:23:21,904 autoreload 58248 8310350016 Watching for file changes with StatReloader
