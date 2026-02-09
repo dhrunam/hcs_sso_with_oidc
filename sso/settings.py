@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sso.yourorg.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sso.diseso.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    *(['debug_toolbar.middleware.DebugToolbarMiddleware'] if DEBUG else []),
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -140,13 +141,18 @@ SOCIAL_AUTH_LOGIN_URL = '/login/'
 
 
 
-# CORS Configuration
+# Exact origins only (optional)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
     "http://localhost:4200",
-    "http://localhost:8080",
-    "https://app.yourorg.com",
 ]
+
+# REGEX-based origins (this is what you need)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^http://localhost:\d+$",
+    r"^https://.*\.diseso\.com$",
+    r"^https://diseso\.com$",
+]
+
 CORS_ALLOW_CREDENTIALS = True
 CORS_EXPOSE_HEADERS = ['Content-Type', 'Authorization']
 

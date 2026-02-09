@@ -101,3 +101,239 @@ INFO 2026-02-07 06:23:20,978 autoreload 30755 8310350016 /Users/dhrubajyotiborah
 ERROR 2026-02-07 06:23:21,894 apps 58248 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
 INFO 2026-02-07 06:23:21,894 apps 58248 8310350016 ✅ Social authentication app initialized successfully
 INFO 2026-02-07 06:23:21,904 autoreload 58248 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 07:03:03,218 autoreload 58248 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 07:03:04,011 apps 69416 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 07:03:04,011 apps 69416 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 07:03:04,018 autoreload 69416 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 07:08:13,676 log 69416 6134837248 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-07 07:08:14,778 log 69416 6134837248 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-07 07:08:14,834 log 69416 6151663616 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-07 07:08:14,837 log 69416 6168489984 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-07 07:08:14,865 log 69416 6134837248 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-07 07:08:14,865 log 69416 6185316352 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-07 07:08:14,867 log 69416 6218969088 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-07 07:08:14,868 log 69416 6202142720 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-07 07:08:14,876 log 69416 6202142720 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-07 07:08:25,457 log 69416 6202142720 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-07 07:08:26,961 basehttp 69416 6202142720 - Broken pipe from ('127.0.0.1', 62281)
+WARNING 2026-02-07 07:08:27,013 log 69416 6218969088 Forbidden (CSRF token from POST incorrect.): /admin/login/
+WARNING 2026-02-07 07:08:27,372 log 69416 6218969088 "POST /admin/login/?next=/admin/ HTTP/1.1" 403 2503
+INFO 2026-02-07 07:12:08,822 autoreload 69416 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 07:12:09,671 apps 71802 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 07:12:09,671 apps 71802 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 07:12:09,678 autoreload 71802 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 07:12:13,056 autoreload 71802 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/urls.py changed, reloading.
+ERROR 2026-02-07 07:12:13,619 apps 71823 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 07:12:13,619 apps 71823 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 07:12:13,624 autoreload 71823 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 07:12:18,005 autoreload 71823 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-07 07:12:18,641 apps 71841 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 07:12:18,641 apps 71841 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 07:12:18,646 autoreload 71841 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 07:12:21,195 log 71841 6200242176 "GET /admin/login/ HTTP/1.1" 302 0
+INFO 2026-02-07 07:12:22,659 log 71841 6200242176 "GET /admin/ HTTP/1.1" 200 13389
+INFO 2026-02-07 07:12:22,706 log 71841 6200242176 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-07 07:12:22,729 log 71841 6200242176 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-07 07:12:22,750 log 71841 6217068544 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-07 07:12:35,337 log 71841 6217068544 "POST /admin/logout/ HTTP/1.1" 200 3475
+INFO 2026-02-07 07:12:40,530 log 71841 6217068544 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-07 07:12:41,417 log 71841 6217068544 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-07 07:12:54,149 log 71841 6217068544 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-07 07:12:55,553 log 71841 6217068544 "GET /admin/ HTTP/1.1" 200 13389
+INFO 2026-02-07 07:13:16,231 log 71841 6217068544 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 15642
+INFO 2026-02-07 07:13:16,313 log 71841 6250721280 "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-07 07:13:16,315 log 71841 6284374016 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-07 07:13:16,316 log 71841 6267547648 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-07 07:13:16,321 log 71841 6250721280 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-07 07:13:16,324 log 71841 6284374016 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-07 07:13:16,325 log 71841 6200242176 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-07 07:13:16,325 log 71841 6267547648 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-07 07:13:16,331 log 71841 6250721280 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-07 07:13:16,337 log 71841 6267547648 "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-07 07:13:16,337 log 71841 6233894912 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-07 07:13:16,342 log 71841 6233894912 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-07 07:13:17,519 log 71841 6217068544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 07:13:17,546 log 71841 6233894912 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-07 07:13:17,547 log 71841 6217068544 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-07 07:13:27,168 log 71841 6217068544 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 24672
+INFO 2026-02-07 07:13:27,195 log 71841 6233894912 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-07 07:13:27,196 log 71841 6267547648 "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-07 07:13:27,225 log 71841 6267547648 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-07 07:13:27,225 log 71841 6233894912 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-07 07:13:28,439 log 71841 6217068544 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 08:37:41,198 autoreload 71841 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-07 08:37:42,162 apps 79916 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 08:37:42,162 apps 79916 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 08:37:42,170 autoreload 79916 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 08:37:43,407 autoreload 79916 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/urls.py changed, reloading.
+ERROR 2026-02-07 08:37:43,882 apps 79926 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 08:37:43,882 apps 79926 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 08:37:43,888 autoreload 79926 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 08:37:47,244 autoreload 79926 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 08:37:47,725 apps 79947 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 08:37:47,725 apps 79947 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 08:37:47,738 autoreload 79947 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 08:38:20,604 autoreload 79947 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 08:38:21,322 apps 80285 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 08:38:21,322 apps 80285 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 08:38:21,327 autoreload 80285 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 09:53:34,978 autoreload 80285 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-07 09:53:36,146 apps 99444 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 09:53:36,146 apps 99444 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 09:53:36,154 autoreload 99444 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 10:02:02,182 log 99444 6194819072 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+WARNING 2026-02-07 10:02:03,207 log 99444 6194819072 Not Found: /favicon.ico
+WARNING 2026-02-07 10:02:03,208 log 99444 6194819072 "GET /favicon.ico HTTP/1.1" 404 4026
+INFO 2026-02-07 10:45:39,371 log 99444 6194819072 "GET /o/authorize/ HTTP/1.1" 302 0
+WARNING 2026-02-07 10:45:40,176 log 99444 6194819072 Not Found: /accounts/login/
+WARNING 2026-02-07 10:45:40,177 log 99444 6194819072 "GET /accounts/login/?next=/o/authorize/ HTTP/1.1" 404 4060
+INFO 2026-02-07 10:46:43,156 log 99444 6194819072 "GET /o/authorize/ HTTP/1.1" 302 0
+WARNING 2026-02-07 10:46:43,961 log 99444 6194819072 Not Found: /accounts/login/
+WARNING 2026-02-07 10:46:43,963 log 99444 6194819072 "GET /accounts/login/?next=/o/authorize/ HTTP/1.1" 404 4060
+INFO 2026-02-07 10:47:28,146 log 99444 6194819072 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-07 10:57:54,038 log 99444 6194819072 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-02-07 10:57:55,968 basehttp 99444 6194819072 - Broken pipe from ('127.0.0.1', 50169)
+INFO 2026-02-07 10:57:57,407 log 99444 6211645440 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 200 25259
+INFO 2026-02-07 10:57:58,669 log 99444 6211645440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 10:57:58,699 log 99444 6211645440 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-07 11:04:09,564 log 99444 6194819072 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=v9SF4effAQ0W7Fb_d4ZOQ36rA5WqT2R2f6-ESIy2i3o&code_challenge_method=S256 HTTP/1.1" 302 0
+WARNING 2026-02-07 11:04:10,432 log 99444 6194819072 Not Found: /accounts/login/
+WARNING 2026-02-07 11:04:10,433 log 99444 6194819072 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dv9SF4effAQ0W7Fb_d4ZOQ36rA5WqT2R2f6-ESIy2i3o%26code_challenge_method%3DS256 HTTP/1.1" 404 4371
+INFO 2026-02-07 11:04:28,378 log 99444 6194819072 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=QfChmofhEuVcpVBIqEve3NtwzO30DJjJHa4ZB7nZ_ac&code_challenge_method=S256 HTTP/1.1" 302 0
+WARNING 2026-02-07 11:04:29,167 log 99444 6194819072 Not Found: /accounts/login/
+WARNING 2026-02-07 11:04:29,169 log 99444 6194819072 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DQfChmofhEuVcpVBIqEve3NtwzO30DJjJHa4ZB7nZ_ac%26code_challenge_method%3DS256 HTTP/1.1" 404 4371
+INFO 2026-02-07 11:06:40,008 autoreload 99444 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-07 11:06:41,037 apps 16884 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-07 11:06:41,037 apps 16884 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-07 11:06:41,045 autoreload 16884 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-07 11:06:52,946 log 16884 6161510400 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=s7QfcknXFg3fcvdUJ_H__mFs8I8XEMc5wKMNXHUxslw&code_challenge_method=S256 HTTP/1.1" 302 0
+ERROR 2026-02-07 11:06:53,571 log 16884 6161510400 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: registration/login.html
+ERROR 2026-02-07 11:06:54,199 log 16884 6161510400 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Ds7QfcknXFg3fcvdUJ_H__mFs8I8XEMc5wKMNXHUxslw%26code_challenge_method%3DS256 HTTP/1.1" 500 97463
+INFO 2026-02-07 11:10:39,676 log 16884 6161510400 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dv9SF4effAQ0W7Fb_d4ZOQ36rA5WqT2R2f6-ESIy2i3o%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+INFO 2026-02-07 11:10:56,517 log 16884 6161510400 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dv9SF4effAQ0W7Fb_d4ZOQ36rA5WqT2R2f6-ESIy2i3o%26code_challenge_method%3DS256 HTTP/1.1" 302 0
+WARNING 2026-02-07 11:10:57,343 log 16884 6178336768 Forbidden (CSRF token from POST incorrect.): /accounts/login/
+WARNING 2026-02-07 11:10:57,714 log 16884 6178336768 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dv9SF4effAQ0W7Fb_d4ZOQ36rA5WqT2R2f6-ESIy2i3o%26code_challenge_method%3DS256 HTTP/1.1" 403 2503
+WARNING 2026-02-07 11:10:58,035 log 16884 6161510400 Bad Request: /o/authorize/
+INFO 2026-02-07 11:10:58,037 basehttp 16884 6161510400 - Broken pipe from ('127.0.0.1', 50444)
+INFO 2026-02-07 11:11:08,731 log 16884 6178336768 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=LKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:11:09,634 log 16884 6178336768 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DLKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+INFO 2026-02-07 11:11:24,491 log 16884 6178336768 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DLKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20%26code_challenge_method%3DS256 HTTP/1.1" 302 0
+WARNING 2026-02-07 11:11:25,929 log 16884 6178336768 Bad Request: /o/authorize/
+WARNING 2026-02-07 11:11:25,930 log 16884 6178336768 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=LKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20&code_challenge_method=S256 HTTP/1.1" 400 1328
+INFO 2026-02-07 11:14:29,004 log 16884 6161510400 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17731
+INFO 2026-02-07 11:14:29,007 basehttp 16884 6161510400 - Broken pipe from ('127.0.0.1', 50553)
+INFO 2026-02-07 11:14:30,376 log 16884 6195163136 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17731
+INFO 2026-02-07 11:14:31,681 log 16884 6195163136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 11:14:36,758 log 16884 6195163136 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25123
+INFO 2026-02-07 11:14:37,969 log 16884 6195163136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 11:14:37,994 log 16884 6195163136 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 569
+INFO 2026-02-07 11:15:02,704 log 16884 6195163136 "POST /admin/oauth2_provider/application/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-07 11:15:04,621 log 16884 6195163136 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17984
+INFO 2026-02-07 11:15:05,874 log 16884 6195163136 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-07 11:15:18,663 log 16884 6178336768 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=Xcr3OGRNcmNh2uiPvihxBYM0Nk7kcrLw-gVQJkAiAcg&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:15:19,458 log 16884 6178336768 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DXcr3OGRNcmNh2uiPvihxBYM0Nk7kcrLw-gVQJkAiAcg%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+INFO 2026-02-07 11:15:33,068 log 16884 6178336768 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DXcr3OGRNcmNh2uiPvihxBYM0Nk7kcrLw-gVQJkAiAcg%26code_challenge_method%3DS256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:15:34,709 log 16884 6178336768 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=Xcr3OGRNcmNh2uiPvihxBYM0Nk7kcrLw-gVQJkAiAcg&code_challenge_method=S256 HTTP/1.1" 200 3800
+INFO 2026-02-07 11:15:41,347 log 16884 6178336768 "POST /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=Xcr3OGRNcmNh2uiPvihxBYM0Nk7kcrLw-gVQJkAiAcg&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:16:49,812 log 16884 6161510400 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=um8dBI3KtwpMfMHO6-gJ2vgSN2mgNoG0bYrcLt2xYdY&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:16:50,608 log 16884 6161510400 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dum8dBI3KtwpMfMHO6-gJ2vgSN2mgNoG0bYrcLt2xYdY%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+INFO 2026-02-07 11:17:02,926 log 16884 6161510400 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3Dum8dBI3KtwpMfMHO6-gJ2vgSN2mgNoG0bYrcLt2xYdY%26code_challenge_method%3DS256 HTTP/1.1" 302 0
+INFO 2026-02-07 11:17:04,651 log 16884 6161510400 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=um8dBI3KtwpMfMHO6-gJ2vgSN2mgNoG0bYrcLt2xYdY&code_challenge_method=S256 HTTP/1.1" 200 3800
+INFO 2026-02-07 11:17:14,513 log 16884 6161510400 "POST /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=um8dBI3KtwpMfMHO6-gJ2vgSN2mgNoG0bYrcLt2xYdY&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-09 05:28:56,479 log 16884 6162083840 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=MgNPpm9pR-jfgv3sM74dZPBBi5cCt1idtKAS37m4tnU&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-09 05:28:57,711 log 16884 6162083840 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DMgNPpm9pR-jfgv3sM74dZPBBi5cCt1idtKAS37m4tnU%26code_challenge_method%3DS256 HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:29:18,577 log 16884 6162083840 Not Found: /
+WARNING 2026-02-09 05:29:18,580 log 16884 6162083840 "GET / HTTP/1.1" 404 4073
+INFO 2026-02-09 05:29:25,497 log 16884 6162083840 "GET /accounts/login/ HTTP/1.1" 200 12377
+INFO 2026-02-09 05:29:28,381 log 16884 6162083840 "GET /accounts/login/ HTTP/1.1" 200 12377
+INFO 2026-02-09 05:29:31,415 basehttp 16884 6162083840 - Broken pipe from ('127.0.0.1', 56553)
+INFO 2026-02-09 05:29:32,010 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:29:35,797 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:29:35,798 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:29:43,712 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:29:44,813 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:29:44,813 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:06,722 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:07,949 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:07,950 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:13,520 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:14,722 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:14,723 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:15,796 log 16884 6341865472 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:17,050 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:17,051 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:17,738 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:18,782 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:18,784 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:19,155 log 16884 6341865472 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:20,299 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:20,300 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:30:21,682 log 16884 6341865472 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:30:22,729 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:30:22,731 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+WARNING 2026-02-09 05:34:09,099 log 16884 6341865472 Not Found: /accounts/google/login/
+WARNING 2026-02-09 05:34:09,103 log 16884 6341865472 "GET /accounts/google/login/ HTTP/1.1" 404 6332
+WARNING 2026-02-09 05:34:10,466 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:34:10,469 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+WARNING 2026-02-09 05:34:14,171 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:34:14,173 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+WARNING 2026-02-09 05:34:15,522 log 16884 6341865472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:34:15,524 log 16884 6341865472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:34:16,220 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:34:17,458 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:34:17,459 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:34:18,544 log 16884 6325039104 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:34:19,892 log 16884 6325039104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:34:19,892 log 16884 6325039104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:42:31,873 log 16884 6162083840 "GET /accounts/login/ HTTP/1.1" 200 12377
+WARNING 2026-02-09 05:42:32,745 log 16884 6162083840 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-09 05:42:32,747 log 16884 6162083840 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4326
+INFO 2026-02-09 05:46:10,248 log 16884 6162083840 "GET /o/authorize/?response_type=code&client_id=tWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU&state=random123&scope=openid%20profile%20email&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fbrowser-callback&code_challenge=LKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-09 05:46:11,092 log 16884 6162083840 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DtWPNEYKsqD0Qe2MHBkEqMamn3Jezyp7qNzKnPgdU%26state%3Drandom123%26scope%3Dopenid%2520profile%2520email%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fbrowser-callback%26code_challenge%3DLKAbLuFCT8oRcTAXrzAhWah54nsV42Z7CX8HlzRrl20%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+INFO 2026-02-09 05:46:26,069 log 16884 6341865472 "GET /admin/oauth2_provider/application/ HTTP/1.1" 302 0
+INFO 2026-02-09 05:46:26,961 log 16884 6341865472 "GET /admin/login/?next=/admin/oauth2_provider/application/ HTTP/1.1" 200 4136
+INFO 2026-02-09 05:46:27,011 log 16884 6375518208 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-09 05:46:27,012 log 16884 6392344576 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-09 09:49:23,553 autoreload 16884 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 09:49:25,335 apps 54147 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 09:49:25,335 apps 54147 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 09:49:25,342 autoreload 54147 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 09:50:01,474 autoreload 54147 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 09:50:02,181 apps 54580 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 09:50:02,181 apps 54580 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 09:50:02,189 autoreload 54580 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 10:41:25,225 autoreload 54580 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 10:41:26,082 apps 87477 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 10:41:26,082 apps 87477 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 10:41:26,090 autoreload 87477 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 10:44:58,919 autoreload 87477 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 10:44:59,639 apps 89754 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 10:44:59,639 apps 89754 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 10:44:59,646 autoreload 89754 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 10:46:13,523 autoreload 89754 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 10:46:14,255 apps 90558 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 10:46:14,255 apps 90558 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 10:46:14,263 autoreload 90558 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 10:50:46,467 autoreload 90558 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 10:50:47,232 apps 93438 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 10:50:47,232 apps 93438 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 10:50:47,240 autoreload 93438 8310350016 Watching for file changes with StatReloader

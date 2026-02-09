@@ -35,6 +35,7 @@ urlpatterns = [
     # Client registration
     path('register/', ClientRegistrationView.as_view(), name='oidc-register'),
     
-    # Include Django OAuth Toolkit URLs
-    path('', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    # NOTE: OAuth2 provider URLs are included at project root `o/` to avoid
+    # duplicate namespace registrations. Do NOT include `oauth2_provider.urls`
+    # here to prevent namespace collisions.
 ]

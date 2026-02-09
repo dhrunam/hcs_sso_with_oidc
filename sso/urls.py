@@ -8,10 +8,14 @@ from django.views.generic import TemplateView
 from django.conf import settings
 from django.conf.urls.static import static
 
+# Import the well-known view directly to avoid including the whole oidc URLconf
+from apps.oidc.views.discovery import WellKnownConfigurationView
+
 urlpatterns = [
     # Admin
     path('admin/', admin.site.urls),
     
+    path('accounts/', include('django.contrib.auth.urls')),
     # OAuth2/OIDC
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     
@@ -31,9 +35,8 @@ urlpatterns = [
     # path('login/', TemplateView.as_view(template_name='login.html'), name='login'),
     # path('profile/', TemplateView.as_view(template_name='profile.html'), name='profile'),
     
-    # OIDC Discovery
-    path('.well-known/openid-configuration/', 
-         include('apps.oidc.urls')),  # No namespace here, it's included above
+    # OIDC Discovery (served directly)
+    path('.well-known/openid-configuration/', WellKnownConfigurationView.as_view(), name='oidc-well-known'),
 ]
 
 # Debug toolbar (development only)

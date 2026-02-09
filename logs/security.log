@@ -1,0 +1,2 @@
+WARNING 2026-02-07 07:08:27,013 log 69416 6218969088 Forbidden (CSRF token from POST incorrect.): /admin/login/
+WARNING 2026-02-07 11:10:57,343 log 16884 6178336768 Forbidden (CSRF token from POST incorrect.): /accounts/login/
