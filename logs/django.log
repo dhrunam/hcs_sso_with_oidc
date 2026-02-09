@@ -345,3 +345,7 @@ INFO 2026-02-09 11:03:55,114 autoreload 2410 8310350016 /Users/dhrubajyotiborah/
 ERROR 2026-02-09 11:03:55,762 apps 2613 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
 INFO 2026-02-09 11:03:55,762 apps 2613 8310350016 ✅ Social authentication app initialized successfully
 INFO 2026-02-09 11:03:55,768 autoreload 2613 8310350016 Watching for file changes with StatReloader
+INFO 2026-02-09 11:09:51,564 autoreload 2613 8310350016 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-09 11:09:52,278 apps 7435 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-09 11:09:52,278 apps 7435 8310350016 ✅ Social authentication app initialized successfully
+INFO 2026-02-09 11:09:52,286 autoreload 7435 8310350016 Watching for file changes with StatReloader
