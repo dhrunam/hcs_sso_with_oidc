@@ -104,17 +104,18 @@ class OIDCProviderInfoView(APIView):
             "code_challenge_methods_supported": ["S256", "plain"],
             
             # OPTIONAL endpoints
-            "end_session_endpoint": f"{base_url}/o/authorize/logout/",
-            "check_session_iframe": f"{base_url}/o/checksession/",
+            # Note: end_session_endpoint and check_session_iframe not yet implemented
+            # "end_session_endpoint": f"{base_url}/o/authorize/logout/",
+            # "check_session_iframe": f"{base_url}/o/checksession/",
             "revocation_endpoint": f"{base_url}/api/oidc/revoke/",
             "introspection_endpoint": f"{base_url}/api/oidc/introspect/",
             "registration_endpoint": f"{base_url}/api/oidc/register/",
             
             # UI and metadata
-            "service_documentation": f"{base_url}/docs/api/oidc/",
+            # "service_documentation": f"{base_url}/docs/api/oidc/",
             "ui_locales_supported": ["en"],
-            "op_policy_uri": f"{base_url}/policy/privacy/",
-            "op_tos_uri": f"{base_url}/terms/service/",
+            # "op_policy_uri": f"{base_url}/policy/privacy/",
+            # "op_tos_uri": f"{base_url}/terms/service/",
             
             # Service metadata
             "claims_parameter_supported": True,
@@ -134,4 +135,15 @@ class WellKnownConfigurationView(APIView):
     def get(self, request):
         # Redirect to actual provider info
         from django.shortcuts import redirect
-        return redirect('oidc-provider-info')
+        from django.urls import reverse
+
+        # Reverse the namespaced URL. The OIDC URLconf is included under the
+        # 'oidc' namespace at `/api/oidc/` in the project `urls.py`, so include
+        # the namespace when reversing by name.
+        try:
+            target = reverse('oidc:oidc-provider-info')
+        except Exception:
+            # Fallback to the absolute path if reversing fails for any reason
+            target = '/api/oidc/provider-info/'
+
+        return redirect(target)

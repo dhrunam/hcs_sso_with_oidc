@@ -349,3 +349,1432 @@ INFO 2026-02-09 11:09:51,564 autoreload 2613 8310350016 /Users/dhrubajyotiborah/
 ERROR 2026-02-09 11:09:52,278 apps 7435 8310350016 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
 INFO 2026-02-09 11:09:52,278 apps 7435 8310350016 ✅ Social authentication app initialized successfully
 INFO 2026-02-09 11:09:52,286 autoreload 7435 8310350016 Watching for file changes with StatReloader
+ERROR 2026-02-10 06:55:06,680 apps 84400 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 06:55:06,681 apps 84400 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 06:55:07,062 apps 84436 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 06:55:07,062 apps 84436 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 06:55:07,066 autoreload 84436 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 06:58:11,491 apps 88005 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 06:58:11,491 apps 88005 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 06:58:11,860 apps 88029 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 06:58:11,860 apps 88029 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 06:58:11,864 autoreload 88029 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 07:00:01,991 apps 89168 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 07:00:01,992 apps 89168 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 07:00:02,394 apps 89190 8380670144 Failed to import social_core: No module named 'social_core.backends.registry'. Make sure 'social_django' is installed.
+INFO 2026-02-10 07:00:02,394 apps 89190 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:00:02,398 autoreload 89190 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:12:37,931 autoreload 88029 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/apps.py changed, reloading.
+ERROR 2026-02-10 07:12:38,852 apps 97065 8380670144 Failed to import social_core: cannot import name 'CustomOIDCBackend' from 'apps.social.backends' (/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/backends.py). Make sure 'social_django' is installed.
+INFO 2026-02-10 07:12:38,858 autoreload 97065 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:15:18,179 autoreload 97065 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-10 07:15:18,933 apps 98731 8380670144 Failed to import social_core: cannot import name 'CustomOIDCBackend' from 'apps.social.backends' (/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/backends.py). Make sure 'social_django' is installed.
+INFO 2026-02-10 07:15:18,937 autoreload 98731 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:16:16,233 autoreload 98731 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/apps.py changed, reloading.
+ERROR 2026-02-10 07:16:17,015 apps 99335 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:16:17,021 autoreload 99335 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:16:29,479 autoreload 99335 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/apps.py changed, reloading.
+ERROR 2026-02-10 07:16:30,241 apps 99492 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:16:30,245 autoreload 99492 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 07:16:33,088 apps 99522 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+ERROR 2026-02-10 07:16:33,459 apps 99523 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:16:33,461 autoreload 99523 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:18:31,720 autoreload 99492 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/apps.py changed, reloading.
+INFO 2026-02-10 07:18:31,842 autoreload 99523 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/social/apps.py changed, reloading.
+ERROR 2026-02-10 07:18:32,558 apps 1082 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+ERROR 2026-02-10 07:18:32,558 apps 1081 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:18:32,559 apps 1082 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:18:32,559 apps 1081 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:18:32,559 apps 1082 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:18:32,559 apps 1081 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:18:32,567 autoreload 1081 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:18:32,567 autoreload 1082 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:19:16,908 log 1082 6172110848 "GET /admin/ HTTP/1.1" 301 0
+INFO 2026-02-10 07:19:16,909 log 1082 6205763584 code 400, message Bad request version ('\xd1yQ\\x98\xf6\xa7\\x08\xf6\\x96\\x8d')
+ERROR 2026-02-10 07:19:16,909 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:16,911 log 1082 6172110848 code 400, message Bad request version ('\\x1a\\x1a\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06\xa5\xaa\xaa\\x00\\x00\\x00\\x05\\x00\\x05\\x01\\x00\\x00\\x00\\x00\\x00+\\x00\\x07\\x06\\x8a\\x8a\\x03\\x04\\x03\\x03\\x00\\x17\\x00\\x00\\x00#\\x00\\x00\\x00\\x1b\\x00\\x03\\x02\\x00\\x02\\x00')
+ERROR 2026-02-10 07:19:16,911 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:29,210 log 1082 6172110848 code 400, message Bad request version ('+5\\x0e\xb5\xa9')
+ERROR 2026-02-10 07:19:29,211 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:29,213 log 1082 6172110848 code 400, message Bad request version ('localhost\\x00')
+ERROR 2026-02-10 07:19:29,213 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:29,214 log 1082 6172110848 code 400, message Bad request version ('E\\x8e\xf0\xa51\\x83')
+ERROR 2026-02-10 07:19:29,214 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:29,216 log 1082 6172110848 code 400, message Bad request version ('8]#<\\x17\\x98\\x86')
+ERROR 2026-02-10 07:19:29,217 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:31,277 log 1082 6172110848 code 400, message Bad request version ('\\x00\\x12\\x00\\x10\\x04\\x03\\x08\\x04\\x04\\x01\\x05\\x03\\x08\\x05\\x05\\x01\\x08\\x06\\x06\\x01\\x00-\\x00\\x02\\x01\\x01\\x003\\x04\xef\\x04\xed\xba\xba\\x00\\x01\\x00\\x11\xec\\x04\xc0R\xa4\\x10\xd0\\x10\xb7\\x19\\x06\\x93\\xad\xf1\xb1\xb1\xd6\xb5V&\\x0e')
+ERROR 2026-02-10 07:19:31,278 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:31,280 log 1082 6172110848 code 400, message Bad request version ('\xb0\xd5}_\\x90\xae\\x02\\x8b\xf6\xd9D\\x87\\x13\\x9cL')
+ERROR 2026-02-10 07:19:31,280 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:31,281 log 1082 6205763584 code 400, message Bad request syntax ('\\x16\\x03\\x01\\x06\xf2\\x01\\x00\\x06\xee\\x03\\x03m|P\xb4\\x0ejGSm\xd3')
+ERROR 2026-02-10 07:19:31,281 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:19:31,282 log 1082 6172110848 code 400, message Bad request version ('\\x1a\\x1a\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06ejj\\x00\\x00\\x00')
+ERROR 2026-02-10 07:19:31,282 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:14,900 log 1082 6172110848 "GET / HTTP/1.1" 301 0
+INFO 2026-02-10 07:22:14,904 log 1082 6205763584 code 400, message Bad request version ('qa\xda\xf3\xe6@Q0u\\x91tn\\x9eudyE\\x17\\x17T\xc6\\x02\xb3\xe6\xbb\\x8e^\xf6\xde\xeb\xe3$\\x00\\x90\\x99\\x10')
+ERROR 2026-02-10 07:22:14,904 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:14,906 log 1082 6172110848 code 400, message Bad request version ('yO')
+ERROR 2026-02-10 07:22:14,906 log 1082 6172110848 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:32,048 log 1082 6205763584 code 400, message Bad request version ('\\x00\\x02\\x01\\x00\\x00-\\x00\\x02\\x01\\x01D\xcd\\x00\\x05\\x00\\x03\\x02h2\\x00')
+ERROR 2026-02-10 07:22:32,049 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:32,050 log 1082 6205763584 code 400, message Bad request version ('jj\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06e\xda\xda\\x00\\x00D\xcd\\x00\\x05\\x00\\x03\\x02h2\\x00-\\x00\\x02\\x01\\x01\xff\\x01\\x00\\x01\\x00\\x00\\x05\\x00\\x05\\x01\\x00\\x00\\x00\\x00\\x00')
+ERROR 2026-02-10 07:22:32,050 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:34,865 log 1082 6205763584 code 400, message Bad request version ('3\\x8cct^]\xaa\xaeQ\\x88\xc1\\x88@\xbf=G\xb3H')
+INFO 2026-02-10 07:22:34,865 log 1082 6222589952 code 400, message Bad request version ('\\x9ee\xfd\\\\N>\xa2LeV\xfe\\x98\xcay')
+ERROR 2026-02-10 07:22:34,870 log 1082 6222589952 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:22:34,870 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:22:34,872 log 1082 6205763584 code 400, message Bad request version ('z\xde6\xaa\xd86\\x92\\x17\\x89\xa8\xf8s\\x89\\x97\xe1\xb9\\x023\\x1a3\xf0T`t"/\xfaB\\x86\xa6u\\x90\xd6S\xe3\xeb\xaa\xc1ap\xaa\xe801\\\\\xc33\xe1r\\x90eL\\x90\xc2\xb3\\x04\xfaM\xa2\xb3\xb7\xc3\xb7}\xd8\\x8cGU\\\\\\x7f\\x81\\x83\\x8cc\\x82')
+INFO 2026-02-10 07:22:34,872 log 1082 6222589952 code 400, message Bad request version ('\\x00\\x90\xe4\\x016\xd1*\\x9a\xd6\\x98\\x0f\\x8d\\x93\xbaC\xc7q\xf0\\x19\\x92=\\\\\xdd\xde\xfc\xf8\xfac\\x8a\xc7\xef\xfbR\xe1')
+ERROR 2026-02-10 07:22:34,872 log 1082 6205763584 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:22:34,872 log 1082 6222589952 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:23:50,733 apps 4531 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:23:50,733 apps 4531 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:23:50,733 apps 4531 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 07:23:51,118 apps 4532 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:23:51,118 apps 4532 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:23:51,118 apps 4532 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:23:51,122 autoreload 4532 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:23:58,366 log 4532 6191542272 "GET / HTTP/1.1" 301 0
+INFO 2026-02-10 07:23:58,396 log 4532 6191542272 code 400, message Bad request version ('\xfa\xfa\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x063\\x8a\\x8a\\x00\\x00\\x00\\x17\\x00\\x00D\xcd\\x00\\x05\\x00\\x03\\x02h2\\x00\\x12\\x00\\x00\\x00+\\x00\\x07\\x06\\x1a\\x1a\\x03\\x04\\x03\\x03\\x003\\x04\xef\\x04\xed')
+ERROR 2026-02-10 07:23:58,397 log 4532 6191542272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:23:58,398 log 4532 6191542272 code 400, message Bad request version ('\\x06\\x9e\xa7\xe4\xa7\\x86g\xc1\\x7fR~\\x12\\x15|2\xd3\xbb\xc7\xe9Q\\x8d\xd9\xb3\\x12\xd2\\x94\xec\\x13\\x146\\x11\\x82\xdf\xc0\xb1mEc\xb2\xc8\\x97\xe7\\x9643:\xb9\\x8cfO')
+ERROR 2026-02-10 07:23:58,398 log 4532 6191542272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:24:20,054 log 4532 6191542272 "GET / HTTP/1.1" 301 0
+INFO 2026-02-10 07:24:20,068 log 4532 6191542272 code 400, message Bad request version ('\\x87\\x02\\x14\\\\\xbf\xf8\xa1\xd0\xb2\xb5GuT_\\x8b\\x86\xf1c%\xb0>\\x03\xefF\xd6\xa3T\xa1\xc4\xcawp\\x00"\\x13\\x01\\x13\\x03\\x13\\x02\xc0+\xc0/\xcc\xa9\xcc\xa8\xc0,\xc00\xc0')
+ERROR 2026-02-10 07:24:20,068 log 4532 6191542272 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:24:20,074 log 4532 6191542272 code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x02t\\x01\\x00\\x02p\\x03\\x03]\\x8cC\xef\xc8Isi3\xd5fx\xf0\xf5\xb7ll\xc4\\x81g\xa2\xf9\xe5\xdf5\\x82Sc\\x90\\x93)\\x1b')
+ERROR 2026-02-10 07:24:20,074 log 4532 6191542272 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:29:31,032 apps 8182 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:29:31,032 apps 8182 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:29:31,032 apps 8182 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 07:29:31,448 apps 8207 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:29:31,449 apps 8207 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:29:31,449 apps 8207 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:29:31,454 autoreload 8207 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:29:41,805 log 8207 6202601472 code 400, message Bad request version (',\xe8\xe8\xa5\\x01\xee\xdf\xe0m\xf3\xb3\\x18\xb0\xbeW0\\x17\xee+);\xe3\xf6\\x14\xa7\\x9bX<5\xfd\xba\xa8\\x00')
+INFO 2026-02-10 07:29:41,805 log 8207 6219427840 code 400, message Bad request version ('\\x02h2\\x08http/1.1\\x00')
+ERROR 2026-02-10 07:29:41,806 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:29:41,807 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:41,809 log 8207 6202601472 code 400, message Bad request version ("\\x042\xbeo\xa5K'bb#\\x04GT\\x93\\x90\xc2\\x94\xa3`\xaf\xef\\x02i\xd054&v\xd2/\xb7\\x81\\x95;u\\x1bf\xf8H;\xee")
+ERROR 2026-02-10 07:29:41,809 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:41,810 log 8207 6219427840 code 400, message Bad request version ('\xa7\xfd_\xdes*\\x9a\xce\\x96D\xd0\xcc\xac')
+ERROR 2026-02-10 07:29:41,810 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,121 log 8207 6202601472 code 400, message Bad request version ('\\x00\\x02\\x01\\x00\\x00\\x05\\x00\\x05\\x01\\x00\\x00\\x00\\x00\\x00\\x17\\x00\\x00\\x00')
+ERROR 2026-02-10 07:29:44,121 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,122 log 8207 6219427840 code 400, message Bad request version ('zz\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06Ejj\\x00\\x00\\x00\\x12\\x00\\x00\\x00')
+ERROR 2026-02-10 07:29:44,122 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,123 log 8207 6202601472 code 400, message Bad request version ('\xacD')
+ERROR 2026-02-10 07:29:44,123 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,123 log 8207 6202601472 code 400, message Bad request version ('En{\xb9\xae\xc5I\\x89\\x93\xfaX\xa2\xe0\\x93')
+ERROR 2026-02-10 07:29:44,124 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,273 log 8207 6202601472 code 400, message Bad request version ('localhost\\x00\\x1b\\x00\\x03\\x02\\x00\\x02\\x00')
+ERROR 2026-02-10 07:29:44,273 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,274 log 8207 6219427840 code 400, message Bad request version ('G3\\x10')
+ERROR 2026-02-10 07:29:44,274 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,275 log 8207 6202601472 code 400, message Bad request version ('\xca\xca\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06E::\\x00\\x00\\x00#\\x00\\x00\\x003\\x04\xef\\x04\xed\\x9a\\x9a\\x00\\x01\\x00\\x11\xec\\x04\xc0\\x9ecf\\x00')
+ERROR 2026-02-10 07:29:44,275 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,275 log 8207 6202601472 code 400, message Bad request version ('\\x06\\x91~\xcc')
+ERROR 2026-02-10 07:29:44,276 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,685 log 8207 6202601472 code 400, message Bad request version ('\\x00\\x12\\x00\\x10\\x04\\x03\\x08\\x04\\x04\\x01\\x05\\x03\\x08\\x05\\x05\\x01\\x08\\x06\\x06\\x01\\x00+\\x00\\x07\\x06\xfa\xfa\\x03\\x04\\x03\\x03\\x00\\x12\\x00\\x00\\x00')
+ERROR 2026-02-10 07:29:44,685 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,686 log 8207 6219427840 code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x06\xf2\\x01\\x00\\x06\xee\\x03\\x03L\\x15\xb3\xcc\xae\\x82JS\\x13\\x17\xbb\xf2!L8\xd1j\xbd\xec\xf1N\xf08\xf9W~\\x92T\xd3R\\x00\xde')
+INFO 2026-02-10 07:29:44,687 log 8207 6202601472 code 400, message Bad request syntax ('\\x16\\x03\\x01\\x06\xf2\\x01\\x00\\x06\xee\\x03\\x03\xb6\xa3t\xf3\xc8\xab\xee\\x9eH\xe6\xa1\xc9\xa5\\x99\xe7:1')
+ERROR 2026-02-10 07:29:44,687 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 07:29:44,687 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,688 log 8207 6202601472 code 400, message Bad request version ('\\x8f`\\x04\\x88\xa6\\x9e\\x12\\x0eV')
+ERROR 2026-02-10 07:29:44,688 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,823 log 8207 6202601472 code 400, message Bad request version ('~t\\x82^\xbf\xb0q\xe4A\\x84;\xd5\\x9c"Y\\'\\x03p\xc8b\\x145#')
+ERROR 2026-02-10 07:29:44,824 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,824 log 8207 6202601472 code 400, message Bad request version ('\\x00\\x02\\x01\\x00\\x00')
+ERROR 2026-02-10 07:29:44,825 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,825 log 8207 6219427840 code 400, message Bad request version ('\xaa\xaa\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06e')
+ERROR 2026-02-10 07:29:44,825 log 8207 6219427840 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:29:44,826 log 8207 6202601472 code 400, message Bad request version ('\\x02h2\\x08http/1.1\\x003\\x04\xef\\x04\xed\\x8a\\x8a\\x00\\x01\\x00\\x11\xec\\x04\xc0\xc3y\\x80\xce\xda*\\x15\xea\\x06\xcc\\x9cS,\xf3\\x88Z9\\x8b\\xad\\x980\xf0\xaaQ\xb2\xb6O\xf0\\x92\xa2T\xf7\\x0e\xea;W]\xfb1\xc5\\x8c\\x90\xa1\xf1XUdl\\x99\\x033Q\xc2*Q\xd8\\x07\xa5\xec\\x19\\x1bE=\xabZ\xc14')
+ERROR 2026-02-10 07:29:44,826 log 8207 6202601472 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:30:07,901 autoreload 8207 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-10 07:30:08,758 apps 8642 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 07:30:08,758 apps 8642 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 07:30:08,758 apps 8642 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 07:30:08,766 autoreload 8642 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 07:30:20,775 log 8642 6228537344 code 400, message Bad request version ('\xcf]\xf9\xca\xabtR\\x95\xeb=\\x8d|\xfb\\x82q<')
+ERROR 2026-02-10 07:30:20,776 log 8642 6228537344 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 07:30:20,782 log 8642 6228537344 code 400, message Bad request version ('W\\x87h\xf7\xdah\xa7\\x1b\xa6\\x11\xd5\\x9f\\x03\xa6\xc4\\x07\\x12O\\\\\xb9\xcc<S\\x92\\x8d6\xc6\xc7\\x86\\x8dX\xc4\xa9\xe4\\x98@\\x9f\xa3\\x82\xfa28da{4\xb0z\xe4\xf9\\x89\xdf\\x0529\\x86R\xb5\xd1!\xef+Mj\\x8a0Y\xa2R\\x9e\xe129\\x02.Z<\\x96\\\\i\\x87o\xb9\\x9dr\xb1\\x89\xbf\\x9c\xcd\xd8*RI\xc1\\x9f\xc7\xf7Ik\\x92')
+ERROR 2026-02-10 07:30:20,782 log 8642 6228537344 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 08:43:51,092 apps 23651 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:43:51,092 apps 23651 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:43:51,092 apps 23651 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 08:43:51,580 apps 23675 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:43:51,580 apps 23675 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:43:51,580 apps 23675 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 08:43:51,586 autoreload 23675 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 08:44:27,083 apps 24027 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:44:27,083 apps 24027 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:44:27,084 apps 24027 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 08:44:27,586 apps 24028 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:44:27,586 apps 24028 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:44:27,586 apps 24028 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 08:44:27,592 autoreload 24028 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 08:49:04,757 apps 26900 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:49:04,757 apps 26900 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:49:04,757 apps 26900 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 08:49:05,213 apps 26922 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:49:05,213 apps 26922 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:49:05,213 apps 26922 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 08:49:05,218 autoreload 26922 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 08:50:45,366 apps 27968 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:50:45,366 apps 27968 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:50:45,366 apps 27968 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 08:50:45,858 apps 27969 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:50:45,858 apps 27969 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:50:45,858 apps 27969 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 08:50:45,864 autoreload 27969 8380670144 Watching for file changes with StatReloader
+ERROR 2026-02-10 08:54:27,545 apps 30228 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:54:27,546 apps 30228 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:54:27,546 apps 30228 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 08:54:29,079 apps 30231 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 08:54:29,079 apps 30231 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 08:54:29,079 apps 30231 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 08:54:29,097 autoreload 30231 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 08:54:39,091 log 30231 6160527360 code 400, message Bad request version ('Bn\xd1\\x00')
+INFO 2026-02-10 08:54:39,093 log 30231 6177353728 code 400, message Bad request version ('zz\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06\\x93\\x1a\\x1a\\x00\\x00\\x00-\\x00\\x02\\x01\\x01\\x00')
+ERROR 2026-02-10 08:54:39,094 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 08:54:39,094 log 30231 6177353728 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:54:39,097 log 30231 6160527360 code 400, message Bad request version ('ZZ\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x063\\x9a\\x9a\\x00\\x00\\x00\\x1b\\x00\\x03\\x02\\x00\\x02\\x00')
+ERROR 2026-02-10 08:54:39,097 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:54:39,097 log 30231 6177353728 code 400, message Bad request version ('\xda\xa6\xae\\x10\\x17\\x81b\\x13')
+ERROR 2026-02-10 08:54:39,097 log 30231 6177353728 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:54:55,935 log 30231 6160527360 code 400, message Bad request version ("\\x00\\x02\\x01\\x00\\x00\\x12\\x00\\x00\\x00\\x17\\x00\\x00D\xcd\\x00\\x05\\x00\\x03\\x02h2\\x003\\x04\xef\\x04\xed\xda\xda\\x00\\x01\\x00\\x11\xec\\x04\xc0\xab\xaa\xc0\\x1a\xe3'\xe9\xb4i\xe8r\\x9c")
+ERROR 2026-02-10 08:54:55,941 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:54:55,946 log 30231 6160527360 code 400, message Bad request version ('\xe9\xe3U([d;=0\\x1a\xd7&K;2\xef\xb1\xee\\x87\xd0\\x12\xd0P\xa9\\x8a\xcb\xff$x`\\x81^&)')
+ERROR 2026-02-10 08:54:55,946 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:55:55,458 log 30231 6160527360 code 400, message Bad request version ('\\x16\xd2\\x96\xe2\xcf_\xc4o\xda~\xb6I\xa7;\\x88-\xe6QH\xd2?\\x01#\\x9e\xfe\xa3\\x92\\x07')
+INFO 2026-02-10 08:55:55,461 log 30231 6194180096 code 400, message Bad request version ('Iz$Kg\xf2\xf9\xe8\xb6s\xce\\x911\\x9b')
+ERROR 2026-02-10 08:55:55,461 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 08:55:55,461 log 30231 6194180096 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 08:55:55,465 log 30231 6160527360 code 400, message Bad request version ('JJ\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x06s\xca\xca\\x00\\x00\\x00')
+INFO 2026-02-10 08:55:55,465 log 30231 6194180096 code 400, message Bad HTTP/0.9 request type ('\\x16\\x03\\x01\\x07\\x00\\x01\\x00\\x06\xfc\\x03\\x03\xaa%_U\xcb0}\\x9aQz\xe1X\\x947\xa5\\xadK:V*\xcf\\x00\xe2\xa8\xc0\\x89\\x87\\x8a\xac\\x89T&')
+ERROR 2026-02-10 08:55:55,465 log 30231 6160527360 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 08:55:55,465 log 30231 6194180096 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2026-02-10 08:56:29,729 log 30231 6160527360 Not Found: /
+WARNING 2026-02-10 08:56:29,731 log 30231 6160527360 "GET / HTTP/1.1" 404 4073
+WARNING 2026-02-10 08:56:30,848 log 30231 6160527360 Not Found: /favicon.ico
+WARNING 2026-02-10 08:56:30,849 log 30231 6160527360 "GET /favicon.ico HTTP/1.1" 404 4178
+WARNING 2026-02-10 08:56:39,025 log 30231 6160527360 Not Found: /admin
+WARNING 2026-02-10 08:56:39,026 log 30231 6160527360 "GET /admin HTTP/1.1" 404 4154
+INFO 2026-02-10 08:56:45,306 log 30231 6160527360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 08:56:46,542 log 30231 6160527360 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-10 08:56:46,575 log 30231 6177353728 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-10 08:56:46,576 log 30231 6194180096 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-10 08:56:46,576 log 30231 6211006464 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-10 08:56:46,576 log 30231 6227832832 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-10 08:56:46,577 log 30231 6244659200 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-10 08:56:46,579 log 30231 6160527360 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-10 08:56:46,579 log 30231 6177353728 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-10 08:57:07,725 log 30231 6160527360 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 08:57:09,301 log 30231 6160527360 "GET /admin/ HTTP/1.1" 200 14221
+INFO 2026-02-10 08:57:09,343 log 30231 6177353728 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-10 08:57:09,348 log 30231 6227832832 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-10 08:57:09,349 log 30231 6177353728 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-10 09:04:34,455 autoreload 30231 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-10 09:08:03,752 apps 38790 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 09:08:03,752 apps 38790 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 09:08:03,752 apps 38790 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 09:08:04,169 apps 38815 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 09:08:04,169 apps 38815 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 09:08:04,169 apps 38815 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 09:08:04,174 autoreload 38815 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 09:08:13,261 log 38815 6233026560 code 400, message Bad request version ('\xbd7\xb5$\xa8\\x08DW\xf4<\\x05\xd1\xc9\\x08\xba\xc9\xa9(w\xdc\\x04\\x13s\\x8b\\x16I\\x06v\xae\xf7!9|u+\xf5u1\\x01\\x99-9~sdt\xb2J.s\xdcx\xb3\\x08<\xe9&\\x9e!\xeb')
+ERROR 2026-02-10 09:08:13,261 log 38815 6233026560 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2026-02-10 09:08:13,262 log 38815 6233026560 code 400, message Bad request version ('ZZ\\x13\\x01\\x13\\x02\\x13\\x03\xc0+\xc0/\xc0,\xc00\xcc\xa9\xcc\xa8\xc0\\x13\xc0\\x14\\x00\\x9c\\x00\\x9d\\x00/\\x005\\x01\\x00\\x063')
+ERROR 2026-02-10 09:08:13,262 log 38815 6233026560 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2026-02-10 09:32:38,740 apps 54748 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 09:32:38,740 apps 54748 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 09:32:38,740 apps 54748 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 09:32:39,160 apps 54750 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 09:32:39,160 apps 54750 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 09:32:39,160 apps 54750 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 09:32:39,165 autoreload 54750 8380670144 Watching for file changes with StatReloader
+WARNING 2026-02-10 09:32:48,927 log 54750 6129414144 Not Found: /
+WARNING 2026-02-10 09:32:48,928 log 54750 6129414144 "GET / HTTP/1.1" 404 4073
+WARNING 2026-02-10 09:32:49,047 log 54750 6129414144 Not Found: /favicon.ico
+WARNING 2026-02-10 09:32:49,048 log 54750 6129414144 "GET /favicon.ico HTTP/1.1" 404 4178
+WARNING 2026-02-10 09:32:54,336 log 54750 6129414144 Not Found: /admin
+WARNING 2026-02-10 09:32:54,337 log 54750 6129414144 "GET /admin HTTP/1.1" 404 4154
+INFO 2026-02-10 09:33:00,344 log 54750 6129414144 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 09:33:00,446 log 54750 6129414144 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-10 09:33:00,462 log 54750 6146240512 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-10 09:33:00,463 log 54750 6163066880 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-10 09:33:00,463 log 54750 6179893248 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-10 09:33:00,463 log 54750 6213545984 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-10 09:33:00,465 log 54750 6196719616 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-10 09:33:00,466 log 54750 6129414144 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-10 09:33:00,471 log 54750 6129414144 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-10 09:33:10,788 log 54750 6129414144 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4252
+INFO 2026-02-10 09:34:21,193 log 54750 6129414144 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 09:34:21,262 log 54750 6129414144 "GET /admin/ HTTP/1.1" 200 13389
+INFO 2026-02-10 09:34:21,282 log 54750 6129414144 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-10 09:34:21,289 log 54750 6196719616 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-10 09:34:21,290 log 54750 6129414144 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-10 09:34:26,962 log 54750 6129414144 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 15642
+INFO 2026-02-10 09:34:26,984 log 54750 6129414144 "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-10 09:34:26,986 log 54750 6179893248 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-10 09:34:26,988 log 54750 6163066880 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-10 09:34:26,990 log 54750 6179893248 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-10 09:34:26,991 log 54750 6146240512 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-10 09:34:26,993 log 54750 6163066880 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-10 09:34:26,993 log 54750 6129414144 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-10 09:34:26,995 log 54750 6146240512 "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-10 09:34:27,024 log 54750 6196719616 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:34:27,037 log 54750 6213545984 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-10 09:34:27,044 log 54750 6213545984 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-10 09:34:27,046 log 54750 6179893248 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-10 09:34:27,058 log 54750 6213545984 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-10 09:34:27,059 log 54750 6179893248 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-10 09:34:29,906 log 54750 6179893248 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 24672
+INFO 2026-02-10 09:34:29,927 log 54750 6196719616 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-10 09:34:29,928 log 54750 6179893248 "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-10 09:34:29,935 log 54750 6179893248 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-10 09:34:29,936 log 54750 6196719616 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-10 09:34:29,954 log 54750 6213545984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:40:40,502 log 54750 6129414144 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 200 24960
+INFO 2026-02-10 09:40:40,555 log 54750 6129414144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:41:13,590 log 54750 6129414144 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-02-10 09:41:13,675 log 54750 6129414144 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17982
+INFO 2026-02-10 09:41:13,727 log 54750 6129414144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:41:13,737 log 54750 6129414144 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+WARNING 2026-02-10 09:44:54,636 log 54750 6129414144 Not Found: /
+WARNING 2026-02-10 09:44:54,637 log 54750 6129414144 "GET / HTTP/1.1" 404 4073
+WARNING 2026-02-10 09:44:54,729 log 54750 6129414144 Not Found: /favicon.ico
+WARNING 2026-02-10 09:44:54,731 log 54750 6129414144 "GET /favicon.ico HTTP/1.1" 404 4178
+WARNING 2026-02-10 09:45:01,187 log 54750 6129414144 Not Found: /admin
+WARNING 2026-02-10 09:45:01,187 log 54750 6129414144 "GET /admin HTTP/1.1" 404 4154
+INFO 2026-02-10 09:45:04,379 log 54750 6129414144 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 09:45:04,411 log 54750 6129414144 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-10 09:45:04,430 log 54750 6179893248 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-10 09:45:04,431 log 54750 6146240512 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-10 09:45:04,431 log 54750 6163066880 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-10 09:45:04,432 log 54750 6213545984 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-10 09:45:04,433 log 54750 6196719616 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-10 09:45:04,434 log 54750 6129414144 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-10 09:45:04,440 log 54750 6129414144 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-10 09:45:11,893 log 54750 6129414144 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-10 09:45:11,928 log 54750 6129414144 "GET /admin/ HTTP/1.1" 200 13819
+INFO 2026-02-10 09:45:11,963 log 54750 6129414144 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-10 09:45:11,970 log 54750 6129414144 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-10 09:45:11,971 log 54750 6196719616 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-10 09:45:17,038 log 54750 6196719616 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17731
+INFO 2026-02-10 09:45:17,066 log 54750 6163066880 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-10 09:45:17,066 log 54750 6196719616 "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-10 09:45:17,069 log 54750 6146240512 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-10 09:45:17,071 log 54750 6179893248 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-10 09:45:17,073 log 54750 6196719616 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-10 09:45:17,074 log 54750 6146240512 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-10 09:45:17,075 log 54750 6196719616 "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-10 09:45:17,076 log 54750 6163066880 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-10 09:45:17,103 log 54750 6129414144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:45:17,117 log 54750 6213545984 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-10 09:45:17,118 log 54750 6179893248 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-10 09:45:17,122 log 54750 6213545984 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-10 09:45:17,132 log 54750 6213545984 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-10 09:45:17,133 log 54750 6179893248 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-10 09:45:20,214 log 54750 6179893248 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25131
+INFO 2026-02-10 09:45:20,235 log 54750 6129414144 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-10 09:45:20,236 log 54750 6179893248 "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-10 09:45:20,243 log 54750 6179893248 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-10 09:45:20,245 log 54750 6129414144 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-10 09:45:20,262 log 54750 6213545984 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:45:20,274 log 54750 6213545984 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 569
+INFO 2026-02-10 09:58:43,856 log 54750 6129414144 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25131
+INFO 2026-02-10 09:58:43,928 log 54750 6129414144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 09:58:43,940 log 54750 6129414144 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 569
+WARNING 2026-02-10 10:01:44,082 log 54750 6146240512 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:01:44,083 log 54750 6146240512 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+ERROR 2026-02-10 10:01:55,617 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:01:55,639 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125157
+WARNING 2026-02-10 10:02:14,529 log 54750 6146240512 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:02:14,530 log 54750 6146240512 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+ERROR 2026-02-10 10:02:30,805 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:02:30,836 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125157
+WARNING 2026-02-10 10:03:06,224 log 54750 6146240512 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:03:06,225 log 54750 6146240512 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+ERROR 2026-02-10 10:03:16,007 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:03:16,030 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125157
+WARNING 2026-02-10 10:03:20,176 log 54750 6146240512 Not Found: /.well-known/openid-configuration/name='oidc-well-known'
+WARNING 2026-02-10 10:03:20,177 log 54750 6146240512 "GET /.well-known/openid-configuration/name='oidc-well-known' HTTP/1.1" 404 4396
+WARNING 2026-02-10 10:04:54,205 log 54750 6146240512 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:04:54,206 log 54750 6146240512 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+ERROR 2026-02-10 10:08:36,134 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:08:36,166 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125301
+ERROR 2026-02-10 10:08:37,334 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:08:37,354 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125157
+WARNING 2026-02-10 10:08:41,453 log 54750 6146240512 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:08:41,453 log 54750 6146240512 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+ERROR 2026-02-10 10:08:56,712 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:08:56,736 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125301
+ERROR 2026-02-10 10:08:58,570 log 54750 6146240512 Internal Server Error: /.well-known/openid-configuration/
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py", line 137, in get
+    return redirect('oidc-provider-info')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 51, in redirect
+    resolve_url(to, *args, **kwargs),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/shortcuts.py", line 184, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 842, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'oidc-provider-info' not found. 'oidc-provider-info' is not a valid view function or pattern name.
+ERROR 2026-02-10 10:08:58,592 log 54750 6146240512 "GET /.well-known/openid-configuration/ HTTP/1.1" 500 125157
+INFO 2026-02-10 10:10:45,798 autoreload 54750 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 10:10:46,791 apps 78963 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 10:10:46,791 apps 78963 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 10:10:46,791 apps 78963 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 10:10:46,799 autoreload 78963 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 10:11:49,957 autoreload 78963 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 10:11:50,820 apps 79656 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 10:11:50,820 apps 79656 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 10:11:50,820 apps 79656 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 10:11:50,828 autoreload 79656 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 10:12:09,122 autoreload 79656 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 10:12:09,851 apps 79866 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 10:12:09,851 apps 79866 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 10:12:09,851 apps 79866 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 10:12:09,860 autoreload 79866 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 10:12:27,544 log 79866 6195441664 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-10 10:12:27,621 log 79866 6195441664 "GET /api/oidc/provider-info/ HTTP/1.1" 200 9532
+INFO 2026-02-10 10:12:27,648 log 79866 6212268032 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-02-10 10:12:27,649 log 79866 6229094400 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-02-10 10:12:27,655 log 79866 6245920768 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-02-10 10:12:27,658 log 79866 6279573504 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-02-10 10:12:27,661 log 79866 6229094400 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-02-10 10:12:27,665 log 79866 6245920768 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-02-10 10:12:27,665 log 79866 6279573504 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2026-02-10 10:12:27,667 log 79866 6195441664 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-02-10 10:12:27,669 log 79866 6229094400 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-02-10 10:12:27,672 log 79866 6229094400 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-02-10 10:12:27,674 log 79866 6212268032 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-02-10 10:12:27,681 log 79866 6262747136 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2026-02-10 10:12:50,704 log 79866 6262747136 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-10 10:12:50,705 log 79866 6262747136 "GET /.well-known/openid-configuration HTTP/1.1" 404 4262
+INFO 2026-02-10 10:12:54,305 log 79866 6262747136 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-10 10:12:54,355 log 79866 6262747136 "GET /api/oidc/provider-info/ HTTP/1.1" 200 9532
+INFO 2026-02-10 10:13:56,690 autoreload 79866 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-10 10:13:57,434 apps 81028 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 10:13:57,435 apps 81028 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 10:13:57,435 apps 81028 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 10:13:57,442 autoreload 81028 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 10:14:02,140 log 81028 6168981504 "GET /api/oidc/provider-info/ HTTP/1.1" 200 9532
+WARNING 2026-02-10 10:16:47,357 log 81028 6168981504 Not Found: /oauth/authorize
+WARNING 2026-02-10 10:16:47,358 log 81028 6168981504 "GET /oauth/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=http://localhost:3000/callback&scope=openid%20profile%20email&state=test123 HTTP/1.1" 404 4343
+WARNING 2026-02-10 10:17:30,236 log 81028 6168981504 Bad Request: /o/authorize/
+WARNING 2026-02-10 10:17:30,237 log 81028 6168981504 "GET /o/authorize/ HTTP/1.1" 400 1331
+WARNING 2026-02-10 10:17:37,582 log 81028 6168981504 Bad Request: /o/authorize/
+WARNING 2026-02-10 10:17:37,583 log 81028 6168981504 "GET /o/authorize/ HTTP/1.1" 400 1331
+INFO 2026-02-10 10:19:52,126 log 81028 6168981504 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&redirect_uri=https://oauth.pstmn.io/v1/browser-callback&scope=openid%20profile%20email&state=test123 HTTP/1.1" 302 0
+INFO 2026-02-10 10:23:58,340 log 81028 6168981504 "POST /admin/oauth2_provider/application/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-10 10:23:58,489 log 81028 6168981504 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17984
+INFO 2026-02-10 10:23:58,583 log 81028 6168981504 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 10:23:58,594 log 81028 6168981504 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-10 10:25:20,091 log 81028 6168981504 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&redirect_uri=http://localhost:3000/callback&scope=openid%20profile%20email&state=test123 HTTP/1.1" 302 0
+INFO 2026-02-10 10:28:06,968 log 81028 6168981504 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25119
+INFO 2026-02-10 10:28:07,072 log 81028 6168981504 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 10:28:36,351 log 81028 6168981504 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&redirect_uri=http://localhost:3000/callback&scope=openid%20profile%20email&state=test123 HTTP/1.1" 302 0
+INFO 2026-02-10 10:34:59,168 log 81028 6168408064 "POST /admin/oauth2_provider/application/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-10 10:34:59,229 log 81028 6168408064 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17984
+INFO 2026-02-10 10:34:59,312 log 81028 6168408064 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-10 10:35:08,675 log 81028 6202060800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback HTTP/1.1" 302 0
+INFO 2026-02-10 10:36:04,761 log 81028 6202060800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback HTTP/1.1" 302 0
+INFO 2026-02-10 10:38:13,538 log 81028 6202060800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=8Cx_dUDfIEQRb5ax0aqnw-sz9AK_BJ3XHiONuixEMns&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 10:38:15,525 log 81028 6202060800 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=8Cx_dUDfIEQRb5ax0aqnw-sz9AK_BJ3XHiONuixEMns&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 10:38:17,758 validators 81028 6218887168 Token issued for user 1 via local
+INFO 2026-02-10 10:38:17,783 signals 81028 6218887168 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 10:38:17,846 log 81028 6218887168 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-10 10:44:13,325 log 81028 6168408064 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=lBvxsHkP_1v_Mwk4AWszYosZ8kSkp7H3mZh_56csAMA&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 10:44:51,441 log 81028 6168408064 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=lBvxsHkP_1v_Mwk4AWszYosZ8kSkp7H3mZh_56csAMA&code_challenge_method=S256 HTTP/1.1" 302 0
+WARNING 2026-02-10 10:44:53,989 log 81028 6202060800 Unauthorized: /o/token/
+WARNING 2026-02-10 10:44:53,990 log 81028 6202060800 "POST /o/token/ HTTP/1.1" 401 27
+INFO 2026-02-10 10:45:46,430 log 81028 6168408064 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=s9_bpKLPl0zGwsmEE2M0d84AuTwdm_2PQUOkQvYA5rU&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 10:45:50,235 log 81028 6168408064 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=s9_bpKLPl0zGwsmEE2M0d84AuTwdm_2PQUOkQvYA5rU&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 10:45:52,246 validators 81028 6202060800 Token issued for user 1 via local
+INFO 2026-02-10 10:45:52,252 signals 81028 6202060800 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 10:45:52,364 log 81028 6202060800 "POST /o/token/ HTTP/1.1" 200 198
+WARNING 2026-02-10 10:49:03,566 log 81028 6185234432 Bad Request: /o/token/
+WARNING 2026-02-10 10:49:03,568 log 81028 6185234432 "POST /o/token/ HTTP/1.1" 400 32
+INFO 2026-02-10 10:51:46,850 log 81028 6168408064 "POST /admin/logout/ HTTP/1.1" 200 3475
+WARNING 2026-02-10 10:56:16,114 log 81028 6235713536 Bad Request: /o/token/
+WARNING 2026-02-10 10:56:16,114 log 81028 6235713536 "POST /o/token/ HTTP/1.1" 400 32
+INFO 2026-02-10 10:56:31,915 log 81028 6252539904 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=jNYC6PuPW-wGZbxa6gAOjsoPQJhokNZ51E7dABa_I8w&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 10:56:33,590 log 81028 6252539904 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=jNYC6PuPW-wGZbxa6gAOjsoPQJhokNZ51E7dABa_I8w&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 10:56:35,779 validators 81028 6235713536 Token issued for user 1 via local
+INFO 2026-02-10 10:56:35,781 signals 81028 6235713536 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 10:56:35,803 log 81028 6235713536 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-10 10:58:48,565 log 81028 6252539904 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=pP0k3-Uj0oSxH4pEGXhaXVsWU4p-LoNnb9yhZDK4kvQ&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 10:58:49,922 log 81028 6252539904 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=pP0k3-Uj0oSxH4pEGXhaXVsWU4p-LoNnb9yhZDK4kvQ&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 10:58:51,683 validators 81028 6269366272 Token issued for user 1 via local
+INFO 2026-02-10 10:58:51,685 signals 81028 6269366272 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 10:58:51,725 log 81028 6269366272 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-10 11:01:04,893 log 81028 6252539904 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=P8livMv_z3Vl0b5uY9-miFYlolH5wnCm5h06xAj0qKI&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 11:01:10,564 log 81028 6252539904 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=P8livMv_z3Vl0b5uY9-miFYlolH5wnCm5h06xAj0qKI&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 11:01:17,989 validators 81028 6286192640 Token issued for user 1 via local
+INFO 2026-02-10 11:01:17,990 signals 81028 6286192640 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 11:01:18,019 log 81028 6286192640 "POST /o/token/ HTTP/1.1" 200 198
+WARNING 2026-02-10 11:03:26,488 log 81028 6168408064 Forbidden (CSRF cookie not set.): /logout
+WARNING 2026-02-10 11:03:26,517 log 81028 6168408064 "POST /logout HTTP/1.1" 403 2855
+INFO 2026-02-10 11:04:01,898 log 81028 6252539904 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-10 11:04:01,937 log 81028 6252539904 "GET /api/oidc/provider-info/ HTTP/1.1" 200 9532
+WARNING 2026-02-10 11:04:27,123 log 81028 6303019008 Forbidden (CSRF cookie not set.): /o/authorize/logout/
+WARNING 2026-02-10 11:04:27,139 log 81028 6303019008 "POST /o/authorize/logout/ HTTP/1.1" 403 2855
+WARNING 2026-02-10 11:08:37,175 log 81028 13035925504 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:08:37,177 log 81028 13035925504 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+WARNING 2026-02-10 11:18:45,276 log 81028 6252539904 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:18:45,277 log 81028 6252539904 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+WARNING 2026-02-10 11:18:54,419 log 81028 6252539904 Not Found: /o/authorize/logout
+WARNING 2026-02-10 11:18:54,419 log 81028 6252539904 "GET /o/authorize/logout HTTP/1.1" 404 9392
+WARNING 2026-02-10 11:19:12,373 log 81028 6252539904 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:19:12,376 log 81028 6252539904 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+WARNING 2026-02-10 11:19:57,237 log 81028 6252539904 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:19:57,238 log 81028 6252539904 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+WARNING 2026-02-10 11:20:03,517 log 81028 6252539904 Not Found: /o/checksession/
+WARNING 2026-02-10 11:20:03,518 log 81028 6252539904 "GET /o/checksession/ HTTP/1.1" 404 9379
+INFO 2026-02-10 11:20:51,489 autoreload 81028 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 11:20:52,470 apps 23394 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:20:52,470 apps 23394 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:20:52,470 apps 23394 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:20:52,478 autoreload 23394 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:20:54,776 autoreload 23394 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 11:20:55,236 apps 23424 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:20:55,236 apps 23424 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:20:55,236 apps 23424 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:20:55,240 autoreload 23424 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:20:57,518 autoreload 23424 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 11:20:57,965 apps 23471 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:20:57,965 apps 23471 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:20:57,965 apps 23471 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:20:57,970 autoreload 23471 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:21:27,969 autoreload 23471 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/discovery.py changed, reloading.
+ERROR 2026-02-10 11:21:28,834 apps 23788 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:21:28,834 apps 23788 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:21:28,834 apps 23788 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:21:28,841 autoreload 23788 8380670144 Watching for file changes with StatReloader
+WARNING 2026-02-10 11:22:30,409 log 23788 6168260608 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:22:30,410 log 23788 6168260608 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+WARNING 2026-02-10 11:22:33,908 log 23788 6168260608 Not Found: /o/authorize/logout/
+WARNING 2026-02-10 11:22:33,909 log 23788 6168260608 "GET /o/authorize/logout/ HTTP/1.1" 404 9395
+INFO 2026-02-10 11:23:26,529 log 23788 6168260608 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8764
+WARNING 2026-02-10 11:23:45,977 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:23:45,978 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:23:45,979 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:23:45,979 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:23:46,009 log 23788 6168260608 Forbidden: /api/oidc/revoke/
+WARNING 2026-02-10 11:23:46,010 log 23788 6168260608 "GET /api/oidc/revoke/ HTTP/1.1" 403 3796
+INFO 2026-02-10 11:23:56,384 log 23788 6168260608 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=4DdQvalmNWaQ7V7BtD8md9m9GzT4We7ybFMN5rUZrsE&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 11:23:58,016 log 23788 6168260608 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=4DdQvalmNWaQ7V7BtD8md9m9GzT4We7ybFMN5rUZrsE&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 11:23:58,674 validators 23788 6201913344 Token issued for user 1 via local
+INFO 2026-02-10 11:23:58,677 signals 23788 6201913344 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 11:23:58,720 log 23788 6201913344 "POST /o/token/ HTTP/1.1" 200 198
+WARNING 2026-02-10 11:24:26,372 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:26,373 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:26,375 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:26,375 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:26,406 log 23788 6168260608 Forbidden: /api/oidc/revoke/
+WARNING 2026-02-10 11:24:26,407 log 23788 6168260608 "GET /api/oidc/revoke/ HTTP/1.1" 403 3796
+WARNING 2026-02-10 11:24:28,329 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:28,329 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:28,330 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:28,330 permissions 23788 6168260608 Missing client credentials from 127.0.0.1
+WARNING 2026-02-10 11:24:28,349 log 23788 6168260608 Forbidden: /api/oidc/revoke/
+WARNING 2026-02-10 11:24:28,349 log 23788 6168260608 "GET /api/oidc/revoke/ HTTP/1.1" 403 3796
+INFO 2026-02-10 11:26:47,400 autoreload 23788 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/token.py changed, reloading.
+ERROR 2026-02-10 11:26:48,401 apps 27159 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:26:48,401 apps 27159 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:26:48,401 apps 27159 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:26:48,409 autoreload 27159 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:27:02,364 autoreload 27159 8380670144 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/views/token.py changed, reloading.
+ERROR 2026-02-10 11:27:03,112 apps 27326 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:27:03,112 apps 27326 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:27:03,112 apps 27326 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:27:03,120 autoreload 27326 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:29:24,150 permissions 27326 6130135040 Client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0 authenticated from 127.0.0.1
+WARNING 2026-02-10 11:29:24,181 log 27326 6130135040 Bad Request: /api/oidc/revoke/
+WARNING 2026-02-10 11:29:24,182 log 27326 6130135040 "POST /api/oidc/revoke/ HTTP/1.1" 400 85
+ERROR 2026-02-10 11:30:17,200 apps 29372 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:30:17,201 apps 29372 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:30:17,201 apps 29372 8380670144 ✅ Social authentication app initialized successfully
+ERROR 2026-02-10 11:30:17,583 apps 29373 8380670144 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-10 11:30:17,583 apps 29373 8380670144 Enabled providers: Google, Facebook
+INFO 2026-02-10 11:30:17,583 apps 29373 8380670144 ✅ Social authentication app initialized successfully
+INFO 2026-02-10 11:30:17,587 autoreload 29373 8380670144 Watching for file changes with StatReloader
+INFO 2026-02-10 11:30:47,946 log 29373 6132002816 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=x0UUB317AFvkblZhvVPQi_yo8lSC-8MxuznkVPAufEU&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-10 11:30:54,731 log 29373 6132002816 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=x0UUB317AFvkblZhvVPQi_yo8lSC-8MxuznkVPAufEU&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-10 11:30:55,585 validators 29373 6165655552 Token issued for user 1 via local
+INFO 2026-02-10 11:30:55,588 signals 29373 6165655552 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-10 11:30:55,631 log 29373 6165655552 "POST /o/token/ HTTP/1.1" 200 198
+ERROR 2026-02-11 05:26:59,890 apps 30259 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:26:59,890 apps 30259 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:26:59,890 apps 30259 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-11 05:27:00,317 apps 30296 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:27:00,317 apps 30296 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:27:00,317 apps 30296 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:27:00,322 autoreload 30296 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 05:27:10,540 log 30296 6159462400 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=TWyofQ8IhWfhn0GS8zlt3rfSz7i4DiXaWENUPAW2jOA&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 05:27:10,625 log 30296 6159462400 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3Drandom123%26scope%3Dread%2520write%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fcallback%26code_challenge%3DTWyofQ8IhWfhn0GS8zlt3rfSz7i4DiXaWENUPAW2jOA%26code_challenge_method%3DS256 HTTP/1.1" 200 700
+WARNING 2026-02-11 05:27:10,838 log 30296 6159462400 Not Found: /favicon.ico
+WARNING 2026-02-11 05:27:10,839 log 30296 6159462400 "GET /favicon.ico HTTP/1.1" 404 4178
+INFO 2026-02-11 05:27:32,182 log 30296 6159462400 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3Drandom123%26scope%3Dread%2520write%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fcallback%26code_challenge%3DTWyofQ8IhWfhn0GS8zlt3rfSz7i4DiXaWENUPAW2jOA%26code_challenge_method%3DS256 HTTP/1.1" 302 0
+INFO 2026-02-11 05:27:32,263 log 30296 6159462400 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=TWyofQ8IhWfhn0GS8zlt3rfSz7i4DiXaWENUPAW2jOA&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-11 05:27:35,597 log 30296 6159462400 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=TWyofQ8IhWfhn0GS8zlt3rfSz7i4DiXaWENUPAW2jOA&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 05:27:36,496 validators 30296 6193115136 Token issued for user 1 via local
+INFO 2026-02-11 05:27:36,503 signals 30296 6193115136 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-11 05:27:36,567 log 30296 6193115136 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-11 05:37:18,793 log 30296 6159462400 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-11 05:37:18,889 log 30296 6159462400 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8764
+INFO 2026-02-11 05:37:18,900 log 30296 6176288768 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,901 log 30296 6159462400 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,902 log 30296 6209941504 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,911 log 30296 6176288768 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,911 log 30296 6159462400 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,912 log 30296 6209941504 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,915 log 30296 6159462400 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,915 log 30296 6209941504 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,917 log 30296 6159462400 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,922 log 30296 6159462400 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,923 log 30296 6209941504 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:37:18,928 log 30296 6209941504 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2026-02-11 05:37:22,999 log 30296 6209941504 Not Found: /api/users
+WARNING 2026-02-11 05:37:22,999 log 30296 6209941504 "GET /api/users HTTP/1.1" 404 6452
+WARNING 2026-02-11 05:37:29,151 log 30296 6209941504 Not Found: /api/users/login
+WARNING 2026-02-11 05:37:29,153 log 30296 6209941504 "GET /api/users/login HTTP/1.1" 404 14826
+WARNING 2026-02-11 05:37:33,224 log 30296 6209941504 Method Not Allowed: /api/users/login/
+WARNING 2026-02-11 05:37:33,225 log 30296 6209941504 "GET /api/users/login/ HTTP/1.1" 405 40
+INFO 2026-02-11 05:37:42,363 log 30296 6209941504 "GET /api/users/ HTTP/1.1" 200 5459
+WARNING 2026-02-11 05:38:49,523 log 30296 6209941504 Not Found: /social
+WARNING 2026-02-11 05:38:49,524 log 30296 6209941504 "GET /social HTTP/1.1" 404 4158
+WARNING 2026-02-11 05:38:57,315 log 30296 6209941504 Not Found: /social/
+WARNING 2026-02-11 05:38:57,316 log 30296 6209941504 "GET /social/ HTTP/1.1" 404 5195
+WARNING 2026-02-11 05:39:03,860 log 30296 6209941504 Not Found: /social/login
+WARNING 2026-02-11 05:39:03,861 log 30296 6209941504 "GET /social/login HTTP/1.1" 404 5216
+WARNING 2026-02-11 05:39:08,403 log 30296 6209941504 Not Found: /social/login/
+WARNING 2026-02-11 05:39:08,404 log 30296 6209941504 "GET /social/login/ HTTP/1.1" 404 5219
+WARNING 2026-02-11 05:39:43,214 log 30296 6209941504 Not Found: /social/login/backend
+WARNING 2026-02-11 05:39:43,216 log 30296 6209941504 "GET /social/login/backend?name=begin HTTP/1.1" 404 5259
+WARNING 2026-02-11 05:40:00,777 log 30296 6209941504 Not Found: /social/login/
+WARNING 2026-02-11 05:40:00,778 log 30296 6209941504 "GET /social/login/ HTTP/1.1" 404 5219
+WARNING 2026-02-11 05:41:03,174 log 30296 6209941504 Not Found: /accounts/
+WARNING 2026-02-11 05:41:03,175 log 30296 6209941504 "GET /accounts/ HTTP/1.1" 404 6280
+WARNING 2026-02-11 05:41:09,983 log 30296 6209941504 Not Found: /accounts/login
+WARNING 2026-02-11 05:41:09,984 log 30296 6209941504 "GET /accounts/login HTTP/1.1" 404 6301
+INFO 2026-02-11 05:41:13,121 log 30296 6209941504 "GET /accounts/login/ HTTP/1.1" 200 700
+WARNING 2026-02-11 05:41:34,003 log 30296 6209941504 Not Found: /accounts/
+WARNING 2026-02-11 05:41:34,004 log 30296 6209941504 "GET /accounts/ HTTP/1.1" 404 6280
+WARNING 2026-02-11 05:42:34,126 log 30296 6209941504 Bad Request: /o/authorize/
+WARNING 2026-02-11 05:42:34,127 log 30296 6209941504 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&redirect_uri=https://oauth.pstmn.io/v1/browser-callback&scope=openid%20profile%20email&state=test123 HTTP/1.1" 400 1328
+WARNING 2026-02-11 05:42:43,659 log 30296 6209941504 Not Found: /o/
+WARNING 2026-02-11 05:42:43,659 log 30296 6209941504 "GET /o/ HTTP/1.1" 404 9327
+INFO 2026-02-11 05:43:50,935 log 30296 6209941504 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-11 05:44:58,290 log 30296 6209941504 "GET /o/.well-known/openid-configuration/ HTTP/1.1" 200 762
+INFO 2026-02-11 05:48:47,746 autoreload 30296 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 05:48:48,594 apps 44478 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:48:48,594 apps 44478 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:48:48,594 apps 44478 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:48:48,600 autoreload 44478 8318492864 Watching for file changes with StatReloader
+ERROR 2026-02-11 05:48:57,366 log 44478 6133723136 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2026-02-11 05:48:57,402 log 44478 6133723136 "GET / HTTP/1.1" 500 96161
+INFO 2026-02-11 05:50:34,276 autoreload 44478 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 05:50:35,009 apps 45616 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:50:35,009 apps 45616 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:50:35,009 apps 45616 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:50:35,018 autoreload 45616 8318492864 Watching for file changes with StatReloader
+ERROR 2026-02-11 05:50:49,293 log 45616 6205698048 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: sso/templates/index.html
+ERROR 2026-02-11 05:50:49,318 log 45616 6205698048 "GET / HTTP/1.1" 500 96497
+INFO 2026-02-11 05:51:13,654 autoreload 45616 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 05:51:14,353 apps 46056 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:51:14,353 apps 46056 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:51:14,353 apps 46056 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:51:14,362 autoreload 46056 8318492864 Watching for file changes with StatReloader
+ERROR 2026-02-11 05:51:22,800 log 46056 6128201728 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /sso/templates/index.html
+ERROR 2026-02-11 05:51:22,826 log 46056 6128201728 "GET / HTTP/1.1" 500 92689
+INFO 2026-02-11 05:53:14,759 autoreload 46056 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 05:53:15,499 apps 47311 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:53:15,500 apps 47311 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:53:15,500 apps 47311 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:53:15,508 autoreload 47311 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 05:53:21,021 autoreload 47311 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 05:53:21,674 apps 47365 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:53:21,674 apps 47365 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:53:21,674 apps 47365 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:53:21,680 autoreload 47365 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 05:54:05,389 autoreload 47365 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 05:54:06,126 apps 47839 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 05:54:06,126 apps 47839 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 05:54:06,126 apps 47839 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 05:54:06,135 autoreload 47839 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 05:54:57,897 log 47839 6156840960 "GET / HTTP/1.1" 200 5346
+WARNING 2026-02-11 05:55:23,320 log 47839 6156840960 Not Found: /api/health
+WARNING 2026-02-11 05:55:23,321 log 47839 6156840960 "GET /api/health HTTP/1.1" 404 6612
+ERROR 2026-02-11 05:55:40,873 log 47839 6156840960 Service Unavailable: /api/health/
+ERROR 2026-02-11 05:55:40,873 log 47839 6156840960 "GET /api/health/ HTTP/1.1" 503 5613
+WARNING 2026-02-11 05:56:09,285 log 47839 6156840960 Not Found: /admin
+WARNING 2026-02-11 05:56:09,285 log 47839 6156840960 "GET /admin HTTP/1.1" 404 4310
+INFO 2026-02-11 05:56:14,392 log 47839 6156840960 "GET /admin/ HTTP/1.1" 200 14623
+INFO 2026-02-11 05:56:14,410 log 47839 6156840960 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,411 log 47839 6173667328 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,411 log 47839 6190493696 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,411 log 47839 6207320064 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,414 log 47839 6224146432 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,414 log 47839 6240972800 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,419 log 47839 6240972800 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,426 log 47839 6224146432 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-11 05:56:14,426 log 47839 6240972800 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+WARNING 2026-02-11 05:56:21,479 log 47839 6240972800 Not Found: /login
+WARNING 2026-02-11 05:56:21,480 log 47839 6240972800 "GET /login HTTP/1.1" 404 4310
+WARNING 2026-02-11 05:56:25,431 log 47839 6240972800 Not Found: /login/
+WARNING 2026-02-11 05:56:25,432 log 47839 6240972800 "GET /login/ HTTP/1.1" 404 4313
+INFO 2026-02-11 05:56:35,492 log 47839 6240972800 "GET /accounts/login/ HTTP/1.1" 200 700
+WARNING 2026-02-11 05:56:47,636 log 47839 6240972800 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-11 05:56:47,637 log 47839 6240972800 "GET /.well-known/openid-configuration HTTP/1.1" 404 4418
+INFO 2026-02-11 05:56:51,524 log 47839 6240972800 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-11 05:56:51,571 log 47839 6240972800 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8764
+INFO 2026-02-11 05:57:04,891 log 47839 6240972800 "GET /api/oidc/jwks/ HTTP/1.1" 200 6019
+INFO 2026-02-11 05:57:14,623 log 47839 6240972800 "GET /o/applications/ HTTP/1.1" 200 1433
+INFO 2026-02-11 05:57:20,327 log 47839 6240972800 "GET /o/applications/register/ HTTP/1.1" 200 7255
+INFO 2026-02-11 06:01:16,077 log 47839 6156840960 "GET / HTTP/1.1" 200 5460
+WARNING 2026-02-11 06:01:32,022 log 47839 6156840960 Not Found: /accounts/login
+WARNING 2026-02-11 06:01:32,024 log 47839 6156840960 "GET /accounts/login HTTP/1.1" 404 6457
+INFO 2026-02-11 06:01:49,708 log 47839 6156840960 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:01:54,283 log 47839 6156840960 "GET /admin/ HTTP/1.1" 200 14623
+WARNING 2026-02-11 06:01:57,625 log 47839 6156840960 Not Found: /accounts/login
+WARNING 2026-02-11 06:01:57,625 log 47839 6156840960 "GET /accounts/login HTTP/1.1" 404 6457
+ERROR 2026-02-11 06:02:11,672 apps 53349 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:02:11,672 apps 53349 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:02:11,672 apps 53349 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-11 06:02:12,088 apps 53350 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:02:12,088 apps 53350 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:02:12,088 apps 53350 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:02:12,092 autoreload 53350 8318492864 Watching for file changes with StatReloader
+ERROR 2026-02-11 06:02:21,082 log 53350 6168932352 Service Unavailable: /api/health/
+ERROR 2026-02-11 06:02:21,083 log 53350 6168932352 "GET /api/health/ HTTP/1.1" 503 5613
+INFO 2026-02-11 06:02:25,024 log 53350 6168932352 "GET /admin/ HTTP/1.1" 200 14623
+WARNING 2026-02-11 06:02:28,078 log 53350 6168932352 Not Found: /accounts/login
+WARNING 2026-02-11 06:02:28,080 log 53350 6168932352 "GET /accounts/login HTTP/1.1" 404 6457
+WARNING 2026-02-11 06:03:11,970 log 53350 6168932352 Not Found: /accounts/login
+WARNING 2026-02-11 06:03:11,972 log 53350 6168932352 "GET /accounts/login HTTP/1.1" 404 6457
+ERROR 2026-02-11 06:03:26,458 apps 54389 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:03:26,458 apps 54389 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:03:26,458 apps 54389 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-11 06:03:26,853 apps 54391 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:03:26,853 apps 54391 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:03:26,853 apps 54391 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:03:26,859 autoreload 54391 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-11 06:03:43,832 log 54391 6165917696 Not Found: /accounts/login
+WARNING 2026-02-11 06:03:43,833 log 54391 6165917696 "GET /accounts/login HTTP/1.1" 404 6457
+INFO 2026-02-11 06:04:32,801 autoreload 54391 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 06:04:33,592 apps 55135 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:04:33,592 apps 55135 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:04:33,592 apps 55135 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:04:33,603 autoreload 55135 8318492864 Watching for file changes with StatReloader
+ERROR 2026-02-11 06:04:46,522 apps 55399 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:04:46,522 apps 55399 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:04:46,522 apps 55399 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-11 06:04:46,944 apps 55400 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:04:46,944 apps 55400 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:04:46,944 apps 55400 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:04:46,949 autoreload 55400 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 06:04:53,432 log 55400 6132002816 "GET / HTTP/1.1" 200 5461
+INFO 2026-02-11 06:04:55,062 log 55400 6132002816 "GET / HTTP/1.1" 200 5461
+INFO 2026-02-11 06:04:55,222 log 55400 6132002816 "GET / HTTP/1.1" 200 5461
+INFO 2026-02-11 06:04:55,389 log 55400 6132002816 "GET / HTTP/1.1" 200 5461
+INFO 2026-02-11 06:04:55,519 log 55400 6132002816 "GET / HTTP/1.1" 200 5461
+INFO 2026-02-11 06:04:59,717 log 55400 6132002816 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:05:02,992 log 55400 6132002816 "GET /admin/ HTTP/1.1" 200 14623
+ERROR 2026-02-11 06:05:05,636 log 55400 6132002816 Service Unavailable: /api/health/
+ERROR 2026-02-11 06:05:05,637 log 55400 6132002816 "GET /api/health/ HTTP/1.1" 503 5613
+ERROR 2026-02-11 06:05:22,109 log 55400 6132002816 Service Unavailable: /api/health/
+ERROR 2026-02-11 06:05:22,110 log 55400 6132002816 "GET /api/health/ HTTP/1.1" 503 5613
+INFO 2026-02-11 06:05:58,055 log 55400 6132002816 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:06:17,497 autoreload 55400 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 06:06:18,286 apps 56451 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:06:18,286 apps 56451 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:06:18,286 apps 56451 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:06:18,293 autoreload 56451 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 06:06:41,777 autoreload 56451 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 06:06:42,527 apps 56733 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:06:42,528 apps 56733 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:06:42,528 apps 56733 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:06:42,535 autoreload 56733 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 06:06:46,108 log 56733 6136557568 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:06:46,647 log 56733 6136557568 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:06:46,787 log 56733 6136557568 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:06:46,973 log 56733 6136557568 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:06:49,756 log 56733 6136557568 "GET /login/ HTTP/1.1" 200 12373
+INFO 2026-02-11 06:07:13,220 log 56733 6136557568 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:07:15,342 log 56733 6136557568 "GET /login/ HTTP/1.1" 200 12373
+WARNING 2026-02-11 06:07:19,421 log 56733 6136557568 Not Found: /accounts/github/login/
+WARNING 2026-02-11 06:07:19,422 log 56733 6136557568 "GET /accounts/github/login/ HTTP/1.1" 404 6651
+INFO 2026-02-11 06:10:07,572 log 56733 6136557568 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:10:14,756 log 56733 6136557568 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:10:17,927 log 56733 6136557568 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:12:09,303 log 56733 6136557568 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:12:17,328 log 56733 6136557568 "POST /accounts/login/ HTTP/1.1" 302 0
+WARNING 2026-02-11 06:12:17,364 log 56733 6136557568 Not Found: /accounts/profile/
+WARNING 2026-02-11 06:12:17,364 log 56733 6136557568 "GET /accounts/profile/ HTTP/1.1" 404 6631
+INFO 2026-02-11 06:13:02,521 autoreload 56733 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 06:13:03,309 apps 60885 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:13:03,309 apps 60885 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:13:03,309 apps 60885 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:13:03,315 autoreload 60885 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 06:14:31,411 autoreload 60885 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 06:14:32,082 apps 61847 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:14:32,082 apps 61847 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:14:32,082 apps 61847 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:14:32,089 autoreload 61847 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 06:14:37,257 log 61847 6167965696 "GET /accounts/profile/ HTTP/1.1" 200 16064
+INFO 2026-02-11 06:14:37,831 log 61847 6167965696 "GET /api/users/profile/ HTTP/1.1" 200 3736
+WARNING 2026-02-11 06:15:03,097 log 61847 6167965696 Not Found: /accounts/password/change/
+WARNING 2026-02-11 06:15:03,099 log 61847 6167965696 "GET /accounts/password/change/ HTTP/1.1" 404 6839
+WARNING 2026-02-11 06:15:53,334 log 61847 6167965696 Not Found: /logout
+WARNING 2026-02-11 06:15:53,335 log 61847 6167965696 "GET /logout HTTP/1.1" 404 4653
+INFO 2026-02-11 06:16:19,080 log 61847 6167965696 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:16:23,813 log 61847 6167965696 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:16:25,959 log 61847 6167965696 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:16:33,417 log 61847 6167965696 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-02-11 06:16:33,448 log 61847 6167965696 "GET /accounts/profile/ HTTP/1.1" 200 16064
+INFO 2026-02-11 06:16:33,609 log 61847 6167965696 "GET /api/users/profile/ HTTP/1.1" 200 3736
+INFO 2026-02-11 06:17:35,073 log 61847 6167965696 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:17:38,018 log 61847 6167965696 "GET /admin/ HTTP/1.1" 200 14623
+INFO 2026-02-11 06:17:40,262 log 61847 6167965696 "POST /admin/logout/ HTTP/1.1" 200 3475
+INFO 2026-02-11 06:17:42,406 log 61847 6167965696 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 06:17:42,459 log 61847 6167965696 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-11 06:17:42,479 log 61847 6167965696 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-02-11 06:17:48,450 log 61847 6167965696 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:17:50,481 log 61847 6167965696 "GET /login/ HTTP/1.1" 200 12355
+WARNING 2026-02-11 06:17:57,219 log 61847 6167965696 Not Found: /accounts/google/login/
+WARNING 2026-02-11 06:17:57,220 log 61847 6167965696 "GET /accounts/google/login/ HTTP/1.1" 404 6827
+INFO 2026-02-11 06:27:59,235 log 61847 6167965696 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:30:05,477 log 61847 6167965696 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:30:06,878 log 61847 6167965696 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:30:15,018 log 61847 6167965696 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-02-11 06:30:15,054 log 61847 6167965696 "GET /accounts/profile/ HTTP/1.1" 200 16064
+INFO 2026-02-11 06:30:15,283 log 61847 6167965696 "GET /api/users/profile/ HTTP/1.1" 200 3736
+INFO 2026-02-11 06:30:27,401 log 61847 6167965696 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=evPBW9eVBWuId2sIxlkaLK30SkmOOgeVC7eYAobf-co&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-11 06:30:30,197 log 61847 6167965696 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=evPBW9eVBWuId2sIxlkaLK30SkmOOgeVC7eYAobf-co&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 06:30:31,003 validators 61847 6201618432 Token issued for user 1 via local
+INFO 2026-02-11 06:30:31,009 signals 61847 6201618432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-11 06:30:31,085 log 61847 6201618432 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-11 06:31:09,846 autoreload 61847 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-11 06:31:10,846 apps 72641 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 06:31:10,846 apps 72641 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 06:31:10,846 apps 72641 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 06:31:10,854 autoreload 72641 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-11 06:43:36,211 log 72641 6135099392 Not Found: /logout
+WARNING 2026-02-11 06:43:36,212 log 72641 6135099392 "GET /logout HTTP/1.1" 404 4653
+INFO 2026-02-11 06:43:42,339 log 72641 6135099392 "GET /accounts/profile/ HTTP/1.1" 200 16064
+INFO 2026-02-11 06:43:42,580 log 72641 6135099392 "GET /api/users/profile/ HTTP/1.1" 200 3736
+WARNING 2026-02-11 06:43:44,742 log 72641 6135099392 Not Found: /logout
+WARNING 2026-02-11 06:43:44,742 log 72641 6135099392 "GET /logout HTTP/1.1" 404 4653
+WARNING 2026-02-11 06:43:48,934 log 72641 6135099392 Not Found: /logout/
+WARNING 2026-02-11 06:43:48,935 log 72641 6135099392 "GET /logout/ HTTP/1.1" 404 4656
+INFO 2026-02-11 06:43:54,978 log 72641 6135099392 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:44:00,121 log 72641 6135099392 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:44:04,349 log 72641 6135099392 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:44:37,195 log 72641 6135099392 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 06:44:54,593 log 72641 6135099392 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 06:45:00,600 log 72641 6135099392 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 06:46:31,507 log 72641 6135099392 "GET / HTTP/1.1" 200 5452
+WARNING 2026-02-11 06:46:40,225 log 72641 6135099392 Not Found: /api/users/register
+WARNING 2026-02-11 06:46:40,226 log 72641 6135099392 "GET /api/users/register HTTP/1.1" 404 15333
+WARNING 2026-02-11 06:46:43,304 log 72641 6135099392 Method Not Allowed: /api/users/register/
+WARNING 2026-02-11 06:46:43,305 log 72641 6135099392 "GET /api/users/register/ HTTP/1.1" 405 12033
+WARNING 2026-02-11 06:49:21,976 log 72641 6135099392 Bad Request: /api/users/register/
+WARNING 2026-02-11 06:49:21,978 log 72641 6135099392 "POST /api/users/register/ HTTP/1.1" 400 12652
+INFO 2026-02-11 07:01:51,846 log 72641 6135099392 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 07:01:53,623 log 72641 6135099392 "GET /login/ HTTP/1.1" 200 12355
+INFO 2026-02-11 07:14:29,348 log 72641 6135099392 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 07:15:12,957 log 72641 6135099392 "GET /accounts/login/ HTTP/1.1" 200 700
+INFO 2026-02-11 07:16:59,209 log 72641 6135099392 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-11 07:16:59,276 log 72641 6135099392 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8764
+WARNING 2026-02-11 07:17:09,488 log 72641 6135099392 Bad Request: /o/authorize/
+WARNING 2026-02-11 07:17:09,488 log 72641 6135099392 "GET /o/authorize/ HTTP/1.1" 400 1331
+INFO 2026-02-11 07:22:18,548 autoreload 72641 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 07:22:19,666 apps 7250 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 07:22:19,666 apps 7250 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 07:22:19,666 apps 7250 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 07:22:19,674 autoreload 7250 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 07:22:46,308 autoreload 7250 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 07:22:46,948 apps 7555 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 07:22:46,948 apps 7555 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 07:22:46,948 apps 7555 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 07:22:46,955 autoreload 7555 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 07:25:17,614 autoreload 7555 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 07:25:18,464 apps 9254 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 07:25:18,464 apps 9254 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 07:25:18,464 apps 9254 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 07:25:18,472 autoreload 9254 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 07:25:27,198 autoreload 9254 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 07:25:27,822 apps 9357 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 07:25:27,822 apps 9357 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 07:25:27,822 apps 9357 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 07:25:27,828 autoreload 9357 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 07:25:33,334 autoreload 9357 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/views.py changed, reloading.
+ERROR 2026-02-11 07:25:33,941 apps 9440 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 07:25:33,941 apps 9440 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 07:25:33,941 apps 9440 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 07:25:33,948 autoreload 9440 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 07:28:19,244 log 9440 6131118080 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=oRG4Ckyum-NDjjfasfoWuQbcXv4k4Dpk8PYd4EPKRNU&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-11 07:28:21,128 log 9440 6131118080 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=oRG4Ckyum-NDjjfasfoWuQbcXv4k4Dpk8PYd4EPKRNU&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 07:28:21,905 validators 9440 6164770816 Token issued for user 1 via local
+INFO 2026-02-11 07:28:21,909 signals 9440 6164770816 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-11 07:28:21,968 log 9440 6164770816 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-11 07:28:55,666 permissions 9440 6164770816 Client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0 authenticated from 127.0.0.1
+WARNING 2026-02-11 07:28:55,685 log 9440 6164770816 Bad Request: /api/oidc/revoke/
+WARNING 2026-02-11 07:28:55,685 log 9440 6164770816 "POST /api/oidc/revoke/ HTTP/1.1" 400 85
+INFO 2026-02-11 07:29:42,357 validators 9440 6164770816 Token issued for user 1 via local
+INFO 2026-02-11 07:29:42,389 signals 9440 6164770816 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-11 07:29:42,442 log 9440 6164770816 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-11 07:29:50,380 log 9440 6131118080 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=Xce5GHauMz_eZ_V_i6_TCeFdVt9LxkLeO3kGmgHYtGU&code_challenge_method=S256 HTTP/1.1" 200 3698
+INFO 2026-02-11 07:29:52,334 log 9440 6131118080 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=Xce5GHauMz_eZ_V_i6_TCeFdVt9LxkLeO3kGmgHYtGU&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 07:29:52,729 validators 9440 6164770816 Token issued for user 1 via local
+INFO 2026-02-11 07:29:52,731 signals 9440 6164770816 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-11 07:29:52,771 log 9440 6164770816 "POST /o/token/ HTTP/1.1" 200 198
+INFO 2026-02-11 07:35:03,511 log 9440 6147944448 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 07:35:05,305 log 9440 6147944448 "GET /admin/ HTTP/1.1" 200 14623
+INFO 2026-02-11 07:35:07,190 log 9440 6147944448 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-02-11 07:35:07,229 log 9440 6147944448 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 07:35:12,055 log 9440 6147944448 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 07:35:18,008 log 9440 6147944448 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-11 07:35:18,105 log 9440 6147944448 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-11 07:35:31,711 log 9440 6147944448 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=random123&scope=read%20write&redirect_uri=https%3A%2F%2Foauth.pstmn.io%2Fv1%2Fcallback&code_challenge=pjdLlL6zbA_wGWx3_UVBvLApxEHSp_B6FAd88BtaNBk&code_challenge_method=S256 HTTP/1.1" 302 0
+INFO 2026-02-11 07:35:31,779 log 9440 6147944448 "GET /login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3Drandom123%26scope%3Dread%2520write%26redirect_uri%3Dhttps%253A%252F%252Foauth.pstmn.io%252Fv1%252Fcallback%26code_challenge%3DpjdLlL6zbA_wGWx3_UVBvLApxEHSp_B6FAd88BtaNBk%26code_challenge_method%3DS256 HTTP/1.1" 200 12355
+INFO 2026-02-11 07:35:36,459 log 9440 6147944448 "GET /accounts/login/ HTTP/1.1" 200 7836
+INFO 2026-02-11 07:35:53,282 log 9440 6147944448 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-02-11 07:35:53,312 log 9440 6147944448 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-11 07:36:06,011 log 9440 6147944448 "GET /admin/ HTTP/1.1" 200 14623
+INFO 2026-02-11 08:50:26,424 autoreload 9440 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-02-11 08:50:27,382 apps 53805 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:50:27,383 apps 53805 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:50:27,383 apps 53805 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:50:27,390 autoreload 53805 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:50:34,087 autoreload 53805 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-02-11 08:50:34,756 apps 53892 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:50:34,756 apps 53892 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:50:34,756 apps 53892 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:50:34,762 autoreload 53892 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:50:38,040 autoreload 53892 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-11 08:50:38,519 apps 53943 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:50:38,519 apps 53943 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:50:38,519 apps 53943 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:50:38,524 autoreload 53943 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:50:41,784 autoreload 53943 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-11 08:50:42,244 apps 53999 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:50:42,247 apps 53999 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:50:42,247 apps 53999 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:50:42,251 autoreload 53999 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:50:55,108 autoreload 53999 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/urls.py changed, reloading.
+ERROR 2026-02-11 08:50:55,741 apps 54153 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:50:55,741 apps 54153 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:50:55,741 apps 54153 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:50:55,746 autoreload 54153 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:27,655 autoreload 54153 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 08:51:28,325 apps 54511 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:28,325 apps 54511 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:28,325 apps 54511 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:28,332 autoreload 54511 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:31,699 autoreload 54511 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 08:51:32,205 apps 54564 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:32,205 apps 54564 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:32,205 apps 54564 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:32,210 autoreload 54564 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:38,787 autoreload 54564 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-11 08:51:39,292 apps 54638 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:39,292 apps 54638 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:39,292 apps 54638 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:39,298 autoreload 54638 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:47,955 autoreload 54638 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 08:51:48,474 apps 54755 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:48,474 apps 54755 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:48,474 apps 54755 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:48,480 autoreload 54755 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:52,870 autoreload 54755 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 08:51:53,383 apps 54807 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:53,384 apps 54807 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:53,384 apps 54807 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:53,389 autoreload 54807 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-11 08:51:55,673 autoreload 54807 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-11 08:51:56,167 apps 54840 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-11 08:51:56,167 apps 54840 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-11 08:51:56,167 apps 54840 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-11 08:51:56,172 autoreload 54840 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-12 11:22:17,360 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:22:17,362 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:29:47,530 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:29:47,531 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:38:57,567 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:38:57,571 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:39:41,357 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:39:41,358 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:40:38,449 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:40:38,450 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:40:52,985 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:40:52,986 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:41:18,518 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:41:18,519 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+WARNING 2026-02-12 11:41:20,526 log 54840 6168260608 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:41:20,527 log 54840 6168260608 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+INFO 2026-02-12 11:42:37,873 log 54840 6185086976 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-12 11:42:54,436 log 54840 6185086976 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-12 11:42:54,517 log 54840 6185086976 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8726
+INFO 2026-02-12 11:42:54,538 log 54840 6218739712 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,539 log 54840 6201913344 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,553 log 54840 6185086976 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,558 log 54840 6235566080 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,559 log 54840 6269218816 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,559 log 54840 6252392448 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,576 log 54840 6218739712 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,577 log 54840 6201913344 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,602 log 54840 6235566080 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,602 log 54840 6269218816 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,602 log 54840 6185086976 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:42:54,627 log 54840 6185086976 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2026-02-12 11:43:29,741 log 54840 6185086976 Not Found: /.well-known/openid-configuration
+WARNING 2026-02-12 11:43:29,742 log 54840 6185086976 "GET /.well-known/openid-configuration HTTP/1.1" 404 4942
+INFO 2026-02-12 11:43:38,564 log 54840 6185086976 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-12 11:43:38,609 log 54840 6185086976 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8726
+INFO 2026-02-12 11:44:41,279 log 54840 6185086976 "GET /.well-known/openid-configuration/ HTTP/1.1" 302 0
+INFO 2026-02-12 11:44:41,314 log 54840 6185086976 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8726
+INFO 2026-02-12 11:46:08,814 autoreload 54840 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/sso/urls.py changed, reloading.
+ERROR 2026-02-12 11:46:11,391 apps 15438 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-12 11:46:11,391 apps 15438 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-12 11:46:11,391 apps 15438 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-12 11:46:11,400 autoreload 15438 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-12 11:46:18,894 log 15438 6165475328 "GET /.well-known/openid-configuration HTTP/1.1" 302 0
+INFO 2026-02-12 11:46:18,982 log 15438 6165475328 "GET /api/oidc/provider-info/ HTTP/1.1" 200 8726
+INFO 2026-02-12 11:46:25,348 log 15438 6199128064 "GET /.well-known/openid-configuration HTTP/1.1" 302 0
+INFO 2026-02-12 11:46:25,475 log 15438 6199128064 "GET /api/oidc/provider-info/ HTTP/1.1" 200 1450
+INFO 2026-02-12 11:47:18,090 basehttp 15438 6199128064 - Broken pipe from ('127.0.0.1', 59920)
+INFO 2026-02-12 11:47:18,223 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:47:18,465 log 15438 6215954432 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-12 11:47:27,640 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:48:00,700 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:48:10,060 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:48:12,659 log 15438 6165475328 "GET /o/authorize/?response_type=code&client_id=ANGULAR_CLIENT_ID&state=ei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&scope=openid%20profile%20email&code_challenge=rxWXJrZhNYgXhZTLIwbMUv-zdfTBZ_O1seSOpYD9FcM&code_challenge_method=S256&nonce=ei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f HTTP/1.1" 302 0
+INFO 2026-02-12 11:48:12,754 log 15438 6165475328 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DANGULAR_CLIENT_ID%26state%3Dei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252Fcallback%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DrxWXJrZhNYgXhZTLIwbMUv-zdfTBZ_O1seSOpYD9FcM%26code_challenge_method%3DS256%26nonce%3Dei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f HTTP/1.1" 200 11669
+WARNING 2026-02-12 11:48:12,966 log 15438 6165475328 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:48:12,967 log 15438 6165475328 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:48:30,439 log 15438 6165475328 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DANGULAR_CLIENT_ID%26state%3Dei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252Fcallback%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DrxWXJrZhNYgXhZTLIwbMUv-zdfTBZ_O1seSOpYD9FcM%26code_challenge_method%3DS256%26nonce%3Dei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f HTTP/1.1" 302 0
+WARNING 2026-02-12 11:48:30,540 log 15438 6165475328 Bad Request: /o/authorize/
+WARNING 2026-02-12 11:48:30,541 log 15438 6165475328 "GET /o/authorize/?response_type=code&client_id=ANGULAR_CLIENT_ID&state=ei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2Fcallback&scope=openid%20profile%20email&code_challenge=rxWXJrZhNYgXhZTLIwbMUv-zdfTBZ_O1seSOpYD9FcM&code_challenge_method=S256&nonce=ei1vMHBVMExMWXVTMnJKM1BLRHA1blN6SUcxei5SNmFZZ35jZW8yc2VoNX5f HTTP/1.1" 400 1337
+WARNING 2026-02-12 11:48:30,723 log 15438 6165475328 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:48:30,723 log 15438 6165475328 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:49:22,252 log 15438 6165475328 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17731
+INFO 2026-02-12 11:49:22,284 log 15438 6165475328 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,292 log 15438 6199128064 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,293 log 15438 6165475328 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,293 log 15438 6232780800 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,295 log 15438 6199128064 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,296 log 15438 6249607168 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,329 log 15438 6165475328 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,306 log 15438 6232780800 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,329 log 15438 6199128064 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,339 log 15438 6266433536 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,340 log 15438 6165475328 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,340 log 15438 6249607168 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,342 log 15438 6232780800 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,342 log 15438 6199128064 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,344 log 15438 6199128064 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,347 log 15438 6199128064 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,349 log 15438 6199128064 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,423 log 15438 6182301696 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 11:49:22,442 log 15438 6182301696 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,442 log 15438 6199128064 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:22,442 log 15438 6232780800 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:24,901 log 15438 6232780800 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25123
+INFO 2026-02-12 11:49:24,938 log 15438 6182301696 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:24,939 log 15438 6199128064 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:24,947 log 15438 6199128064 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:24,985 log 15438 6199128064 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-12 11:49:25,010 log 15438 6232780800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 11:49:25,022 log 15438 6232780800 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:50:34,639 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:51:17,920 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:51:53,876 log 15438 6232780800 "POST /admin/oauth2_provider/application/1/change/ HTTP/1.1" 302 0
+INFO 2026-02-12 11:51:53,963 log 15438 6232780800 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17984
+INFO 2026-02-12 11:51:54,122 log 15438 6232780800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-12 11:51:54,144 log 15438 6232780800 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-02-12 11:52:16,042 log 15438 6232780800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=NU1tVzA0Mi5naFVpbWMyM2JuMW9PVk5sQmtjd0pjeksyaUxtQjUzcX5SUzhl&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=KdEnBQKZ-JDyMOAOO4u5o7W465lGxn-qN_swmHOFjRI&code_challenge_method=S256&nonce=NU1tVzA0Mi5naFVpbWMyM2JuMW9PVk5sQmtjd0pjeksyaUxtQjUzcX5SUzhl HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:52:16,332 log 15438 6232780800 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:52:16,335 log 15438 6232780800 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:52:19,285 log 15438 6232780800 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=NU1tVzA0Mi5naFVpbWMyM2JuMW9PVk5sQmtjd0pjeksyaUxtQjUzcX5SUzhl&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=KdEnBQKZ-JDyMOAOO4u5o7W465lGxn-qN_swmHOFjRI&code_challenge_method=S256&nonce=NU1tVzA0Mi5naFVpbWMyM2JuMW9PVk5sQmtjd0pjeksyaUxtQjUzcX5SUzhl HTTP/1.1" 302 0
+INFO 2026-02-12 11:52:19,615 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:52:19,981 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:52:20,004 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:52:20,085 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:54:09,547 log 15438 6283259904 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:54:09,787 log 15438 6283259904 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-12 11:54:13,681 log 15438 6300086272 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=dFomNuabpsbskW52dOy9iqPnFMq0kCRcPXcZ9wwMMfI&code_challenge_method=S256&nonce=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu HTTP/1.1" 302 0
+INFO 2026-02-12 11:54:13,756 log 15438 6300086272 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DR0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DdFomNuabpsbskW52dOy9iqPnFMq0kCRcPXcZ9wwMMfI%26code_challenge_method%3DS256%26nonce%3DR0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu HTTP/1.1" 200 11741
+WARNING 2026-02-12 11:54:16,252 log 15438 6300086272 Not Found: /favicon.ico
+WARNING 2026-02-12 11:54:16,253 log 15438 6300086272 "GET /favicon.ico HTTP/1.1" 404 4857
+INFO 2026-02-12 11:54:31,581 log 15438 6300086272 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DR0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DdFomNuabpsbskW52dOy9iqPnFMq0kCRcPXcZ9wwMMfI%26code_challenge_method%3DS256%26nonce%3DR0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu HTTP/1.1" 302 0
+INFO 2026-02-12 11:54:31,633 log 15438 6300086272 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=dFomNuabpsbskW52dOy9iqPnFMq0kCRcPXcZ9wwMMfI&code_challenge_method=S256&nonce=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu HTTP/1.1" 200 3899
+INFO 2026-02-12 11:54:34,546 log 15438 6300086272 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=dFomNuabpsbskW52dOy9iqPnFMq0kCRcPXcZ9wwMMfI&code_challenge_method=S256&nonce=R0t0MEd6WVBFS0toeHdWbFNCR0llLXYuUTEzTGJadFFzUmpPNGREMEtVTkZu HTTP/1.1" 302 0
+INFO 2026-02-12 11:54:34,655 log 15438 6283259904 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:54:34,728 validators 15438 6283259904 Token issued for user 1 via local
+INFO 2026-02-12 11:54:34,735 signals 15438 6283259904 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:54:34,781 log 15438 6283259904 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:56:27,505 log 15438 6232780800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=V2ZtYzRGVkFld2JjeUxqNmcwdkIzUUo0NFVSN1dsaHhVcXB1LWdQQlVyUE1w&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=aQOphLIfjyxj-lEfEj5dzzQMWylM-sPnZMDkVYov5Es&code_challenge_method=S256&nonce=V2ZtYzRGVkFld2JjeUxqNmcwdkIzUUo0NFVSN1dsaHhVcXB1LWdQQlVyUE1w HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:56:27,718 log 15438 6232780800 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:56:27,719 log 15438 6232780800 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:56:33,563 log 15438 6232780800 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=V2ZtYzRGVkFld2JjeUxqNmcwdkIzUUo0NFVSN1dsaHhVcXB1LWdQQlVyUE1w&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=aQOphLIfjyxj-lEfEj5dzzQMWylM-sPnZMDkVYov5Es&code_challenge_method=S256&nonce=V2ZtYzRGVkFld2JjeUxqNmcwdkIzUUo0NFVSN1dsaHhVcXB1LWdQQlVyUE1w HTTP/1.1" 302 0
+INFO 2026-02-12 11:56:33,810 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:56:34,093 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:56:34,103 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:56:34,177 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:57:12,437 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:57:13,570 log 15438 6182301696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:57:16,434 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:57:18,241 log 15438 6182301696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:57:23,613 log 15438 6232780800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=X2dacks0WTZZSllLR2UtTkZLQVlWV35mSUpWNU1uSkNXNFNYTG1zQjlTbDhv&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=x-M4yc9VTKnLbZKKObJETJkxPInCqf1SdfCi5-WN5DY&code_challenge_method=S256&nonce=X2dacks0WTZZSllLR2UtTkZLQVlWV35mSUpWNU1uSkNXNFNYTG1zQjlTbDhv HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:57:23,823 log 15438 6232780800 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:57:23,824 log 15438 6232780800 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:57:26,417 log 15438 6232780800 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=X2dacks0WTZZSllLR2UtTkZLQVlWV35mSUpWNU1uSkNXNFNYTG1zQjlTbDhv&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=x-M4yc9VTKnLbZKKObJETJkxPInCqf1SdfCi5-WN5DY&code_challenge_method=S256&nonce=X2dacks0WTZZSllLR2UtTkZLQVlWV35mSUpWNU1uSkNXNFNYTG1zQjlTbDhv HTTP/1.1" 302 0
+INFO 2026-02-12 11:57:26,718 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:57:26,831 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:57:26,836 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:57:26,870 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:57:29,091 log 15438 6232780800 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=alk3RVBnZTB4WmZ1bTloWlA1d1pVQlFkfm1XblBhRmxvb0h1Y0hwMDgyQWx3&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=0PwS3bePAFmw7F4DBL2PJCi70S-ZCHY8_prUPLRm6Wk&code_challenge_method=S256&nonce=alk3RVBnZTB4WmZ1bTloWlA1d1pVQlFkfm1XblBhRmxvb0h1Y0hwMDgyQWx3 HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:57:29,252 log 15438 6232780800 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:57:29,252 log 15438 6232780800 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:58:09,726 log 15438 6165475328 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=alk3RVBnZTB4WmZ1bTloWlA1d1pVQlFkfm1XblBhRmxvb0h1Y0hwMDgyQWx3&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=0PwS3bePAFmw7F4DBL2PJCi70S-ZCHY8_prUPLRm6Wk&code_challenge_method=S256&nonce=alk3RVBnZTB4WmZ1bTloWlA1d1pVQlFkfm1XblBhRmxvb0h1Y0hwMDgyQWx3 HTTP/1.1" 302 0
+INFO 2026-02-12 11:58:10,104 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:58:10,447 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:58:10,457 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:58:10,505 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:58:13,183 log 15438 6165475328 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=eVI2elF5SVJaR0ZFaGk2YnNQREtHLng1bEloSXlNUnFhQVJYRHZ5YWt4R01V&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=_pj8jVby1OtxcejBxxRniCtKTPTFL7kb5BzcjFnewvE&code_challenge_method=S256&nonce=eVI2elF5SVJaR0ZFaGk2YnNQREtHLng1bEloSXlNUnFhQVJYRHZ5YWt4R01V HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:58:13,393 log 15438 6165475328 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:58:13,394 log 15438 6165475328 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:58:46,645 log 15438 6165475328 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=eVI2elF5SVJaR0ZFaGk2YnNQREtHLng1bEloSXlNUnFhQVJYRHZ5YWt4R01V&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=_pj8jVby1OtxcejBxxRniCtKTPTFL7kb5BzcjFnewvE&code_challenge_method=S256&nonce=eVI2elF5SVJaR0ZFaGk2YnNQREtHLng1bEloSXlNUnFhQVJYRHZ5YWt4R01V HTTP/1.1" 302 0
+INFO 2026-02-12 11:58:47,126 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:58:47,429 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:58:47,479 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:58:47,520 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 11:58:52,697 log 15438 6165475328 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=ZV9EY1BxVHMzQVNFTHl0NnY4djdUVGx2dC56eXlLQTd-R35iUHQuSkdBOHNs&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=RsaQi4qPFaofUQXmt13NS9otKG6qGdXTXQtb8EVIXYU&code_challenge_method=S256&nonce=ZV9EY1BxVHMzQVNFTHl0NnY4djdUVGx2dC56eXlLQTd-R35iUHQuSkdBOHNs HTTP/1.1" 200 3899
+WARNING 2026-02-12 11:58:52,878 log 15438 6165475328 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-12 11:58:52,878 log 15438 6165475328 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-12 11:59:53,463 log 15438 6165475328 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=ZV9EY1BxVHMzQVNFTHl0NnY4djdUVGx2dC56eXlLQTd-R35iUHQuSkdBOHNs&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=RsaQi4qPFaofUQXmt13NS9otKG6qGdXTXQtb8EVIXYU&code_challenge_method=S256&nonce=ZV9EY1BxVHMzQVNFTHl0NnY4djdUVGx2dC56eXlLQTd-R35iUHQuSkdBOHNs HTTP/1.1" 302 0
+INFO 2026-02-12 11:59:53,907 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 11:59:54,133 validators 15438 6215954432 Token issued for user 1 via local
+INFO 2026-02-12 11:59:54,153 signals 15438 6215954432 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-12 11:59:54,200 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-12 12:00:13,526 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 12:00:14,455 log 15438 6199128064 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 12:00:26,227 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762

@@ -5,7 +5,6 @@ app_name = 'oidc'
 from .views.discovery import (
     JWKSDocumentView,
     OIDCProviderInfoView,
-    WellKnownConfigurationView
 )
 from .views.token import (
     OIDCUserInfoView,
@@ -19,9 +18,10 @@ urlpatterns = [
     # Discovery endpoints
     path('jwks/', JWKSDocumentView.as_view(), name='oidc-jwks'),
     path('provider-info/', OIDCProviderInfoView.as_view(), name='oidc-provider-info'),
-    path('.well-known/openid-configuration/', 
-         WellKnownConfigurationView.as_view(), 
-         name='oidc-well-known'),
+    
+    # NOTE: Well-known OIDC discovery endpoint is at project root:
+    # /.well-known/openid-configuration/ (defined in sso/urls.py)
+    # DO NOT duplicate here to avoid confusion
     
     # Token management endpoints
     path('userinfo/', OIDCUserInfoView.as_view(), name='oidc-userinfo'),

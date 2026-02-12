@@ -1,2 +1,4 @@
 WARNING 2026-02-07 07:08:27,013 log 69416 6218969088 Forbidden (CSRF token from POST incorrect.): /admin/login/
 WARNING 2026-02-07 11:10:57,343 log 16884 6178336768 Forbidden (CSRF token from POST incorrect.): /accounts/login/
+WARNING 2026-02-10 11:03:26,488 log 81028 6168408064 Forbidden (CSRF cookie not set.): /logout
+WARNING 2026-02-10 11:04:27,123 log 81028 6303019008 Forbidden (CSRF cookie not set.): /o/authorize/logout/

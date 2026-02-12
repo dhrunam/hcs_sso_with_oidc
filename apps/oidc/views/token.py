@@ -166,7 +166,13 @@ class TokenRevocationView(APIView):
     Requires client authentication via HTTP Basic or POST credentials.
     Clients can only revoke their own tokens.
     """
-    permission_classes = [IsClientAuthenticated]
+    permission_classes = []  # Allow GET to trigger proper 405 response
+    
+    def get_permissions(self):
+        """Only require authentication for POST requests"""
+        if self.request.method == 'POST':
+            return [IsClientAuthenticated()]
+        return []
     
     def post(self, request):
         """Revoke a token"""

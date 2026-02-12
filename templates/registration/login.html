@@ -1,17 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SSO Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCS Account Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .login-card {
+            border: none;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        .login-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px 10px 0 0 !important;
+        }
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+        .btn-login {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            padding: 10px 20px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #667eea;
+            transition: all 0.3s;
+        }
+        .back-link:hover {
+            color: #764ba2;
+        }
+        .error-alert {
+            border-radius: 5px;
+            animation: slideDown 0.3s ease-out;
+        }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="login-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-lg-4">
+                    <div class="card login-card">
+                        <div class="card-header login-header text-white">
+                            <h4 class="mb-0 text-center py-2">
+                                <i class="fas fa-building me-2"></i>HCS Account Login
+                            </h4>
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Error Messages -->
+                            {% if form.non_field_errors %}
+                                <div class="alert alert-danger error-alert" role="alert">
+                                    <i class="fas fa-exclamation-circle me-2"></i>
+                                    <strong>Login Failed</strong>
+                                    {% for error in form.non_field_errors %}
+                                        <div>{{ error }}</div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                            
+                            <!-- Security Notice -->
+                            <div class="alert alert-info small mb-4">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                <strong>Secure Login</strong>
+                                <p class="mb-0">Use your organization credentials to sign in.</p>
+                            </div>
+                            
+                            <!-- Login Form -->
+                            <form method="post" novalidate>
+                                {% csrf_token %}
+                                
+                                <!-- Username Field -->
+                                <div class="mb-3">
+                                    <label for="{{ form.username.id_for_label }}" class="form-label">
+                                        <i class="fas fa-user me-2"></i>Username
+                                    </label>
+                                    {% if form.username.errors %}
+                                        <input type="text" class="form-control is-invalid" id="{{ form.username.id_for_label }}" name="username" placeholder="Enter your username" value="{{ form.username.value|default:'' }}" required>
+                                        <div class="invalid-feedback d-block">
+                                            {% for error in form.username.errors %}{{ error }}{% endfor %}
+                                        </div>
+                                    {% else %}
+                                        <input type="text" class="form-control" id="{{ form.username.id_for_label }}" name="username" placeholder="Enter your username" value="{{ form.username.value|default:'' }}" required autofocus>
+                                    {% endif %}
+                                </div>
+                                
+                                <!-- Password Field -->
+                                <div class="mb-3">
+                                    <label for="{{ form.password.id_for_label }}" class="form-label">
+                                        <i class="fas fa-lock me-2"></i>Password
+                                    </label>
+                                    {% if form.password.errors %}
+                                        <input type="password" class="form-control is-invalid" id="{{ form.password.id_for_label }}" name="password" placeholder="Enter your password" required>
+                                        <div class="invalid-feedback d-block">
+                                            {% for error in form.password.errors %}{{ error }}{% endfor %}
+                                        </div>
+                                    {% else %}
+                                        <input type="password" class="form-control" id="{{ form.password.id_for_label }}" name="password" placeholder="Enter your password" required>
+                                    {% endif %}
+                                </div>
+                                
+                                <!-- Remember Me -->
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="{{ form.remember_me|default:'rememberme' }}" name="remember_me">
+                                    <label class="form-check-label" for="{{ form.remember_me|default:'rememberme' }}">
+                                        Remember me for 24 hours
+                                    </label>
+                                </div>
+                                
+                                <!-- Hidden next parameter for OAuth2 redirect -->
+                                {% if next %}
+                                    <input type="hidden" name="next" value="{{ next }}">
+                                {% endif %}
+                                
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-login w-100 text-white mb-3">
+                                    <i class="fas fa-sign-in-alt me-2"></i>Sign In with Organization Account
+                                </button>
+                            </form>
+                            
+                            <!-- Divider -->
+                            <div class="text-center my-3 position-relative">
+                                <hr>
+                                <span class="bg-white px-3 text-muted position-absolute top-50 start-50 translate-middle">
+                                    OR continue with
+                                </span>
+                            </div>
+                            
+                            <!-- Social Login Options -->
+                            <div class="social-login-options">
+                                <a href="/social/login/google-oauth2/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100 mb-2">
+                                    <i class="fab fa-google me-2"></i>Google
+                                </a>
+                                <a href="/social/login/facebook/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100 mb-2">
+                                    <i class="fab fa-facebook me-2"></i>Facebook
+                                </a>
+                                <a href="/social/login/microsoft-graph/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100 mb-2">
+                                    <i class="fab fa-microsoft me-2"></i>Microsoft
+                                </a>
+                                <a href="/social/login/github/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100 mb-2">
+                                    <i class="fab fa-github me-2"></i>GitHub
+                                </a>
+                                <a href="/social/login/linkedin-oauth2/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100">
+                                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Help Card -->
+                    <div class="card mt-3 border-light">
+                        <div class="card-body small">
+                            <h6 class="card-title">
+                                <i class="fas fa-question-circle me-2"></i>Need Help?
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-check text-success me-2"></i>Forgot your password? Contact IT</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Locked account? Try again in 30 minutes</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Issues logging in? Enable cookies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h2>SSO Login</h2>
-
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Focus on username field
+            const usernameField = document.querySelector('input[name="username"]');
+            if (usernameField) {
+                usernameField.focus();
+            }
+            
+            // Log when form is submitted
+            document.querySelector('form').addEventListener('submit', function(e) {
+                console.log('Organization login form submitted');
+                // You can add analytics here
+            });
+        });
+    </script>
 </body>
 </html>

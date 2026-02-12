@@ -74,18 +74,17 @@ class SocialConfig(AppConfig):
     def register_custom_backends(self):
         """Register custom social auth backends"""
         try:
-            from social_core.backends.registry import BACKENDS
+            from social_core import backends as BACKENDS
             from apps.social.backends import (
                 CustomGoogleOAuth2,
-                CustomFacebookOAuth2,
-                CustomOIDCBackend
+                CustomFacebookOAuth2
             )
             
             # Define custom backends to register
             custom_backends = {
                 'google-oauth2': CustomGoogleOAuth2,
-                'facebook': CustomFacebookOAuth2,
-                'custom-oidc': CustomOIDCBackend,
+                'facebook': CustomFacebookOAuth2
+               
             }
             
             registered_count = 0
@@ -106,7 +105,7 @@ class SocialConfig(AppConfig):
     def log_initialization(self):
         """Log social auth initialization details"""
         try:
-            from social_core.backends.registry import BACKENDS
+            from social_core import backends as BACKENDS
             
             # Get enabled providers from settings
             enabled_providers = []
@@ -120,7 +119,7 @@ class SocialConfig(AppConfig):
                 enabled_providers.append('GitHub')
             
             logger.info(
-                f"Social auth initialized with {len(BACKENDS)} backends. "
+                # f"Social auth initialized with {len(BACKENDS)} backends. "
                 f"Enabled providers: {', '.join(enabled_providers) if enabled_providers else 'None'}"
             )
             

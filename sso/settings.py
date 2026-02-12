@@ -61,7 +61,7 @@ ROOT_URLCONF = 'sso.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates', BASE_DIR / 'sso' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,21 +78,34 @@ TEMPLATES = [
 WSGI_APPLICATION = 'sso.wsgi.application'
 
 # Database
-DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
+if DEBUG:
+    DATABASES = {
+        # 'default': {
+        #     'ENGINE': 'django.db.backends.sqlite3',
+        #     'NAME': BASE_DIR / 'db.sqlite3',
+        # }
 
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('POSTGRES_DB', 'hcs_sso_oidc_db'),
-        'USER': os.getenv('POSTGRES_USER', 'postgres'),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'postgres'),
-        'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
-        'PORT': os.getenv('POSTGRES_PORT', '5435'), 
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME':  'hcs_sso_oidc_db',
+            'USER': 'postgres',
+            'PASSWORD':  'postgres',
+            'HOST':  'localhost',
+            'PORT':  '5435', 
+        }      
+        
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('POSTGRES_DB', 'hcs_sso_oidc_db'),
+            'USER': os.getenv('POSTGRES_USER', 'postgres'),
+            'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'postgres'),
+            'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
+            'PORT': os.getenv('POSTGRES_PORT', '5432'),
+        }
+    }   
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -119,31 +132,40 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SITE_ID = 1
 
-# Authentication backends
+# Django Authentication URLs (Unified OAuth2/JWT System)
+# All authentication flows redirect to /accounts/login/ for user interaction
+# All tokens are OAuth2 JWT tokens from /o/token/ endpoint
+LOGIN_URL = '/accounts/login/'              # Where to send unauthenticated users
+LOGIN_REDIRECT_URL = '/'                    # After successful organization login
+LOGOUT_REDIRECT_URL = '/'                   # After logout
+
+# Authentication backends (in order of evaluation)
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'social_core.backends.google.GoogleOAuth2',
-    'social_core.backends.facebook.FacebookOAuth2',
-    'social_core.backends.microsoft.MicrosoftOAuth2',
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.linkedin.LinkedinOAuth2',
-    'social_core.backends.open_id_connect.OpenIdConnectAuth',  # For generic OIDC
+    'django.contrib.auth.backends.ModelBackend',           # Organization credentials
+    'social_core.backends.google.GoogleOAuth2',            # Google OAuth2
+    'social_core.backends.facebook.FacebookOAuth2',        # Facebook OAuth2
+    'social_core.backends.microsoft.MicrosoftOAuth2',      # Microsoft/Azure AD
+    'social_core.backends.github.GithubOAuth2',            # GitHub OAuth2
+    'social_core.backends.linkedin.LinkedinOAuth2',        # LinkedIn OAuth2
+    'social_core.backends.open_id_connect.OpenIdConnectAuth',  # Generic OIDC
 ]
 
-# Social auth settings
-SOCIAL_AUTH_POSTGRES_JSONFIELD = True  # If using PostgreSQL
+# Social Authentication Configuration (using django-social-auth)
+# All social logins redirect back to /accounts/login/ during OAuth2 flow
+SOCIAL_AUTH_POSTGRES_JSONFIELD = True       # If using PostgreSQL
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
-SOCIAL_AUTH_LOGIN_ERROR_URL = '/login-error/'
-SOCIAL_AUTH_LOGOUT_REDIRECT_URL = '/'
-SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/profile/'
-SOCIAL_AUTH_LOGIN_URL = '/login/'
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'        # After successful social login
+SOCIAL_AUTH_LOGIN_ERROR_URL = '/accounts/login/'  # On social auth error
+SOCIAL_AUTH_LOGIN_URL = '/accounts/login/'  # Where to redirect unauthenticated
+SOCIAL_AUTH_LOGOUT_REDIRECT_URL = '/'       # After logout
+SOCIAL_AUTH_NEW_USER_REDIRECT_URL = '/profile/'  # New user redirect
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = not DEBUG
 
 CSRF_TRUSTED_ORIGINS = ['https://sso.diseso.com']
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = os.getenv('SECURE_SSL_REDIRECT', 'False') == 'True'
+SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'False') == 'True'
+CSRF_COOKIE_SECURE = os.getenv('CSRF_COOKIE_SECURE', 'False') == 'True'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -202,7 +224,8 @@ def generate_rsa_key():
 
 OIDC_PRIVATE_KEY = generate_rsa_key()
 
-# OAuth2 Provider Configuration
+# OAuth2 Provider Configuration (Unified Token System)
+# All authentication methods return OAuth2 JWT tokens
 OAUTH2_PROVIDER = {
     # OIDC Settings
     'OIDC_ENABLED': True,
@@ -214,6 +237,11 @@ OAUTH2_PROVIDER = {
     'REFRESH_TOKEN_EXPIRE_SECONDS': 86400,  # 1 day
     'REFRESH_TOKEN_GRACE_PERIOD_SECONDS': 3600,
     'ID_TOKEN_EXPIRE_SECONDS': 3600,
+    
+    # Grant Types - ENABLED
+    # Resource Owner Password Credentials Grant (for API clients)
+    # Allows clients to POST username+password to /o/token/
+    'ALLOW_UNICODE_IN_CLIENT_SECRET': False,
     
     # PKCE for SPAs
     'PKCE_REQUIRED': True,

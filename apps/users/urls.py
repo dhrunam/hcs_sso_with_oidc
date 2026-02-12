@@ -4,9 +4,7 @@ from django.urls import path, include
 # Namespacing required when included with `namespace=` in project urls
 app_name = 'users'
 from rest_framework.routers import DefaultRouter
-from rest_framework.authtoken.views import obtain_auth_token
 from .views import (
-    CustomAuthToken,
     UserRegistrationView,
     UserProfileView,
     PasswordChangeView,
@@ -26,8 +24,11 @@ router = DefaultRouter()
 router.register(r'admin/users', AdminUserViewSet, basename='admin-users')
 
 urlpatterns = [
-    # Authentication
-    path('login/', CustomAuthToken.as_view(), name='user-login'),
+    # Authentication via OAuth2 /o/token/ endpoint (not REST token)
+    # DELETE: DRF token endpoint removed - use OAuth2 instead
+    # Users should authenticate via /o/token/ with grant_type=password
+    
+    # User operations
     path('logout/', UserLogoutView.as_view(), name='user-logout'),
     
     # Registration & Profile

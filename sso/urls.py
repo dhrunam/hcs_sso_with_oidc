@@ -5,17 +5,20 @@ URL configuration for SSO (Single Sign-On) project.
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import TemplateView
+from django.shortcuts import redirect
 from django.conf import settings
 from django.conf.urls.static import static
 
 # Import the well-known view directly to avoid including the whole oidc URLconf
 from apps.oidc.views.discovery import WellKnownConfigurationView
+from apps.core.views import OrganizationLoginView
 
 urlpatterns = [
     # Admin
     path('admin/', admin.site.urls),
     
     path('accounts/', include('django.contrib.auth.urls')),
+    
     # OAuth2/OIDC
     path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
     
@@ -31,12 +34,24 @@ urlpatterns = [
       if 'social_django' in settings.INSTALLED_APPS else []),
     
     # Frontend Pages
-    # path('', TemplateView.as_view(template_name='index.html'), name='home'),
-    # path('login/', TemplateView.as_view(template_name='login.html'), name='login'),
-    # path('profile/', TemplateView.as_view(template_name='profile.html'), name='profile'),
+    path('', TemplateView.as_view(template_name='index.html'), name='home'),
+    
+    # Authentication
+    # NOTE: All authentication flows redirect to /accounts/login/ for user interaction
+    # - Organization login (username/password)
+    # - Social login (Google, Facebook, etc.)
+    # Handles both browser HTML form submission and OAuth2 redirects
+    path('accounts/login/', OrganizationLoginView.as_view(), name='organization_login'),
+    path('accounts/profile/', TemplateView.as_view(template_name='profile.html'), name='profile'),
+    
+    # DEPRECATED: /login/ choice page has been merged into /accounts/login/
+    # The organization login form now includes social auth buttons
+    # Kept for backwards compatibility - redirects to new location
+    path('login/', lambda request: redirect('organization_login', permanent=False), name='login'),
     
     # OIDC Discovery (served directly)
-    path('.well-known/openid-configuration/', WellKnownConfigurationView.as_view(), name='oidc-well-known'),
+    path('.well-known/openid-configuration', WellKnownConfigurationView.as_view(), name='oidc-well-known'),
+   
 ]
 
 # Debug toolbar (development only)

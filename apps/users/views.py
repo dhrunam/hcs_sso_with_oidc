@@ -45,37 +45,6 @@ class StandardResultsSetPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class CustomAuthToken(ObtainAuthToken):
-    """
-    Custom token authentication endpoint that returns user data with token
-    """
-    
-    def post(self, request, *args, **kwargs):
-        serializer = self.serializer_class(
-            data=request.data,
-            context={'request': request}
-        )
-        serializer.is_valid(raise_exception=True)
-        user = serializer.validated_data['user']
-        
-        # Get or create token
-        token, created = Token.objects.get_or_create(user=user)
-        
-        # Update last login
-        user.last_login = timezone.now()
-        user.save(update_fields=['last_login'])
-        
-        # Return user data with token
-        user_serializer = UserSerializer(user, context={'request': request})
-        
-        return Response({
-            'token': token.key,
-            'user': user_serializer.data,
-            'expires_in': getattr(settings, 'TOKEN_EXPIRY_SECONDS', 3600),
-            'token_type': 'Bearer'
-        })
-
-
 class UserRegistrationView(generics.CreateAPIView):
     """
     User registration endpoint
@@ -93,18 +62,14 @@ class UserRegistrationView(generics.CreateAPIView):
         try:
             user = serializer.save()
             
-            # Generate auth token for immediate login
-            token, created = Token.objects.get_or_create(user=user)
-            
-            # Return user data with token
-            user_data = UserSerializer(user, context={'request': request}).data
-            
             logger.info(f"New user registered: {user.username} ({user.email})")
+            
+            # Return user data (user should now authenticate using OAuth2)
+            user_data = UserSerializer(user, context={'request': request}).data
             
             return Response({
                 'user': user_data,
-                'token': token.key,
-                'message': 'User registered successfully',
+                'message': 'User registered successfully. Please authenticate using /o/token/ endpoint.',
                 'requires_verification': getattr(settings, 'REQUIRE_EMAIL_VERIFICATION', False)
             }, status=status.HTTP_201_CREATED)
             

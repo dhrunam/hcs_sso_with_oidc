@@ -1,0 +1,506 @@
+{
+  "info": {
+    "name": "HCS SSO - OAuth2/JWT Unified Authentication",
+    "description": "Complete OAuth2 Authentication Flow with JWT tokens. All authentication methods use this unified system.",
+    "version": "1.0.0"
+  },
+  "item": [
+    {
+      "name": "1. Setup & Registration",
+      "item": [
+        {
+          "name": "Register OAuth2 Application",
+          "description": "Create an OAuth2 application to test the flow. Do this via Django admin.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/admin/oauth2_provider/application/add/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["admin", "oauth2_provider", "application", "add"]
+            }
+          }
+        },
+        {
+          "name": "Create Test User (Django Shell)",
+          "description": "Create a test user for organization login testing.",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "# Run in: python manage.py shell\nfrom django.contrib.auth.models import User\nUser.objects.create_user('testuser', 'test@hcs.gov', 'TestPassword123!')\n"
+            },
+            "url": {
+              "raw": "http://localhost:8000/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. OAuth2 Authorization Code Flow (Browser Clients)",
+      "item": [
+        {
+          "name": "Step 1: Authorization Request (Open in Browser)",
+          "description": "Visit this URL in your browser to initiate the OAuth2 authorization code flow.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/o/authorize/?client_id=YOUR_CLIENT_ID&redirect_uri=http://localhost:8888/callback&response_type=code&scope=openid%20profile%20email&state=random_state_123&code_challenge=YOUR_CODE_CHALLENGE&code_challenge_method=S256",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "authorize"],
+              "query": [
+                {
+                  "key": "client_id",
+                  "value": "YOUR_CLIENT_ID",
+                  "description": "OAuth2 app client ID (from admin)"
+                },
+                {
+                  "key": "redirect_uri",
+                  "value": "http://localhost:8888/callback",
+                  "description": "Callback URL (must be registered)"
+                },
+                {
+                  "key": "response_type",
+                  "value": "code",
+                  "description": "Always 'code' for auth code flow"
+                },
+                {
+                  "key": "scope",
+                  "value": "openid profile email",
+                  "description": "Space-separated scopes"
+                },
+                {
+                  "key": "state",
+                  "value": "random_state_123",
+                  "description": "Random state for CSRF protection"
+                },
+                {
+                  "key": "code_challenge",
+                  "value": "YOUR_CODE_CHALLENGE",
+                  "description": "PKCE code challenge (base64url encoded sha256 of verifier)"
+                },
+                {
+                  "key": "code_challenge_method",
+                  "value": "S256",
+                  "description": "PKCE method"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Step 2: User Login & Authorization",
+          "description": "After step 1, you'll see /accounts/login/ form. Login with: testuser / TestPassword123!",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "username",
+                  "value": "testuser",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "TestPassword123!",
+                  "type": "text"
+                },
+                {
+                  "key": "csrfmiddlewaretoken",
+                  "value": "GET_FROM_FORM",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/accounts/login/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["accounts", "login"]
+            }
+          }
+        },
+        {
+          "name": "Step 3: Exchange Code for Token",
+          "description": "After step 2, you get authorization code. Extract it from callback URL and exchange for token.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "authorization_code",
+                  "type": "text"
+                },
+                {
+                  "key": "code",
+                  "value": "YOUR_AUTH_CODE",
+                  "description": "From callback URL: code=..."
+                },
+                {
+                  "key": "client_id",
+                  "value": "YOUR_CLIENT_ID",
+                  "type": "text"
+                },
+                {
+                  "key": "redirect_uri",
+                  "value": "http://localhost:8888/callback",
+                  "type": "text"
+                },
+                {
+                  "key": "code_verifier",
+                  "value": "YOUR_CODE_VERIFIER",
+                  "description": "PKCE code verifier (43-128 char string)"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/o/token/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "token"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Resource Owner Password Grant (API Clients - Postman)",
+      "item": [
+        {
+          "name": "Get Token with Username/Password (DIRECT - NO BROWSER)",
+          "description": "Direct token request using username and password. Perfect for Postman, mobile apps, and API clients.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "testuser",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "TestPassword123!",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "YOUR_CLIENT_ID",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/o/token/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "token"]
+            }
+          },
+          "response": [
+            {
+              "name": "Token Response (Example)",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "grant_type",
+                      "value": "password"
+                    },
+                    {
+                      "key": "username",
+                      "value": "testuser"
+                    },
+                    {
+                      "key": "password",
+                      "value": "TestPassword123!"
+                    },
+                    {
+                      "key": "client_id",
+                      "value": "test_client_id"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "http://localhost:8000/o/token/",
+                  "protocol": "http",
+                  "host": ["localhost"],
+                  "port": "8000",
+                  "path": ["o", "token"]
+                }
+              },
+              "code": 200,
+              "body": "{\n  \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...\",\n  \"token_type\": \"Bearer\",\n  \"expires_in\": 3600,\n  \"refresh_token\": \"abc123xyz...\",\n  \"id_token\": \"eyJhbGciOiJSUzI1NiJ9...\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Use Access Token (API Calls)",
+      "item": [
+        {
+          "name": "Get User Info",
+          "description": "Use access token to get authenticated user's information.",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer YOUR_ACCESS_TOKEN",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/oidc/userinfo/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "oidc", "userinfo"]
+            }
+          }
+        },
+        {
+          "name": "Get User Profile",
+          "description": "Get authenticated user's profile information.",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer YOUR_ACCESS_TOKEN",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/users/profile/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "users", "profile"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "5. Refresh Token",
+      "item": [
+        {
+          "name": "Get New Access Token using Refresh Token",
+          "description": "When access token expires, use refresh token to get a new one.",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "refresh_token",
+                  "type": "text"
+                },
+                {
+                  "key": "refresh_token",
+                  "value": "YOUR_REFRESH_TOKEN",
+                  "type": "text"
+                },
+                {
+                  "key": "client_id",
+                  "value": "YOUR_CLIENT_ID",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/o/token/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "token"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. OIDC Discovery & JWKS",
+      "item": [
+        {
+          "name": "OIDC Discovery Endpoint",
+          "description": "Get OIDC configuration and endpoint information.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/.well-known/openid-configuration/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": [".well-known", "openid-configuration"]
+            }
+          }
+        },
+        {
+          "name": "JWKS Endpoint",
+          "description": "Get JWT signing keys for token validation.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/api/oidc/jwks/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["api", "oidc", "jwks"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "7. Social Login (Google Example)",
+      "item": [
+        {
+          "name": "Initiate Google Login",
+          "description": "Start social login with Google. Opens browser redirect.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8000/social/login/google-oauth2/?next=/o/authorize/?client_id=YOUR_CLIENT_ID",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["social", "login", "google-oauth2"],
+              "query": [
+                {
+                  "key": "next",
+                  "value": "/o/authorize/?client_id=YOUR_CLIENT_ID",
+                  "description": "Optional: redirect after social login"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "8. TESTING - Quick Start",
+      "item": [
+        {
+          "name": "[1] Register App",
+          "description": "Visit http://localhost:8000/admin/oauth2_provider/application/add/ and create app with callback: http://localhost:8888/callback",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8000/o/applications/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "applications"]
+            }
+          }
+        },
+        {
+          "name": "[2] Get Token (Easiest Way - Use This!)",
+          "description": "Copy the 'Get Token with Username/Password' request above and change YOUR_CLIENT_ID. Hit Send!",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password"
+                },
+                {
+                  "key": "username",
+                  "value": "testuser"
+                },
+                {
+                  "key": "password",
+                  "value": "TestPassword123!"
+                },
+                {
+                  "key": "client_id",
+                  "value": "PASTE_YOUR_CLIENT_ID_HERE"
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:8000/o/token/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8000",
+              "path": ["o", "token"]
+            }
+          }
+        },
+        {
+          "name": "[3] Copy Access Token from Response",
+          "description": "From response, copy the 'access_token' value (without quotes)."
+        },
+        {
+          "name": "[4] Use Token in API Calls",
+          "description": "In 'Get User Info' request, replace YOUR_ACCESS_TOKEN with the token from step 3. Hit Send!"
+        }
+      ]
+    }
+  ]
+}
