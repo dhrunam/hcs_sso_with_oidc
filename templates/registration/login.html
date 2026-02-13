@@ -134,6 +134,16 @@
                                     </label>
                                 </div>
                                 
+                                <!-- New User Registration Link -->
+                                <div class="mb-3 text-center">
+                                    <small class="text-muted">
+                                        Don't have an account?
+                                        <a href="/api/users/register-form/" class="back-link fw-bold">
+                                            Create one here
+                                        </a>
+                                    </small>
+                                </div>
+                                
                                 <!-- Hidden next parameter for OAuth2 redirect -->
                                 {% if next %}
                                     <input type="hidden" name="next" value="{{ next }}">
@@ -146,15 +156,15 @@
                             </form>
                             
                             <!-- Divider -->
-                            <div class="text-center my-3 position-relative">
+                            {% comment %} <div class="text-center my-3 position-relative">
                                 <hr>
                                 <span class="bg-white px-3 text-muted position-absolute top-50 start-50 translate-middle">
                                     OR continue with
                                 </span>
-                            </div>
+                            </div> {% endcomment %}
                             
                             <!-- Social Login Options -->
-                            <div class="social-login-options">
+                            {% comment %} <div class="social-login-options">
                                 <a href="/social/login/google-oauth2/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100 mb-2">
                                     <i class="fab fa-google me-2"></i>Google
                                 </a>
@@ -170,7 +180,7 @@
                                 <a href="/social/login/linkedin-oauth2/?next={{ next|default:'' }}" class="btn btn-outline-primary w-100">
                                     <i class="fab fa-linkedin me-2"></i>LinkedIn
                                 </a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                     

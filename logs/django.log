@@ -1778,3 +1778,310 @@ INFO 2026-02-12 11:59:54,200 log 15438 6215954432 "POST /o/token/ HTTP/1.1" 200 
 INFO 2026-02-12 12:00:13,526 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
 INFO 2026-02-12 12:00:14,455 log 15438 6199128064 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
 INFO 2026-02-12 12:00:26,227 log 15438 6215954432 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 12:10:07,043 log 15438 6165475328 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 12:10:08,595 log 15438 6182301696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-12 12:10:42,336 log 15438 6165475328 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:51:16,577 log 15438 6165475328 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:51:16,640 log 15438 6165475328 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 04:51:59,608 log 15438 6165475328 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+ERROR 2026-02-13 04:52:50,927 apps 68116 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 04:52:50,927 apps 68116 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 04:52:50,928 apps 68116 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-13 04:52:51,346 apps 68120 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 04:52:51,346 apps 68120 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 04:52:51,346 apps 68120 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 04:52:51,355 autoreload 68120 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 04:52:56,910 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:54:32,381 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:55:15,989 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:55:59,228 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:57:09,756 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:58:22,684 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:58:36,012 log 68120 6222278656 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=U0VJeXRnUmFMc1Z3WXMzUTRrOUZCNGhQZ0VOeklJWWNnbEt6bTFIVWpQZGJm&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=N56pa8HnF-BEj7qLr6WFgKI4qHx_RKZGJHkSPvssdTk&code_challenge_method=S256&nonce=U0VJeXRnUmFMc1Z3WXMzUTRrOUZCNGhQZ0VOeklJWWNnbEt6bTFIVWpQZGJm HTTP/1.1" 200 3899
+WARNING 2026-02-13 04:58:36,196 log 68120 6222278656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 04:58:36,198 log 68120 6222278656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 04:58:38,289 log 68120 6222278656 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=U0VJeXRnUmFMc1Z3WXMzUTRrOUZCNGhQZ0VOeklJWWNnbEt6bTFIVWpQZGJm&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=N56pa8HnF-BEj7qLr6WFgKI4qHx_RKZGJHkSPvssdTk&code_challenge_method=S256&nonce=U0VJeXRnUmFMc1Z3WXMzUTRrOUZCNGhQZ0VOeklJWWNnbEt6bTFIVWpQZGJm HTTP/1.1" 302 0
+INFO 2026-02-13 04:58:38,584 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:58:38,914 validators 68120 6205452288 Token issued for user 1 via local
+INFO 2026-02-13 04:58:38,948 signals 68120 6205452288 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 04:58:39,019 log 68120 6205452288 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 04:59:21,517 log 68120 6222278656 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=UTRkb3JGUHFocmRfcFZRMFlscHJtUG1HX1JtVEpRVVIuTHhqc0V5c1RVYk1V&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=-8MCwIOkr471hSY6R9FA-cmAjgEdkNzClHJfSUrYtQ0&code_challenge_method=S256&nonce=UTRkb3JGUHFocmRfcFZRMFlscHJtUG1HX1JtVEpRVVIuTHhqc0V5c1RVYk1V HTTP/1.1" 200 3899
+WARNING 2026-02-13 04:59:21,701 log 68120 6222278656 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 04:59:21,702 log 68120 6222278656 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 04:59:23,709 log 68120 6222278656 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=UTRkb3JGUHFocmRfcFZRMFlscHJtUG1HX1JtVEpRVVIuTHhqc0V5c1RVYk1V&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=-8MCwIOkr471hSY6R9FA-cmAjgEdkNzClHJfSUrYtQ0&code_challenge_method=S256&nonce=UTRkb3JGUHFocmRfcFZRMFlscHJtUG1HX1JtVEpRVVIuTHhqc0V5c1RVYk1V HTTP/1.1" 302 0
+INFO 2026-02-13 04:59:24,102 log 68120 6205452288 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:59:24,229 validators 68120 6205452288 Token issued for user 1 via local
+INFO 2026-02-13 04:59:24,241 signals 68120 6205452288 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 04:59:24,304 log 68120 6205452288 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 04:59:53,673 log 68120 6255931392 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 04:59:53,735 log 68120 6255931392 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 05:00:51,023 log 68120 6255931392 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:00:51,059 log 68120 6255931392 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 05:00:53,087 log 68120 6239105024 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=cUlsc0d-LktYei55TnRINHpzU3pmMi1lU3dydlFJMlZBLlpHNG4yU1ZvUnNf&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=1XlqrOT8ATbCLXloKw7HpXoWGAaRMx6ivhZLP84k-l8&code_challenge_method=S256&nonce=cUlsc0d-LktYei55TnRINHpzU3pmMi1lU3dydlFJMlZBLlpHNG4yU1ZvUnNf HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:00:53,341 log 68120 6239105024 Not Found: /favicon.ico
+WARNING 2026-02-13 05:00:53,341 log 68120 6239105024 "GET /favicon.ico HTTP/1.1" 404 4857
+INFO 2026-02-13 05:01:09,328 log 68120 6239105024 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=cUlsc0d-LktYei55TnRINHpzU3pmMi1lU3dydlFJMlZBLlpHNG4yU1ZvUnNf&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=1XlqrOT8ATbCLXloKw7HpXoWGAaRMx6ivhZLP84k-l8&code_challenge_method=S256&nonce=cUlsc0d-LktYei55TnRINHpzU3pmMi1lU3dydlFJMlZBLlpHNG4yU1ZvUnNf HTTP/1.1" 302 0
+INFO 2026-02-13 05:01:09,431 log 68120 6255931392 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:01:09,513 validators 68120 6255931392 Token issued for user 1 via local
+INFO 2026-02-13 05:01:09,521 signals 68120 6255931392 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 05:01:09,572 log 68120 6255931392 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 05:02:20,401 log 68120 6239105024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:02:20,469 log 68120 6239105024 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 05:02:22,535 log 68120 6255931392 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=bVhrc3VmV2xrVW8ycWsxLnNFVXRScUdYYzNDdGYyYjJ5Lm81Vmh3OFdKfi1C&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=wqfxo5i7k2DZlza00fXo-RBgle5mm0OjErxZlWsR3M0&code_challenge_method=S256&nonce=bVhrc3VmV2xrVW8ycWsxLnNFVXRScUdYYzNDdGYyYjJ5Lm81Vmh3OFdKfi1C HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:02:22,707 log 68120 6255931392 Not Found: /favicon.ico
+WARNING 2026-02-13 05:02:22,707 log 68120 6255931392 "GET /favicon.ico HTTP/1.1" 404 4857
+WARNING 2026-02-13 05:08:08,383 log 68120 6204878848 Method Not Allowed (GET): /admin/logout/
+WARNING 2026-02-13 05:08:08,414 log 68120 6204878848 "GET /admin/logout/ HTTP/1.1" 405 0
+INFO 2026-02-13 05:08:14,786 log 68120 6204878848 "GET /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-02-13 05:08:14,807 log 68120 6204878848 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-13 05:08:14,897 log 68120 6204878848 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-13 05:08:14,924 log 68120 6221705216 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,927 log 68120 6238531584 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,928 log 68120 6204878848 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,929 log 68120 6255357952 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,930 log 68120 6272184320 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,931 log 68120 6289010688 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:14,931 log 68120 6255357952 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-13 05:08:26,857 log 68120 6255357952 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=WEw4SjI1eG5TM1BsS3NCZmFnVnVuN01McWQ0LTRrU1BrQUN3R2c4TnZtV1VN&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=JmC1DgxZHmwfozP4kuydkTSOV_vHqctoD2o0YJP0kH8&code_challenge_method=S256&nonce=WEw4SjI1eG5TM1BsS3NCZmFnVnVuN01McWQ0LTRrU1BrQUN3R2c4TnZtV1VN HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:08:27,092 log 68120 6255357952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:08:27,092 log 68120 6255357952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 05:08:28,685 log 68120 6255357952 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=WEw4SjI1eG5TM1BsS3NCZmFnVnVuN01McWQ0LTRrU1BrQUN3R2c4TnZtV1VN&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=JmC1DgxZHmwfozP4kuydkTSOV_vHqctoD2o0YJP0kH8&code_challenge_method=S256&nonce=WEw4SjI1eG5TM1BsS3NCZmFnVnVuN01McWQ0LTRrU1BrQUN3R2c4TnZtV1VN HTTP/1.1" 302 0
+INFO 2026-02-13 05:08:29,045 log 68120 6305837056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:08:39,983 log 68120 6305837056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:08:42,215 log 68120 6255357952 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=bnNXMFBHSXRtUVpqZVdIQjd5UlF3cHptYlJVWnl0YjZwZnNCY29kXzAtYmFx&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=NhupWkwrNLIdY5ji3YDmOgQ8qz4nQ-kNDZzZZh0qZZQ&code_challenge_method=S256&nonce=bnNXMFBHSXRtUVpqZVdIQjd5UlF3cHptYlJVWnl0YjZwZnNCY29kXzAtYmFx HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:08:42,341 log 68120 6255357952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:08:42,341 log 68120 6255357952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 05:08:43,913 log 68120 6255357952 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=bnNXMFBHSXRtUVpqZVdIQjd5UlF3cHptYlJVWnl0YjZwZnNCY29kXzAtYmFx&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=NhupWkwrNLIdY5ji3YDmOgQ8qz4nQ-kNDZzZZh0qZZQ&code_challenge_method=S256&nonce=bnNXMFBHSXRtUVpqZVdIQjd5UlF3cHptYlJVWnl0YjZwZnNCY29kXzAtYmFx HTTP/1.1" 302 0
+INFO 2026-02-13 05:08:44,256 log 68120 6305837056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:08:44,428 validators 68120 6305837056 Token issued for user 1 via local
+INFO 2026-02-13 05:08:44,435 signals 68120 6305837056 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 05:08:44,477 log 68120 6305837056 "POST /o/token/ HTTP/1.1" 200 1312
+WARNING 2026-02-13 05:09:02,236 log 68120 6255357952 Method Not Allowed (GET): /accounts/logout/
+WARNING 2026-02-13 05:09:02,252 log 68120 6255357952 "GET /accounts/logout/ HTTP/1.1" 405 0
+INFO 2026-02-13 05:09:10,298 log 68120 6255357952 "GET / HTTP/1.1" 200 5452
+INFO 2026-02-13 05:09:12,920 log 68120 6255357952 "GET /login/ HTTP/1.1" 302 0
+INFO 2026-02-13 05:09:12,968 log 68120 6255357952 "GET /accounts/login/ HTTP/1.1" 200 9199
+INFO 2026-02-13 05:10:57,216 log 68120 6255357952 "GET /accounts/login/ HTTP/1.1" 200 7618
+INFO 2026-02-13 05:11:05,894 log 68120 6255357952 "GET /accounts/login/ HTTP/1.1" 200 7618
+INFO 2026-02-13 05:11:14,870 log 68120 6255357952 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=dURENDgxRjEyeGFRRlRWbFJTY1ZCWWJhT0I0elpZSlBGYzVuSzZ2UGlrZHhY&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=yQrrLU6S-B8wUy-vBspVtG2RS7P8hYVqwqh_-CUOpV0&code_challenge_method=S256&nonce=dURENDgxRjEyeGFRRlRWbFJTY1ZCWWJhT0I0elpZSlBGYzVuSzZ2UGlrZHhY HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:11:15,006 log 68120 6255357952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:11:15,007 log 68120 6255357952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 05:11:17,162 log 68120 6255357952 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=dURENDgxRjEyeGFRRlRWbFJTY1ZCWWJhT0I0elpZSlBGYzVuSzZ2UGlrZHhY&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=yQrrLU6S-B8wUy-vBspVtG2RS7P8hYVqwqh_-CUOpV0&code_challenge_method=S256&nonce=dURENDgxRjEyeGFRRlRWbFJTY1ZCWWJhT0I0elpZSlBGYzVuSzZ2UGlrZHhY HTTP/1.1" 302 0
+INFO 2026-02-13 05:11:17,425 log 68120 6305837056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:11:17,604 validators 68120 6305837056 Token issued for user 1 via local
+INFO 2026-02-13 05:11:17,610 signals 68120 6305837056 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 05:11:17,655 log 68120 6305837056 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 05:16:08,879 log 68120 6255357952 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=i5_amgoJl-S6CqgnMGWOGGA1DzQpXiXQsD2RFNV5518&code_challenge_method=S256&nonce=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3 HTTP/1.1" 302 0
+INFO 2026-02-13 05:16:08,922 log 68120 6255357952 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DLkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Di5_amgoJl-S6CqgnMGWOGGA1DzQpXiXQsD2RFNV5518%26code_challenge_method%3DS256%26nonce%3DLkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3 HTTP/1.1" 200 8135
+WARNING 2026-02-13 05:16:09,165 log 68120 6255357952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:16:09,166 log 68120 6255357952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 05:16:20,061 log 68120 6255357952 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DLkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Di5_amgoJl-S6CqgnMGWOGGA1DzQpXiXQsD2RFNV5518%26code_challenge_method%3DS256%26nonce%3DLkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3 HTTP/1.1" 302 0
+INFO 2026-02-13 05:16:20,117 log 68120 6255357952 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=i5_amgoJl-S6CqgnMGWOGGA1DzQpXiXQsD2RFNV5518&code_challenge_method=S256&nonce=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3 HTTP/1.1" 200 3899
+WARNING 2026-02-13 05:16:20,191 log 68120 6255357952 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:16:20,191 log 68120 6255357952 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 05:16:21,882 log 68120 6255357952 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=i5_amgoJl-S6CqgnMGWOGGA1DzQpXiXQsD2RFNV5518&code_challenge_method=S256&nonce=LkFOdWxfNFo3UlhrRE5hbS4yU3F1blFPbUoydWpEd1VwdEJPVHkzMWk3clE3 HTTP/1.1" 302 0
+INFO 2026-02-13 05:16:22,229 log 68120 6221705216 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:16:22,357 validators 68120 6221705216 Token issued for user 1 via local
+INFO 2026-02-13 05:16:22,364 signals 68120 6221705216 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 05:16:22,407 log 68120 6221705216 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 05:23:20,398 autoreload 68120 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-02-13 05:23:21,323 apps 92779 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:21,323 apps 92779 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:21,323 apps 92779 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:21,332 autoreload 92779 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:23:24,703 autoreload 92779 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-02-13 05:23:25,197 apps 92844 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:25,197 apps 92844 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:25,197 apps 92844 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:25,202 autoreload 92844 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:23:28,554 autoreload 92844 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-13 05:23:29,054 apps 92908 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:29,054 apps 92908 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:29,054 apps 92908 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:29,059 autoreload 92908 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:23:32,502 autoreload 92908 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-13 05:23:33,009 apps 92969 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:33,009 apps 92969 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:33,009 apps 92969 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:33,015 autoreload 92969 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:23:41,606 autoreload 92969 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-02-13 05:23:42,153 apps 93095 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:42,154 apps 93095 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:42,154 apps 93095 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:42,159 autoreload 93095 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:23:44,440 autoreload 93095 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-13 05:23:44,912 apps 93163 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:23:44,912 apps 93163 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:23:44,912 apps 93163 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:23:44,917 autoreload 93163 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 05:25:44,227 log 93163 6132625408 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 05:25:44,414 log 93163 6132625408 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 05:25:46,523 log 93163 6149451776 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=b2tKSHQ1Y2xrSGRjdlVtZklmZE9mLkpmWWw5bEpydkEtN253c19USFp2amNy&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=1aMhxuAqiL7nscrxSfAde1vvoTfA1Jmq-hqwiGqFR7Y&code_challenge_method=S256&nonce=b2tKSHQ1Y2xrSGRjdlVtZklmZE9mLkpmWWw5bEpydkEtN253c19USFp2amNy HTTP/1.1" 302 0
+INFO 2026-02-13 05:25:46,585 log 93163 6149451776 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3Db2tKSHQ1Y2xrSGRjdlVtZklmZE9mLkpmWWw5bEpydkEtN253c19USFp2amNy%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D1aMhxuAqiL7nscrxSfAde1vvoTfA1Jmq-hqwiGqFR7Y%26code_challenge_method%3DS256%26nonce%3Db2tKSHQ1Y2xrSGRjdlVtZklmZE9mLkpmWWw5bEpydkEtN253c19USFp2amNy HTTP/1.1" 200 8711
+WARNING 2026-02-13 05:25:50,982 log 93163 6149451776 Not Found: /accounts/register/
+WARNING 2026-02-13 05:25:50,983 log 93163 6149451776 "GET /accounts/register/ HTTP/1.1" 404 6995
+WARNING 2026-02-13 05:27:12,165 log 93163 6149451776 Not Found: /accounts/register
+WARNING 2026-02-13 05:27:12,167 log 93163 6149451776 "GET /accounts/register HTTP/1.1" 404 6992
+WARNING 2026-02-13 05:39:28,810 log 93163 6132625408 Not Found: /accounts/register-form/
+WARNING 2026-02-13 05:39:28,812 log 93163 6132625408 "GET /accounts/register-form/ HTTP/1.1" 404 7015
+WARNING 2026-02-13 05:39:40,911 log 93163 6132625408 Not Found: /accounts/register-form
+WARNING 2026-02-13 05:39:40,911 log 93163 6132625408 "GET /accounts/register-form HTTP/1.1" 404 7012
+INFO 2026-02-13 05:39:51,457 autoreload 93163 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/urls.py changed, reloading.
+ERROR 2026-02-13 05:39:52,350 apps 6654 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:39:52,350 apps 6654 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:39:52,350 apps 6654 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:39:52,359 autoreload 6654 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-13 05:42:05,863 log 6654 6192885760 Not Found: /api/users/register-form
+WARNING 2026-02-13 05:42:05,864 log 6654 6192885760 "GET /api/users/register-form HTTP/1.1" 404 15553
+INFO 2026-02-13 05:42:15,059 log 6654 6192885760 "GET /api/users/register-form/ HTTP/1.1" 200 18947
+WARNING 2026-02-13 05:44:58,378 log 6654 6192885760 Bad Request: /api/users/register/
+WARNING 2026-02-13 05:44:58,378 log 6654 6192885760 "POST /api/users/register/ HTTP/1.1" 400 130
+WARNING 2026-02-13 05:45:18,885 log 6654 6192885760 Bad Request: /api/users/register/
+WARNING 2026-02-13 05:45:18,885 log 6654 6192885760 "POST /api/users/register/ HTTP/1.1" 400 50
+WARNING 2026-02-13 05:45:30,078 log 6654 6192885760 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 05:45:30,079 log 6654 6192885760 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+WARNING 2026-02-13 05:47:09,315 log 6654 6192885760 Bad Request: /api/users/register/
+WARNING 2026-02-13 05:47:09,316 log 6654 6192885760 "POST /api/users/register/ HTTP/1.1" 400 50
+WARNING 2026-02-13 05:51:12,607 log 6654 6192885760 Bad Request: /api/users/register/
+WARNING 2026-02-13 05:51:12,608 log 6654 6192885760 "POST /api/users/register/ HTTP/1.1" 400 50
+ERROR 2026-02-13 05:51:44,798 apps 16322 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:51:44,799 apps 16322 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:51:44,799 apps 16322 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-13 05:51:45,215 apps 16351 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 05:51:45,215 apps 16351 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 05:51:45,215 apps 16351 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 05:51:45,220 autoreload 16351 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-13 05:51:50,976 log 16351 6160756736 Bad Request: /api/users/register/
+WARNING 2026-02-13 05:51:50,976 log 16351 6160756736 "POST /api/users/register/ HTTP/1.1" 400 50
+WARNING 2026-02-13 06:04:29,977 log 16351 6160756736 Bad Request: /api/users/register/
+WARNING 2026-02-13 06:04:29,978 log 16351 6160756736 "POST /api/users/register/ HTTP/1.1" 400 50
+ERROR 2026-02-13 06:04:58,533 apps 27150 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:04:58,533 apps 27150 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:04:58,533 apps 27150 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-13 06:04:58,999 apps 27151 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:04:58,999 apps 27151 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:04:58,999 apps 27151 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 06:04:59,005 autoreload 27151 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-13 06:07:05,674 log 27151 6124892160 Bad Request: /api/users/register/
+WARNING 2026-02-13 06:07:05,674 log 27151 6124892160 "POST /api/users/register/ HTTP/1.1" 400 50
+ERROR 2026-02-13 06:15:05,933 apps 35396 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:15:05,933 apps 35396 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:15:05,933 apps 35396 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-13 06:15:06,349 apps 35425 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:15:06,350 apps 35425 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:15:06,350 apps 35425 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 06:15:06,355 autoreload 35425 8318492864 Watching for file changes with StatReloader
+WARNING 2026-02-13 06:15:18,130 log 35425 6156546048 Bad Request: /api/users/register/
+WARNING 2026-02-13 06:15:18,130 log 35425 6156546048 "POST /api/users/register/ HTTP/1.1" 400 50
+ERROR 2026-02-13 06:18:50,452 apps 38507 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:18:50,452 apps 38507 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:18:50,452 apps 38507 8318492864 ✅ Social authentication app initialized successfully
+ERROR 2026-02-13 06:18:50,922 apps 38536 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:18:50,922 apps 38536 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:18:50,922 apps 38536 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 06:18:50,927 autoreload 38536 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 06:18:56,618 log 38536 6195163136 "POST /api/users/register/ HTTP/1.1" 201 879
+INFO 2026-02-13 06:18:58,714 log 38536 6195163136 "GET /accounts/login/ HTTP/1.1" 200 8200
+WARNING 2026-02-13 06:18:58,845 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:18:58,845 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:19:49,826 log 38536 6195163136 "POST /accounts/login/ HTTP/1.1" 200 8737
+WARNING 2026-02-13 06:19:49,947 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:19:49,948 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:20:07,405 log 38536 6195163136 "POST /accounts/login/ HTTP/1.1" 200 8737
+WARNING 2026-02-13 06:20:07,499 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:20:07,501 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:20:41,100 log 38536 6195163136 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-02-13 06:20:41,144 log 38536 6195163136 "GET / HTTP/1.1" 200 5452
+WARNING 2026-02-13 06:20:41,275 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:20:41,275 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:21:27,029 log 38536 6195163136 "GET /admin/ HTTP/1.1" 200 15025
+INFO 2026-02-13 06:21:27,070 log 38536 6262468608 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-13 06:21:27,073 log 38536 6245642240 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-13 06:21:27,074 log 38536 6228815872 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-13 06:21:27,075 log 38536 6262468608 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-13 06:21:27,082 log 38536 6279294976 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-13 06:21:27,085 log 38536 6211989504 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-13 06:21:27,089 log 38536 6279294976 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-13 06:21:27,099 log 38536 6279294976 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-13 06:21:27,102 log 38536 6211989504 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+WARNING 2026-02-13 06:21:27,115 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:27,116 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:21:29,235 log 38536 6195163136 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-02-13 06:21:29,281 log 38536 6195163136 "GET / HTTP/1.1" 200 5452
+WARNING 2026-02-13 06:21:29,364 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:29,365 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:21:33,364 log 38536 6195163136 "GET /login/ HTTP/1.1" 302 0
+INFO 2026-02-13 06:21:33,409 log 38536 6195163136 "GET /accounts/login/ HTTP/1.1" 200 8200
+WARNING 2026-02-13 06:21:33,472 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:33,473 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:21:49,073 log 38536 6195163136 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-02-13 06:21:49,094 log 38536 6195163136 "GET / HTTP/1.1" 200 5452
+WARNING 2026-02-13 06:21:49,156 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:49,156 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:21:51,388 log 38536 6195163136 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-13 06:21:51,486 log 38536 6195163136 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3602
+INFO 2026-02-13 06:21:51,515 log 38536 6211989504 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+WARNING 2026-02-13 06:21:51,549 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:51,550 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+WARNING 2026-02-13 06:21:54,686 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:54,687 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+WARNING 2026-02-13 06:21:54,715 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:21:54,716 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:22:13,201 log 38536 6296121344 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:22:15,443 log 38536 6195163136 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=b1hXdWdVM2xrZF9IdHV3cDF6d3VBTFIwUGtxeWk5QldJNn4tTng2OTJDOXBq&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=IfuYkQ3CgZxBsW28nZZq8gSqjC7hbdFViWQ8F1e9Ovo&code_challenge_method=S256&nonce=b1hXdWdVM2xrZF9IdHV3cDF6d3VBTFIwUGtxeWk5QldJNn4tTng2OTJDOXBq HTTP/1.1" 200 3899
+WARNING 2026-02-13 06:22:15,492 log 38536 6195163136 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:22:15,492 log 38536 6195163136 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:22:20,909 log 38536 6195163136 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=b1hXdWdVM2xrZF9IdHV3cDF6d3VBTFIwUGtxeWk5QldJNn4tTng2OTJDOXBq&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=IfuYkQ3CgZxBsW28nZZq8gSqjC7hbdFViWQ8F1e9Ovo&code_challenge_method=S256&nonce=b1hXdWdVM2xrZF9IdHV3cDF6d3VBTFIwUGtxeWk5QldJNn4tTng2OTJDOXBq HTTP/1.1" 302 0
+INFO 2026-02-13 06:22:21,149 log 38536 6296121344 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:22:21,444 validators 38536 6296121344 Token issued for user 8 via local
+INFO 2026-02-13 06:22:21,452 signals 38536 6296121344 Access token created for user 8 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 06:22:21,494 log 38536 6296121344 "POST /o/token/ HTTP/1.1" 200 1387
+WARNING 2026-02-13 06:22:51,137 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:22:51,139 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:23:30,887 log 38536 6329774080 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:23:30,996 log 38536 6329774080 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-13 06:24:20,399 log 38536 6312947712 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=zUcnNqX6Tj4Pqlj2rXzaPTPkPRSws65j_sBy_3J7h20&code_challenge_method=S256&nonce=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN HTTP/1.1" 302 0
+INFO 2026-02-13 06:24:20,438 log 38536 6312947712 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DaTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DzUcnNqX6Tj4Pqlj2rXzaPTPkPRSws65j_sBy_3J7h20%26code_challenge_method%3DS256%26nonce%3DaTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN HTTP/1.1" 200 8717
+WARNING 2026-02-13 06:24:20,566 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:24:20,566 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:24:40,886 log 38536 6312947712 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DaTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DzUcnNqX6Tj4Pqlj2rXzaPTPkPRSws65j_sBy_3J7h20%26code_challenge_method%3DS256%26nonce%3DaTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN HTTP/1.1" 302 0
+INFO 2026-02-13 06:24:40,937 log 38536 6312947712 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=zUcnNqX6Tj4Pqlj2rXzaPTPkPRSws65j_sBy_3J7h20&code_challenge_method=S256&nonce=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN HTTP/1.1" 200 3899
+WARNING 2026-02-13 06:24:41,043 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:24:41,043 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:24:45,636 log 38536 6312947712 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=zUcnNqX6Tj4Pqlj2rXzaPTPkPRSws65j_sBy_3J7h20&code_challenge_method=S256&nonce=aTBrYnNwcldWUjY2MWtnQ0ZGSEZLRGJEQldZLUJRRVlPOFJ0Z1pQTmoucnJN HTTP/1.1" 302 0
+INFO 2026-02-13 06:24:45,954 log 38536 6329774080 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:24:46,217 validators 38536 6329774080 Token issued for user 8 via local
+INFO 2026-02-13 06:24:46,224 signals 38536 6329774080 Access token created for user 8 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 06:24:46,270 log 38536 6329774080 "POST /o/token/ HTTP/1.1" 200 1387
+INFO 2026-02-13 06:25:45,800 log 38536 6329774080 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:25:52,403 log 38536 6312947712 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=62t62IpM_07hFgGL1q7w9ewCGkG635xNoGtLy0cahWk&code_challenge_method=S256&nonce=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR HTTP/1.1" 302 0
+INFO 2026-02-13 06:25:52,442 log 38536 6312947712 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DVXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D62t62IpM_07hFgGL1q7w9ewCGkG635xNoGtLy0cahWk%26code_challenge_method%3DS256%26nonce%3DVXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR HTTP/1.1" 200 8717
+WARNING 2026-02-13 06:25:52,650 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:25:52,650 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:26:01,354 log 38536 6312947712 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DVXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D62t62IpM_07hFgGL1q7w9ewCGkG635xNoGtLy0cahWk%26code_challenge_method%3DS256%26nonce%3DVXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR HTTP/1.1" 302 0
+INFO 2026-02-13 06:26:01,403 log 38536 6312947712 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=62t62IpM_07hFgGL1q7w9ewCGkG635xNoGtLy0cahWk&code_challenge_method=S256&nonce=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR HTTP/1.1" 200 3899
+WARNING 2026-02-13 06:26:01,531 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:26:01,531 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:26:02,844 log 38536 6312947712 "POST /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=62t62IpM_07hFgGL1q7w9ewCGkG635xNoGtLy0cahWk&code_challenge_method=S256&nonce=VXk5VGZyWE53RkpWMGp1bWMwcm4ya24yd0FmX1NLUFo1VnYwMFRqVnpLV1JR HTTP/1.1" 302 0
+INFO 2026-02-13 06:26:03,099 log 38536 6329774080 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:26:03,244 validators 38536 6329774080 Token issued for user 1 via local
+INFO 2026-02-13 06:26:03,336 signals 38536 6329774080 Access token created for user 1 via client 5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0
+INFO 2026-02-13 06:26:03,390 log 38536 6329774080 "POST /o/token/ HTTP/1.1" 200 1312
+INFO 2026-02-13 06:28:13,543 log 38536 6312947712 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=TDdDTVU0Qjd5YWRUR0c0VGF6OFVKNkw1fjU1ak00THQtWVFrMU04Sm55ZkMt&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=CT6mpNhHWU6xWCHRaDuf1Dhx78SH7vLc0N_VN_o9v0Q&code_challenge_method=S256&nonce=TDdDTVU0Qjd5YWRUR0c0VGF6OFVKNkw1fjU1ak00THQtWVFrMU04Sm55ZkMt HTTP/1.1" 302 0
+INFO 2026-02-13 06:28:13,574 log 38536 6312947712 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DTDdDTVU0Qjd5YWRUR0c0VGF6OFVKNkw1fjU1ak00THQtWVFrMU04Sm55ZkMt%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DCT6mpNhHWU6xWCHRaDuf1Dhx78SH7vLc0N_VN_o9v0Q%26code_challenge_method%3DS256%26nonce%3DTDdDTVU0Qjd5YWRUR0c0VGF6OFVKNkw1fjU1ak00THQtWVFrMU04Sm55ZkMt HTTP/1.1" 200 8717
+WARNING 2026-02-13 06:28:13,679 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:28:13,679 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:28:20,999 log 38536 6312947712 "GET /api/users/register-form/ HTTP/1.1" 200 18947
+WARNING 2026-02-13 06:28:21,127 log 38536 6312947712 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:28:21,128 log 38536 6312947712 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005
+INFO 2026-02-13 06:29:14,341 autoreload 38536 8318492864 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-02-13 06:29:15,121 apps 47090 8318492864 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-13 06:29:15,121 apps 47090 8318492864 Enabled providers: Google, Facebook
+INFO 2026-02-13 06:29:15,121 apps 47090 8318492864 ✅ Social authentication app initialized successfully
+INFO 2026-02-13 06:29:15,129 autoreload 47090 8318492864 Watching for file changes with StatReloader
+INFO 2026-02-13 06:34:32,286 log 47090 6203879424 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:34:45,078 log 47090 6203879424 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 762
+INFO 2026-02-13 06:35:27,398 log 47090 6220705792 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=dkNheDdTZVZBUlI4YmpMbENnanNMSnZpV2g2OUNsanNHcHVUR2t2dXdZQzhp&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=o5wqjf9WYLXyFv7_nbVCqoquOl0-qeZZ9074IKxX0TQ&code_challenge_method=S256&nonce=dkNheDdTZVZBUlI4YmpMbENnanNMSnZpV2g2OUNsanNHcHVUR2t2dXdZQzhp HTTP/1.1" 302 0
+INFO 2026-02-13 06:35:27,481 log 47090 6220705792 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DdkNheDdTZVZBUlI4YmpMbENnanNMSnZpV2g2OUNsanNHcHVUR2t2dXdZQzhp%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Do5wqjf9WYLXyFv7_nbVCqoquOl0-qeZZ9074IKxX0TQ%26code_challenge_method%3DS256%26nonce%3DdkNheDdTZVZBUlI4YmpMbENnanNMSnZpV2g2OUNsanNHcHVUR2t2dXdZQzhp HTTP/1.1" 200 8717
+WARNING 2026-02-13 06:35:27,673 log 47090 6220705792 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-13 06:35:27,674 log 47090 6220705792 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5005

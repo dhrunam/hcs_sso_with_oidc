@@ -9,6 +9,7 @@ from typing import Dict, Any, Optional
 from django.conf import settings
 from django.contrib.auth import logout, get_user_model
 from django.shortcuts import get_object_or_404
+from django.views.generic import TemplateView
 from django.db.models import Q
 from django.utils import timezone
 from rest_framework import viewsets, generics, status, permissions, filters
@@ -757,3 +758,19 @@ def health_check(request):
             {'status': 'unhealthy', 'error': str(e)},
             status=status.HTTP_503_SERVICE_UNAVAILABLE
         )
+
+
+class UserRegistrationFormView(TemplateView):
+    """
+    Template-based user registration page
+    
+    GET /accounts/register/ - Display registration form
+    Uses JavaScript to submit to /api/users/register/ REST API
+    """
+    template_name = 'registration/register.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['api_register_url'] = '/api/users/register/'
+        context['login_url'] = '/accounts/login/'
+        return context

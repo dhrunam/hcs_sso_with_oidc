@@ -330,7 +330,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
         profile_data = validated_data.pop('profile', {})
         validated_data.pop('password2', None)
         
-        # Create user
+        # Create user (signal handler will auto-create UserProfile)
         user = User.objects.create_user(
             username=validated_data['username'],
             email=validated_data['email'],
@@ -340,14 +340,13 @@ class UserCreateSerializer(serializers.ModelSerializer):
             is_active=True  # Auto-activate, or make configurable
         )
         
-        # Create or update profile
+        # Update profile with additional data if provided
+        # (signal handler already created the UserProfile instance)
         if profile_data:
-            UserProfile.objects.create(
-                user=user,
-                **profile_data
-            )
-        else:
-            UserProfile.objects.create(user=user)
+            profile = user.userprofile
+            for key, value in profile_data.items():
+                setattr(profile, key, value)
+            profile.save()
         
         # Assign default group if configured
         default_group = getattr(settings, 'DEFAULT_USER_GROUP', None)

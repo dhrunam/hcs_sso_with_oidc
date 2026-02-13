@@ -6,6 +6,7 @@ app_name = 'users'
 from rest_framework.routers import DefaultRouter
 from .views import (
     UserRegistrationView,
+    UserRegistrationFormView,
     UserProfileView,
     PasswordChangeView,
     PasswordResetRequestView,
@@ -32,7 +33,8 @@ urlpatterns = [
     path('logout/', UserLogoutView.as_view(), name='user-logout'),
     
     # Registration & Profile
-    path('register/', UserRegistrationView.as_view(), name='user-register'),
+    path('register-form/', UserRegistrationFormView.as_view(), name='user-register-form'),  # Template-based form
+    path('register/', UserRegistrationView.as_view(), name='user-register'),  # REST API endpoint
     path('profile/', UserProfileView.as_view(), name='user-profile'),
     
     # Password management
