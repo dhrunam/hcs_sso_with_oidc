@@ -1,3 +1,5 @@
+
+# apps/api/authentication_introspection.py
 """
 OIDC/OAuth2 Token Introspection Authentication for DRF.
 
@@ -179,11 +181,15 @@ class OIDCTokenIntrospectionAuthentication(authentication.BaseAuthentication):
         
         # Map claims to Django User
         user = self._get_or_create_user(claims)
-        
+
+        # Sync user group membership from token claims
+        from apps.api.permissions_mapping import map_token_claims_to_groups
+        map_token_claims_to_groups(user, claims)
+
         # Optionally store claims in request for use in views/permissions
         request.token_claims = claims
         request.token_scopes = claims.get('scope', '').split()
-        
+
         return (user, token)
     
     def _get_or_create_user(self, claims):

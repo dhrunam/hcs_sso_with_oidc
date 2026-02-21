@@ -247,14 +247,19 @@ OAUTH2_PROVIDER = {
     'PKCE_REQUIRED': True,
     
     # Scopes
+    # SCOPES define what the token can access. Audience is set below for multi-app tokens.
     'SCOPES': {
         'openid': 'OpenID Connect',
         'profile': 'User profile',
         'email': 'Email address',
-        'read': 'Read access',
-        'write': 'Write access',
+        'read': 'Read access (all APIs)',
+        'write': 'Write access (all APIs)',
+        'api.read': 'Read access to APIs',
+        'api.write': 'Write access to APIs',
         'offline_access': 'Offline access',
     },
+    # Set a generic audience for all issued tokens (so one token works for all APIs)
+    'OIDC_AUDIENCE': ['all-apps', 'api', 'default'],
     
     # Claims
     'OIDC_CLAIMS_ENABLED': True,
@@ -272,7 +277,9 @@ OAUTH2_PROVIDER = {
 # REST Framework
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
+
         'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        # 'apps.api.authentication_introspection.OIDCTokenIntrospectionAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (

@@ -13,6 +13,20 @@
             <a class="navbar-brand" href="/">
                 <i class="fas fa-user-shield me-2"></i>Organization SSO
             </a>
+            <div class="d-flex ms-auto">
+                {% if not user.is_authenticated %}
+                <a href="/login/" class="btn btn-light me-2">
+                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                </a>
+                {% else %}
+                <form method="post" action="/accounts/logout/" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-light me-2">
+                        <i class="fas fa-sign-out-alt me-2"></i>Logout
+                    </button>
+                </form>
+                {% endif %}
+            </div>
         </div>
     </nav>
 
@@ -22,7 +36,7 @@
                 <div class="card">
                     <div class="card-header bg-primary text-white">
                         <h4 class="mb-0">
-                            <i class="fas fa-home me-2"></i>Welcome to High Court of Sikkim Singe Sign-On Service
+                            <i class="fas fa-home me-2"></i>Welcome to High Court of Sikkim Single Sign-On Service
                         </h4>
                     </div>
                     <div class="card-body">
@@ -62,32 +76,15 @@
                             </div>
                         </div>
                         
-                        <div class="mt-4">
-                            <a href="/login/" class="btn btn-primary me-2">
-                                <i class="fas fa-sign-in-alt me-2"></i>Login
-                            </a>
-                            <a href="/admin/" class="btn btn-outline-primary me-2">
-                                <i class="fas fa-cog me-2"></i>Admin
-                            </a>
-                            <a href="/api/health/" class="btn btn-outline-secondary">
-                                <i class="fas fa-heartbeat me-2"></i>Health Check
-                            </a>
-                        </div>
-                        
-                        <hr class="my-4">
-                        
-                        <h6>Quick Links:</h6>
-                        <div class="list-group">
-                            <a href="/.well-known/openid-configuration/" class="list-group-item list-group-item-action">
-                                <i class="fas fa-file-code me-2"></i>OIDC Discovery Document
-                            </a>
-                            <a href="/api/oidc/jwks/" class="list-group-item list-group-item-action">
-                                <i class="fas fa-key me-2"></i>JWKS (Public Keys)
-                            </a>
-                            <a href="/o/applications/" class="list-group-item list-group-item-action">
-                                <i class="fas fa-list me-2"></i>OAuth Applications
-                            </a>
-                        </div>
+                      
+                        {% if user.is_authenticated and user.is_staff %}
+                        <a href="/admin/" class="btn btn-outline-primary me-2">
+                            <i class="fas fa-cog me-2"></i>Admin
+                        </a>
+                        {% endif %}
+                        <a href="/api/health/" class="btn btn-outline-secondary">
+                            <i class="fas fa-heartbeat me-2"></i>Health Check
+                        </a>
                     </div>
                 </div>
             </div>

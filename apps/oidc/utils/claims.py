@@ -271,6 +271,8 @@ def get_userinfo_claims(user, scopes, request=None):
         locale_claims = get_locale_claims(profile)
         if 'zoneinfo' in locale_claims:
             claims['zoneinfo'] = locale_claims['zoneinfo']
+    # if 'group' in scopes_set:
+    claims['groups'] = list(user.groups.values_list('name', flat=True))
     
     return claims
 

@@ -14,7 +14,7 @@ from ..serializers import (
     SessionSerializer
 )
 from ..throttles import IntrospectionThrottle
-from ..permissions import IsOAuth2Authenticated, IsClientAuthenticated
+from ..permissions_refactored import IsClientAuthenticated
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +23,8 @@ class OIDCUserInfoView(APIView):
     
     def get_permissions(self):
         """Use OAuth2 token authentication"""
-        return [IsOAuth2Authenticated()]
+        # Use DRF's default authentication for userinfo endpoint, or remove if not needed
+        return []
     
     def get(self, request):
         """GET method for UserInfo"""
@@ -36,25 +37,24 @@ class OIDCUserInfoView(APIView):
     def _get_user_info(self, request):
         """Extract and return user info based on token scope"""
         from apps.oidc.validators import CustomOAuth2Validator
-        
         try:
-            # Get scopes from token
-            scopes = request.access_token.scope.split()
-            
-            # Create a mock request for the validator
+            # Try to get the access token from request.auth (DRF standard)
+            access_token = getattr(request, 'access_token', None)
+            if access_token is None:
+                access_token = getattr(request, 'auth', None)
+            if access_token is None:
+                raise Exception('No access token found on request')
+            scopes = access_token.scope.split()
+
             class MockRequest:
                 def __init__(self, user, scopes):
                     self.user = user
                     self.scopes = scopes
-            
+
             mock_request = MockRequest(request.user, scopes)
             validator = CustomOAuth2Validator()
-            
-            # Get claims based on scope
             claims = validator.get_userinfo_claims(mock_request)
-            
             return Response(claims)
-            
         except Exception as e:
             logger.error(f"UserInfo endpoint error: {e}")
             return Response(
