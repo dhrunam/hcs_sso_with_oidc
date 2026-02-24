@@ -47,7 +47,7 @@ urlpatterns = [
     # DEPRECATED: /login/ choice page has been merged into /accounts/login/
     # The organization login form now includes social auth buttons
     # Kept for backwards compatibility - redirects to new location
-    path('login/', lambda request: redirect('organization_login', permanent=False), name='login'),
+    # path('login/', lambda request: redirect('organization_login', permanent=False), name='login'),
     
     # OIDC Discovery (served directly)
     path('.well-known/openid-configuration', WellKnownConfigurationView.as_view(), name='oidc-well-known'),

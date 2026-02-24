@@ -49,6 +49,12 @@ def handle_user_creation(sender, instance: User, created: bool, **kwargs):
                     }
                 )
                 
+                # Always assign API_READERS group if not already present
+                api_readers_group, _ = Group.objects.get_or_create(name='API_READERS')
+                if api_readers_group not in instance.groups.all():
+                    instance.groups.add(api_readers_group)
+                    logger.info(f"Assigned 'API_READERS' group to new user {instance.id}")
+                
                 # Assign default groups
                 default_groups = getattr(settings, 'DEFAULT_USER_GROUPS', [])
                 if default_groups:

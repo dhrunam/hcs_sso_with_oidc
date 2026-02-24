@@ -38,6 +38,7 @@ from apps.social.views import get_available_providers
 logger = logging.getLogger(__name__)
 User = get_user_model()
 
+from oauth2_provider.models import RefreshToken, AccessToken
 
 class StandardResultsSetPagination(PageNumberPagination):
     """Standard pagination for user lists"""
@@ -278,24 +279,26 @@ class PasswordResetConfirmView(generics.GenericAPIView):
 
 class UserLogoutView(APIView):
     """
-    Logout user and invalidate token
-    
+    Logout user and invalidate all tokens (access and refresh)
     POST /api/users/logout/
     """
     permission_classes = [IsAuthenticated]
     
     def post(self, request):
+        print("I am called during logout...")
         try:
             user = request.user
-            
-            # Invalidate token if using token auth
-            if hasattr(request, 'auth') and isinstance(request.auth, Token):
-                request.auth.delete()
-                logger.info(f"Token invalidated for user: {user.username}")
-            
+
+            # Invalidate all access and refresh tokens for this user
+            access_tokens = AccessToken.objects.filter(user=user)
+            refresh_tokens = RefreshToken.objects.filter(user=user)
+            access_tokens.delete()
+            refresh_tokens.delete()
+            logger.info(f"All tokens invalidated for user: {user.username}")
+
             # Logout from Django session
             logout(request)
-            
+
             # Create audit event
             SocialLoginEvent.objects.create(
                 user=user,
@@ -306,14 +309,14 @@ class UserLogoutView(APIView):
                 ip_address=request.META.get('REMOTE_ADDR', ''),
                 extra_data={'action': 'logout'}
             )
-            
+
             logger.info(f"User logged out: {user.username}")
-            
+
             return Response({
-                'message': 'Logged out successfully',
+                'message': 'Logged out successfully (all sessions)',
                 'logout_time': timezone.now().isoformat()
             })
-            
+
         except Exception as e:
             logger.error(f"Logout failed for user {request.user.id}: {e}")
             return Response(
