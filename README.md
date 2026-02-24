@@ -27,6 +27,53 @@ pip install -r requirements.txt
 
 2. Set environment variables (example):
 
+Create .env file in root of the project folder(Here HCS_SSO_WITH_OIDC) with following values
+
+# .env file
+DEBUG=True
+# Generate a secure secret key for production using: python -c "import secrets; print(secrets.token_urlsafe())"
+# python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+
+SECRET_KEY="miv2t_l&gzy)omi)gqkc=88mwdvny^&77zj!6^fz51uuw#wsm%"
+
+# DATABASE_URL=sqlite:///db.sqlite3
+
+POSTGRES_DB=hcs_sso_oidc_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=Darkhorse@7428
+POSTGRES_HOST=72.60.218.27
+POSTGRES_PORT=5432
+
+OIDC_CLIENT_ID=your-oidc-client-id
+OIDC_CLIENT_SECRET=your-oidc-client-secret
+OIDC_URL = 'https://sso.diseso.com'  # Example
+
+
+
+# OAuth Toolkit
+OAUTH2_PROVIDER_APPLICATION_MODEL=oauth2_provider.Application
+OAUTH2_PROVIDER_ACCESS_TOKEN_MODEL=oauth2_provider.AccessToken
+
+# Allauth
+SITE_ID=1
+ACCOUNT_EMAIL_VERIFICATION=optional
+ACCOUNT_AUTHENTICATION_METHOD=email
+
+# Social Providers (Add your credentials)
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+FACEBOOK_CLIENT_ID=your-facebook-app-id
+FACEBOOK_CLIENT_SECRET=your-facebook-app-secret
+MICROSOFT_CLIENT_ID=your-microsoft-client-id
+MICROSOFT_CLIENT_SECRET=your-microsoft-client-secret
+
+SECURE_SSL_REDIRECT=False
+SESSION_COOKIE_SECURE=False
+CSRF_COOKIE_SECURE=False
+
+
+
+
 ```bash
 export DEBUG=True
 export SECRET_KEY="$(python -c 'from django.core.management.utils import get_random_secret_key; print(_ )')"
