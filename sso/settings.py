@@ -91,7 +91,7 @@ if DEBUG:
             'USER': 'postgres',
             'PASSWORD':  'postgres',
             'HOST':  'localhost',
-            'PORT':  '5435', 
+            'PORT':  '5434', 
         }      
         
     }
@@ -103,7 +103,7 @@ else:
             'USER': os.getenv('POSTGRES_USER', 'postgres'),
             'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'postgres'),
             'HOST': os.getenv('POSTGRES_HOST', 'localhost'),
-            'PORT': os.getenv('POSTGRES_PORT', '5432'),
+            'PORT': os.getenv('POSTGRES_PORT', '5434'),
         }
     }   
 

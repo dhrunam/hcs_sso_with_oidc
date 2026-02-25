@@ -75,7 +75,19 @@ class TokenIntrospectionView(APIView):
     
     def post(self, request):
         """Introspect token and return status"""
-        serializer = IntrospectionRequestSerializer(data=request.data)
+        # Allow client authentication via HTTP Basic (attached to request.client_app)
+        # If Basic auth was used, the serializer still requires `client_id`/`client_secret`.
+        # Populate them from the authenticated client when missing.
+        try:
+            data = request.data.copy()
+        except Exception:
+            data = dict(request.data)
+
+        if not data.get('client_id') and hasattr(request, 'client_app') and request.client_app:
+            data['client_id'] = request.client_app.client_id
+            data['client_secret'] = request.client_app.client_secret
+
+        serializer = IntrospectionRequestSerializer(data=data)
         
         if not serializer.is_valid():
             return Response(

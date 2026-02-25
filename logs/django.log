@@ -5437,3 +5437,381 @@ WARNING 2026-02-24 06:11:38,028 log 33539 6123696128 "GET /.well-known/appspecif
 INFO 2026-02-24 06:37:26,857 log 33539 6123122688 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
 INFO 2026-02-24 06:37:54,679 log 33539 6139949056 "GET /o/authorize/?response_type=code&client_id=5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0&state=REhROXdhRmtUaDA5VWtTeVVzeWUucFB3MURlVnlVbFp0NVVMMjNpLnNTNWds&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=87ttch-DdSB6K6PZVhJJv3LmUTJ_qab8j2R7I3FN4CM&code_challenge_method=S256&nonce=REhROXdhRmtUaDA5VWtTeVVzeWUucFB3MURlVnlVbFp0NVVMMjNpLnNTNWds HTTP/1.1" 302 0
 INFO 2026-02-24 06:37:54,706 log 33539 6139949056 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D5kWtcsPK1TeThWvN7gktrTfOsoiVdaY9OMqXEIV0%26state%3DREhROXdhRmtUaDA5VWtTeVVzeWUucFB3MURlVnlVbFp0NVVMMjNpLnNTNWds%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D87ttch-DdSB6K6PZVhJJv3LmUTJ_qab8j2R7I3FN4CM%26code_challenge_method%3DS256%26nonce%3DREhROXdhRmtUaDA5VWtTeVVzeWUucFB3MURlVnlVbFp0NVVMMjNpLnNTNWds HTTP/1.1" 200 8717
+ERROR 2026-02-25 05:37:20,402 apps 37576 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 05:37:20,403 apps 37576 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 05:37:20,403 apps 37576 140704523291136 ✅ Social authentication app initialized successfully
+ERROR 2026-02-25 05:37:21,317 apps 37589 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 05:37:21,318 apps 37589 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 05:37:21,318 apps 37589 140704523291136 ✅ Social authentication app initialized successfully
+INFO 2026-02-25 05:37:21,330 autoreload 37589 140704523291136 Watching for file changes with StatReloader
+WARNING 2026-02-25 05:42:30,348 log 37589 123145456812032 Not Found: /admin
+WARNING 2026-02-25 05:42:30,349 log 37589 123145456812032 "GET /admin HTTP/1.1" 404 4669
+WARNING 2026-02-25 05:42:30,674 log 37589 123145456812032 Not Found: /favicon.ico
+WARNING 2026-02-25 05:42:30,675 log 37589 123145456812032 "GET /favicon.ico HTTP/1.1" 404 4693
+INFO 2026-02-25 05:42:40,696 log 37589 123145456812032 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-25 05:42:40,897 log 37589 123145456812032 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4080
+INFO 2026-02-25 05:42:41,003 log 37589 123145490391040 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-25 05:42:41,007 log 37589 123145507180544 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2026-02-25 05:42:41,014 log 37589 123145473601536 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 3538
+INFO 2026-02-25 05:42:41,021 log 37589 123145523970048 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16273
+INFO 2026-02-25 05:42:41,023 log 37589 123145540759552 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2026-02-25 05:42:41,039 log 37589 123145540759552 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-25 05:42:41,044 log 37589 123145456812032 "GET /static/admin/css/base.css HTTP/1.1" 200 23100
+INFO 2026-02-25 05:42:50,610 log 37589 123145456812032 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-25 05:42:50,952 log 37589 123145456812032 "GET /admin/ HTTP/1.1" 200 13389
+INFO 2026-02-25 05:42:51,050 log 37589 123145540759552 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 593
+INFO 2026-02-25 05:42:51,051 log 37589 123145523970048 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 978
+INFO 2026-02-25 05:42:51,052 log 37589 123145456812032 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-25 05:42:53,548 log 37589 123145456812032 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 24672
+INFO 2026-02-25 05:42:53,616 log 37589 123145456812032 "GET /static/admin/css/forms.css HTTP/1.1" 200 8817
+INFO 2026-02-25 05:42:53,643 log 37589 123145473601536 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2026-02-25 05:42:53,647 log 37589 123145507180544 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2026-02-25 05:42:53,661 log 37589 123145490391040 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2026-02-25 05:42:53,670 log 37589 123145456812032 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2026-02-25 05:42:53,681 log 37589 123145507180544 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2026-02-25 05:42:53,685 log 37589 123145473601536 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11811
+INFO 2026-02-25 05:42:53,687 log 37589 123145490391040 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2026-02-25 05:42:53,692 log 37589 123145507180544 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2026-02-25 05:42:53,878 log 37589 123145456812032 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2026-02-25 05:42:53,920 log 37589 123145540759552 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2026-02-25 05:42:53,929 log 37589 123145540759552 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2026-02-25 05:42:53,997 log 37589 123145523970048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:42:54,041 log 37589 123145523970048 "GET /static/admin/img/search.svg HTTP/1.1" 200 607
+INFO 2026-02-25 05:44:42,054 log 37589 123145523970048 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 200 25158
+INFO 2026-02-25 05:44:42,427 log 37589 123145523970048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:45:30,657 log 37589 123145523970048 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 200 25061
+INFO 2026-02-25 05:45:30,755 log 37589 123145540759552 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,764 log 37589 123145456812032 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,767 log 37589 123145540759552 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,783 log 37589 123145490391040 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,795 log 37589 123145490391040 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,791 log 37589 123145540759552 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,800 log 37589 123145490391040 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,802 log 37589 123145473601536 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,802 log 37589 123145456812032 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,812 log 37589 123145540759552 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,791 log 37589 123145507180544 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,817 log 37589 123145490391040 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,820 log 37589 123145473601536 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,821 log 37589 123145456812032 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,830 log 37589 123145507180544 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,840 log 37589 123145540759552 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,848 log 37589 123145540759552 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,856 log 37589 123145540759552 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,964 log 37589 123145523970048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:45:30,997 log 37589 123145540759552 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:45:30,997 log 37589 123145523970048 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:46:19,398 log 37589 123145540759552 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-02-25 05:46:19,726 log 37589 123145540759552 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 17964
+INFO 2026-02-25 05:46:19,806 log 37589 123145540759552 "GET /static/admin/css/changelists.css HTTP/1.1" 200 7498
+INFO 2026-02-25 05:46:19,820 log 37589 123145540759552 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2026-02-25 05:46:20,023 log 37589 123145523970048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:46:20,060 log 37589 123145540759552 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 593
+INFO 2026-02-25 05:46:20,060 log 37589 123145523970048 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 558
+INFO 2026-02-25 05:46:20,061 log 37589 123145507180544 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 928
+INFO 2026-02-25 05:46:59,343 log 37589 123145540759552 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25112
+INFO 2026-02-25 05:46:59,612 log 37589 123145540759552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:46:59,682 log 37589 123145540759552 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 569
+INFO 2026-02-25 05:48:24,686 log 37589 123145540759552 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 24672
+INFO 2026-02-25 05:48:24,746 log 37589 123145456812032 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,757 log 37589 123145473601536 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,764 log 37589 123145507180544 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,765 log 37589 123145490391040 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,766 log 37589 123145523970048 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,769 log 37589 123145456812032 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,773 log 37589 123145473601536 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,775 log 37589 123145507180544 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,777 log 37589 123145490391040 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,778 log 37589 123145456812032 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,781 log 37589 123145523970048 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,786 log 37589 123145507180544 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,786 log 37589 123145473601536 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,788 log 37589 123145456812032 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,790 log 37589 123145490391040 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,870 log 37589 123145490391040 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,875 log 37589 123145490391040 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:24,881 log 37589 123145490391040 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:25,108 log 37589 123145540759552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:48:25,149 log 37589 123145490391040 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:48:25,152 log 37589 123145540759552 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:41,210 log 37589 123145540759552 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-02-25 05:50:41,337 log 37589 123145540759552 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 18452
+INFO 2026-02-25 05:50:41,452 log 37589 123145490391040 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:41,478 log 37589 123145490391040 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:41,788 log 37589 123145540759552 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 05:50:41,831 log 37589 123145540759552 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:41,839 log 37589 123145456812032 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:41,840 log 37589 123145490391040 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-25 05:50:59,963 log 37589 123145557549056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 05:51:00,161 log 37589 123145557549056 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-25 05:51:04,136 log 37589 123145490391040 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=aWdJUXNFdi1sQm5UfnlKVHVqLkRWX0JpekJwTVpSUzBHWUthc0RkYktrUENw&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=hN-SNUuVEYwhquGPBuPgsfAF4nenDGerr3i_11sj9bc&code_challenge_method=S256&nonce=aWdJUXNFdi1sQm5UfnlKVHVqLkRWX0JpekJwTVpSUzBHWUthc0RkYktrUENw HTTP/1.1" 302 0
+INFO 2026-02-25 05:51:04,503 log 37589 123145557549056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 05:51:04,754 validators 37589 123145557549056 Token issued for user 1 via local
+INFO 2026-02-25 05:51:04,843 signals 37589 123145557549056 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 05:51:04,936 log 37589 123145557549056 "POST /o/token/ HTTP/1.1" 200 1455
+INFO 2026-02-25 05:51:10,838 log 37589 123145557549056 "OPTIONS /api/users/logout/ HTTP/1.1" 200 0
+ERROR 2026-02-25 05:51:11,043 signals 37589 123145490391040 Failed to handle login alert: argument of type 'NoneType' is not iterable
+INFO 2026-02-25 05:51:11,112 log 37589 123145490391040 "POST /api/users/logout/ HTTP/1.1" 200 101
+INFO 2026-02-25 05:51:47,056 log 37589 123145490391040 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=Lm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=oUwoLbz45COlsITkUQa7qflJMWMSh8F-5j3mXlaTvik&code_challenge_method=S256&nonce=Lm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy HTTP/1.1" 302 0
+INFO 2026-02-25 05:51:47,258 log 37589 123145490391040 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DLm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DoUwoLbz45COlsITkUQa7qflJMWMSh8F-5j3mXlaTvik%26code_challenge_method%3DS256%26nonce%3DLm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy HTTP/1.1" 200 8717
+WARNING 2026-02-25 05:51:47,890 log 37589 123145490391040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-25 05:51:47,891 log 37589 123145490391040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4841
+INFO 2026-02-25 05:52:06,786 log 37589 123145490391040 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DLm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DoUwoLbz45COlsITkUQa7qflJMWMSh8F-5j3mXlaTvik%26code_challenge_method%3DS256%26nonce%3DLm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy HTTP/1.1" 302 0
+INFO 2026-02-25 05:52:06,887 log 37589 123145490391040 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=Lm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=oUwoLbz45COlsITkUQa7qflJMWMSh8F-5j3mXlaTvik&code_challenge_method=S256&nonce=Lm8xWk5PcWN5S1RVcE1LdkVnWWpfNFgzMDBjNFhVc21HaG1pcmN5MFFjVHdy HTTP/1.1" 302 0
+INFO 2026-02-25 05:52:08,310 log 37589 123145557549056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 05:52:08,641 validators 37589 123145557549056 Token issued for user 1 via local
+INFO 2026-02-25 05:52:08,682 signals 37589 123145557549056 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 05:52:08,995 log 37589 123145557549056 "POST /o/token/ HTTP/1.1" 200 1455
+INFO 2026-02-25 05:56:42,187 log 37589 123145557549056 "OPTIONS /o/.well-known/openid-configuration HTTP/1.1" 200 0
+INFO 2026-02-25 05:56:43,607 log 37589 123145557549056 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 05:56:43,685 log 37589 123145557549056 "OPTIONS /o/.well-known/jwks.json HTTP/1.1" 200 0
+INFO 2026-02-25 05:56:43,893 log 37589 123145557549056 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-25 05:56:44,240 log 37589 123145557549056 "OPTIONS /api/cms/notifications/?page=1&search_text= HTTP/1.1" 200 0
+INFO 2026-02-25 05:56:44,258 log 37589 123145456812032 "OPTIONS /api/cms/events HTTP/1.1" 200 0
+INFO 2026-02-25 05:56:44,379 log 37589 123145473601536 "OPTIONS /api/cms/important-links HTTP/1.1" 200 0
+INFO 2026-02-25 05:56:44,467 log 37589 123145507180544 "OPTIONS /api/cms/holiday-lists?page=&year=2026 HTTP/1.1" 200 0
+WARNING 2026-02-25 05:56:44,952 log 37589 123145557549056 Not Found: /api/cms/notifications/
+WARNING 2026-02-25 05:56:44,953 log 37589 123145456812032 Not Found: /api/cms/events
+WARNING 2026-02-25 05:56:44,954 log 37589 123145456812032 "GET /api/cms/events HTTP/1.1" 404 6987
+WARNING 2026-02-25 05:56:44,957 log 37589 123145557549056 "GET /api/cms/notifications/?page=1&search_text= HTTP/1.1" 404 7042
+WARNING 2026-02-25 05:56:45,198 log 37589 123145507180544 Not Found: /api/cms/holiday-lists
+WARNING 2026-02-25 05:56:45,198 log 37589 123145507180544 "GET /api/cms/holiday-lists?page=&year=2026 HTTP/1.1" 404 7035
+WARNING 2026-02-25 05:56:45,210 log 37589 123145473601536 Not Found: /api/cms/important-links
+WARNING 2026-02-25 05:56:45,211 log 37589 123145473601536 "GET /api/cms/important-links HTTP/1.1" 404 7023
+INFO 2026-02-25 05:56:52,831 log 37589 123145507180544 "OPTIONS /api/cms/notifications-category HTTP/1.1" 200 0
+WARNING 2026-02-25 05:56:53,041 log 37589 123145507180544 Not Found: /api/cms/notifications-category
+WARNING 2026-02-25 05:56:53,041 log 37589 123145507180544 "GET /api/cms/notifications-category HTTP/1.1" 404 7051
+WARNING 2026-02-25 05:56:53,055 log 37589 123145473601536 Not Found: /api/cms/notifications/
+WARNING 2026-02-25 05:56:53,058 log 37589 123145473601536 "GET /api/cms/notifications/?page=1&search_text= HTTP/1.1" 404 7042
+WARNING 2026-02-25 05:57:31,668 log 37589 123145490391040 Not Found: /api/cms/notifications/
+WARNING 2026-02-25 05:57:31,669 log 37589 123145490391040 "GET /api/cms/notifications/?page=1&search_tex HTTP/1.1" 404 7040
+INFO 2026-02-25 05:58:14,223 log 37589 123145473601536 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-02-25 05:58:14,992 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:14,993 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:15,398 log 37589 123145591128064 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:15,399 log 37589 123145591128064 "POST /o/introspect/ HTTP/1.1" 403 0
+INFO 2026-02-25 05:58:21,721 log 37589 123145473601536 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-02-25 05:58:22,255 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:22,255 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:22,813 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:22,814 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:30,342 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:30,346 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:30,526 log 37589 123145607917568 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:30,527 log 37589 123145607917568 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:30,640 log 37589 123145624707072 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:30,641 log 37589 123145624707072 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:30,720 log 37589 123145591128064 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:30,721 log 37589 123145591128064 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:34,452 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:34,453 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:58:34,455 log 37589 123145524506624 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:58:34,456 log 37589 123145524506624 "POST /o/introspect/ HTTP/1.1" 403 0
+INFO 2026-02-25 05:58:49,822 log 37589 123145490391040 "POST /api/users/logout/ HTTP/1.1" 200 101
+INFO 2026-02-25 05:58:51,457 log 37589 123145490391040 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=RVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=qONI0saBHtBacc_3-Fau7mWM81htIn9qIptHgj3Iyz8&code_challenge_method=S256&nonce=RVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi HTTP/1.1" 302 0
+INFO 2026-02-25 05:58:51,583 log 37589 123145490391040 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DRVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DqONI0saBHtBacc_3-Fau7mWM81htIn9qIptHgj3Iyz8%26code_challenge_method%3DS256%26nonce%3DRVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi HTTP/1.1" 200 8717
+WARNING 2026-02-25 05:58:52,268 log 37589 123145490391040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-25 05:58:52,269 log 37589 123145490391040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4841
+INFO 2026-02-25 05:59:10,126 log 37589 123145490391040 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DRVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DqONI0saBHtBacc_3-Fau7mWM81htIn9qIptHgj3Iyz8%26code_challenge_method%3DS256%26nonce%3DRVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi HTTP/1.1" 302 0
+INFO 2026-02-25 05:59:10,264 log 37589 123145490391040 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=RVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=qONI0saBHtBacc_3-Fau7mWM81htIn9qIptHgj3Iyz8&code_challenge_method=S256&nonce=RVRkenl0WElUcFBVVHNIVmZfTzFKRjRfcDRxbkQuQ0xNeFhGRzBCeHREUXZi HTTP/1.1" 302 0
+INFO 2026-02-25 05:59:11,844 log 37589 123145473601536 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 05:59:12,066 log 37589 123145473601536 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-02-25 05:59:12,498 validators 37589 123145473601536 Token issued for user 1 via local
+INFO 2026-02-25 05:59:12,548 signals 37589 123145473601536 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 05:59:12,685 log 37589 123145473601536 "POST /o/token/ HTTP/1.1" 200 1455
+WARNING 2026-02-25 05:59:13,704 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:13,706 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:59:14,706 log 37589 123145591128064 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:14,707 log 37589 123145591128064 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:59:14,710 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:14,711 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:59:14,829 log 37589 123145607917568 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:14,830 log 37589 123145607917568 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:59:27,061 log 37589 123145591128064 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:27,062 log 37589 123145591128064 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 05:59:27,073 log 37589 123145574338560 Forbidden: /o/introspect/
+WARNING 2026-02-25 05:59:27,076 log 37589 123145574338560 "POST /o/introspect/ HTTP/1.1" 403 0
+INFO 2026-02-25 06:04:06,480 log 37589 123145490391040 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 18217
+INFO 2026-02-25 06:04:06,549 log 37589 123145456275456 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,552 log 37589 123145456275456 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,564 log 37589 123145456275456 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,568 log 37589 123145507180544 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,582 log 37589 123145524506624 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,585 log 37589 123145456275456 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,587 log 37589 123145541296128 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,600 log 37589 123145558085632 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,601 log 37589 123145524506624 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,609 log 37589 123145507180544 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,613 log 37589 123145541296128 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,613 log 37589 123145456275456 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,616 log 37589 123145558085632 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,619 log 37589 123145524506624 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,700 log 37589 123145524506624 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,708 log 37589 123145524506624 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,714 log 37589 123145524506624 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:06,986 log 37589 123145490391040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:04:07,028 log 37589 123145490391040 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:07,043 log 37589 123145558085632 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:07,043 log 37589 123145524506624 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:09,321 log 37589 123145558085632 "GET /admin/oauth2_provider/application/2/change/ HTTP/1.1" 200 25103
+INFO 2026-02-25 06:04:09,472 log 37589 123145524506624 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:09,477 log 37589 123145490391040 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:09,480 log 37589 123145524506624 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:09,493 log 37589 123145524506624 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:09,573 log 37589 123145558085632 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:04:09,631 log 37589 123145558085632 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:54,566 log 37589 123145558085632 "POST /admin/oauth2_provider/application/2/change/ HTTP/1.1" 302 0
+INFO 2026-02-25 06:04:54,701 log 37589 123145558085632 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 18454
+INFO 2026-02-25 06:04:55,034 log 37589 123145558085632 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:04:55,148 log 37589 123145558085632 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:04:58,805 log 37589 123145558085632 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 25112
+INFO 2026-02-25 06:04:59,075 log 37589 123145558085632 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:05:51,945 log 37589 123145558085632 "POST /api/users/logout/ HTTP/1.1" 200 101
+INFO 2026-02-25 06:06:07,130 log 37589 123145558085632 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=UHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=8jQYhAFRl-qHDf1K2Du10-OO-TgN2b43ij4Iy-aBEqo&code_challenge_method=S256&nonce=UHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB HTTP/1.1" 302 0
+INFO 2026-02-25 06:06:07,325 log 37589 123145558085632 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DUHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D8jQYhAFRl-qHDf1K2Du10-OO-TgN2b43ij4Iy-aBEqo%26code_challenge_method%3DS256%26nonce%3DUHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB HTTP/1.1" 200 8717
+WARNING 2026-02-25 06:06:08,168 log 37589 123145558085632 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-25 06:06:08,169 log 37589 123145558085632 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4841
+INFO 2026-02-25 06:06:26,663 log 37589 123145558085632 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DUHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D8jQYhAFRl-qHDf1K2Du10-OO-TgN2b43ij4Iy-aBEqo%26code_challenge_method%3DS256%26nonce%3DUHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB HTTP/1.1" 302 0
+INFO 2026-02-25 06:06:26,848 log 37589 123145558085632 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=UHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=8jQYhAFRl-qHDf1K2Du10-OO-TgN2b43ij4Iy-aBEqo&code_challenge_method=S256&nonce=UHNzejRMODVBbjVqSnRzR1ZrSWtRdElNMGVCRTB-d0ZUcU1uNFBKTDh2WDVB HTTP/1.1" 302 0
+INFO 2026-02-25 06:06:28,879 log 37589 123145473064960 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 06:06:29,337 validators 37589 123145473064960 Token issued for user 1 via local
+INFO 2026-02-25 06:06:29,391 signals 37589 123145473064960 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 06:06:29,692 log 37589 123145473064960 "POST /o/token/ HTTP/1.1" 200 1455
+WARNING 2026-02-25 06:06:30,564 log 37589 123145574875136 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:06:30,565 log 37589 123145574875136 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 06:06:30,916 log 37589 123145574875136 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:06:30,917 log 37589 123145574875136 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 06:06:32,322 log 37589 123145591664640 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:06:32,324 log 37589 123145591664640 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 06:06:32,370 log 37589 123145608454144 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:06:32,372 log 37589 123145608454144 "POST /o/introspect/ HTTP/1.1" 403 0
+INFO 2026-02-25 06:10:58,989 log 37589 123145456275456 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 18217
+INFO 2026-02-25 06:10:59,148 log 37589 123145489854464 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,153 log 37589 123145489854464 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,156 log 37589 123145489854464 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,178 log 37589 123145489854464 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,182 log 37589 123145473064960 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,188 log 37589 123145506643968 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,206 log 37589 123145524506624 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,212 log 37589 123145541296128 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,246 log 37589 123145506643968 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,253 log 37589 123145506643968 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,262 log 37589 123145473064960 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,270 log 37589 123145541296128 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,291 log 37589 123145524506624 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,292 log 37589 123145473064960 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,310 log 37589 123145489854464 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,322 log 37589 123145489854464 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,331 log 37589 123145489854464 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,576 log 37589 123145456275456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:10:59,648 log 37589 123145473064960 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,652 log 37589 123145489854464 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:10:59,655 log 37589 123145456275456 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-02-25 06:11:07,691 log 37589 123145456275456 "GET /admin/oauth2_provider/application/2/change/ HTTP/1.1" 200 25126
+INFO 2026-02-25 06:11:07,798 log 37589 123145473064960 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:11:07,815 log 37589 123145473064960 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:11:07,821 log 37589 123145489854464 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-02-25 06:11:07,838 log 37589 123145489854464 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-02-25 06:11:07,944 log 37589 123145456275456 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-02-25 06:11:07,988 log 37589 123145456275456 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 304 0
+WARNING 2026-02-25 06:12:56,519 log 37589 123145574875136 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:12:56,520 log 37589 123145574875136 "POST /o/introspect/ HTTP/1.1" 403 0
+WARNING 2026-02-25 06:12:56,561 log 37589 123145558085632 Forbidden: /o/introspect/
+WARNING 2026-02-25 06:12:56,562 log 37589 123145558085632 "POST /o/introspect/ HTTP/1.1" 403 0
+INFO 2026-02-25 06:15:08,224 autoreload 37589 140704523291136 /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-25 06:15:10,587 apps 50974 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 06:15:10,588 apps 50974 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 06:15:10,588 apps 50974 140704523291136 ✅ Social authentication app initialized successfully
+INFO 2026-02-25 06:15:10,612 autoreload 50974 140704523291136 Watching for file changes with StatReloader
+INFO 2026-02-25 06:18:32,374 autoreload 50974 140704523291136 /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/sso/settings.py changed, reloading.
+ERROR 2026-02-25 06:18:34,652 apps 52143 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 06:18:34,652 apps 52143 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 06:18:34,652 apps 52143 140704523291136 ✅ Social authentication app initialized successfully
+INFO 2026-02-25 06:18:34,678 autoreload 52143 140704523291136 Watching for file changes with StatReloader
+INFO 2026-02-25 06:20:13,536 signals 53094 140704523291136 Access token created for user 1 via client test_client_id
+INFO 2026-02-25 06:20:13,584 permissions_refactored 53094 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:20:14,855 signals 53094 140704523291136 Access token created for user 2 via client test_client_id
+INFO 2026-02-25 06:20:14,862 permissions_refactored 53094 140704523291136 Client test_client_id authenticated from 127.0.0.1
+WARNING 2026-02-25 06:20:14,874 log 53094 140704523291136 Bad Request: /api/oidc/introspect/
+INFO 2026-02-25 06:20:16,114 signals 53094 140704523291136 Access token created for user 3 via client test_client_id
+WARNING 2026-02-25 06:20:16,119 permissions_refactored 53094 140704523291136 Unknown client_id bad from 127.0.0.1
+WARNING 2026-02-25 06:20:16,126 log 53094 140704523291136 Unauthorized: /api/oidc/introspect/
+INFO 2026-02-25 06:23:53,039 signals 54957 140704523291136 Access token created for user 1 via client test_client_id
+INFO 2026-02-25 06:23:53,079 permissions_refactored 54957 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:23:54,600 signals 54957 140704523291136 Access token created for user 2 via client test_client_id
+INFO 2026-02-25 06:23:54,605 permissions_refactored 54957 140704523291136 Client test_client_id authenticated from 127.0.0.1
+WARNING 2026-02-25 06:23:54,620 log 54957 140704523291136 Bad Request: /api/oidc/introspect/
+INFO 2026-02-25 06:23:55,894 signals 54957 140704523291136 Access token created for user 3 via client test_client_id
+WARNING 2026-02-25 06:23:55,899 permissions_refactored 54957 140704523291136 Unknown client_id bad from 127.0.0.1
+WARNING 2026-02-25 06:23:55,916 log 54957 140704523291136 Unauthorized: /api/oidc/introspect/
+INFO 2026-02-25 06:24:48,179 autoreload 52143 140704523291136 /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/apps/oidc/views/token.py changed, reloading.
+ERROR 2026-02-25 06:24:50,930 apps 55356 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 06:24:50,931 apps 55356 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 06:24:50,931 apps 55356 140704523291136 ✅ Social authentication app initialized successfully
+INFO 2026-02-25 06:24:50,956 autoreload 55356 140704523291136 Watching for file changes with StatReloader
+INFO 2026-02-25 06:26:19,935 autoreload 55356 140704523291136 /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/apps/oidc/views/token.py changed, reloading.
+ERROR 2026-02-25 06:26:22,347 apps 55848 140704523291136 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-02-25 06:26:22,347 apps 55848 140704523291136 Enabled providers: Google, Facebook
+INFO 2026-02-25 06:26:22,347 apps 55848 140704523291136 ✅ Social authentication app initialized successfully
+INFO 2026-02-25 06:26:22,384 autoreload 55848 140704523291136 Watching for file changes with StatReloader
+INFO 2026-02-25 06:26:29,280 signals 56004 140704523291136 Access token created for user 1 via client test_client_id
+INFO 2026-02-25 06:26:29,368 permissions_refactored 56004 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:26:30,752 signals 56004 140704523291136 Access token created for user 2 via client test_client_id
+INFO 2026-02-25 06:26:30,757 permissions_refactored 56004 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:26:32,153 signals 56004 140704523291136 Access token created for user 3 via client test_client_id
+WARNING 2026-02-25 06:26:32,161 permissions_refactored 56004 140704523291136 Unknown client_id bad from 127.0.0.1
+WARNING 2026-02-25 06:26:32,178 log 56004 140704523291136 Unauthorized: /api/oidc/introspect/
+INFO 2026-02-25 06:28:11,348 signals 56746 140704523291136 Access token created for user 1 via client test_client_id
+INFO 2026-02-25 06:28:11,383 permissions_refactored 56746 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:28:12,967 signals 56746 140704523291136 Access token created for user 2 via client test_client_id
+INFO 2026-02-25 06:28:12,972 permissions_refactored 56746 140704523291136 Client test_client_id authenticated from 127.0.0.1
+INFO 2026-02-25 06:28:14,306 signals 56746 140704523291136 Access token created for user 3 via client test_client_id
+WARNING 2026-02-25 06:28:14,310 permissions_refactored 56746 140704523291136 Unknown client_id bad from 127.0.0.1
+WARNING 2026-02-25 06:28:14,343 log 56746 140704523291136 Unauthorized: /api/oidc/introspect/
+INFO 2026-02-25 06:29:18,523 log 55848 123145536315392 "POST /api/users/logout/ HTTP/1.1" 200 101
+INFO 2026-02-25 06:29:20,575 log 55848 123145536315392 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=emNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=GujVYWgZMfnv3DXwl4dnQMFxHELRyPQxLtoha0CU5gc&code_challenge_method=S256&nonce=emNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB HTTP/1.1" 302 0
+INFO 2026-02-25 06:29:20,786 log 55848 123145536315392 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DemNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DGujVYWgZMfnv3DXwl4dnQMFxHELRyPQxLtoha0CU5gc%26code_challenge_method%3DS256%26nonce%3DemNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB HTTP/1.1" 200 8717
+WARNING 2026-02-25 06:29:22,070 log 55848 123145536315392 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-25 06:29:22,099 log 55848 123145536315392 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4841
+INFO 2026-02-25 06:29:22,100 basehttp 55848 123145536315392 - Broken pipe from ('127.0.0.1', 52270)
+INFO 2026-02-25 06:29:38,880 log 55848 123145553104896 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DemNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DGujVYWgZMfnv3DXwl4dnQMFxHELRyPQxLtoha0CU5gc%26code_challenge_method%3DS256%26nonce%3DemNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB HTTP/1.1" 302 0
+INFO 2026-02-25 06:29:39,134 log 55848 123145553104896 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=emNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=GujVYWgZMfnv3DXwl4dnQMFxHELRyPQxLtoha0CU5gc&code_challenge_method=S256&nonce=emNGbFpOX2sweFB5d055fmVsZU40ZnZsU1plcnFzZGU1Z3RZTVprQmFPdkRB HTTP/1.1" 302 0
+INFO 2026-02-25 06:29:40,975 log 55848 123145569894400 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 06:29:41,866 validators 55848 123145569894400 Token issued for user 1 via local
+INFO 2026-02-25 06:29:41,938 signals 55848 123145569894400 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 06:29:42,269 log 55848 123145569894400 "POST /o/token/ HTTP/1.1" 200 1455
+INFO 2026-02-25 06:29:42,961 log 55848 123145586683904 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:44,788 log 55848 123145603473408 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:29:44,929 log 55848 123145620262912 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:45,105 log 55848 123145637052416 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:45,114 log 55848 123145653841920 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:45,417 log 55848 123145670631424 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:29:45,506 log 55848 123145687420928 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:29:45,512 log 55848 123145704210432 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:29:53,308 log 55848 123145620262912 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:53,355 log 55848 123145653841920 "POST /o/introspect/ HTTP/1.1" 200 174
+INFO 2026-02-25 06:29:53,395 log 55848 123145670631424 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:29:53,429 log 55848 123145704210432 "GET /api/oidc/userinfo/ HTTP/1.1" 200 179
+INFO 2026-02-25 06:32:11,210 log 55848 123145553104896 "POST /api/users/logout/ HTTP/1.1" 200 101
+INFO 2026-02-25 06:32:13,416 log 55848 123145553104896 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=Lm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=phMnQv_mLFEarSr1yNEAlrVGTUium90SKdFgOrXxS9Q&code_challenge_method=S256&nonce=Lm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh HTTP/1.1" 302 0
+INFO 2026-02-25 06:32:13,540 log 55848 123145553104896 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DLm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DphMnQv_mLFEarSr1yNEAlrVGTUium90SKdFgOrXxS9Q%26code_challenge_method%3DS256%26nonce%3DLm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh HTTP/1.1" 200 8717
+WARNING 2026-02-25 06:32:14,385 log 55848 123145553104896 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-02-25 06:32:14,385 log 55848 123145553104896 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4841
+INFO 2026-02-25 06:32:26,758 log 55848 123145553104896 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F%26state%3DLm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DphMnQv_mLFEarSr1yNEAlrVGTUium90SKdFgOrXxS9Q%26code_challenge_method%3DS256%26nonce%3DLm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh HTTP/1.1" 302 0
+INFO 2026-02-25 06:32:26,964 log 55848 123145553104896 "GET /o/authorize/?response_type=code&client_id=ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F&state=Lm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh&redirect_uri=http%3A%2F%2Flocalhost%3A4200&scope=openid%20profile%20email&code_challenge=phMnQv_mLFEarSr1yNEAlrVGTUium90SKdFgOrXxS9Q&code_challenge_method=S256&nonce=Lm15QURWUXp5NGMtMW5HVzBvR0NDckVIeHY0V1NLSkd3R2R0a2s1NXVYUTFh HTTP/1.1" 302 0
+INFO 2026-02-25 06:32:28,249 log 55848 123145569894400 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-02-25 06:32:28,821 validators 55848 123145569894400 Token issued for user 1 via local
+INFO 2026-02-25 06:32:28,834 signals 55848 123145569894400 Access token created for user 1 via client ASKBWu3mpjrkJUIcul1nflFNcLniOPM6rImpJK7F
+INFO 2026-02-25 06:32:29,129 log 55848 123145569894400 "POST /o/token/ HTTP/1.1" 200 1495
+INFO 2026-02-25 06:32:29,986 log 55848 123145620262912 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:30,609 log 55848 123145653841920 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
+INFO 2026-02-25 06:32:31,510 log 55848 123145670631424 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:31,880 log 55848 123145720999936 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:32,213 log 55848 123145704210432 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:32,498 log 55848 123145620262912 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
+INFO 2026-02-25 06:32:32,498 log 55848 123145653841920 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
+INFO 2026-02-25 06:32:32,610 log 55848 123145737789440 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
+INFO 2026-02-25 06:32:35,959 log 55848 123145653841920 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:36,002 log 55848 123145620262912 "POST /o/introspect/ HTTP/1.1" 200 195
+INFO 2026-02-25 06:32:36,079 log 55848 123145704210432 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
+INFO 2026-02-25 06:32:36,085 log 55848 123145670631424 "GET /api/oidc/userinfo/ HTTP/1.1" 200 192
