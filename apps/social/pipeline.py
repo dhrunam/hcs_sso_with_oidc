@@ -72,7 +72,7 @@ def extract_user_data(backend_name: str, response: Dict[str, Any]) -> Dict[str, 
     field_mappings = {
         'email': ['email', 'mail', 'userPrincipalName', 'upn'],
         'first_name': ['given_name', 'givenName', 'first_name', 'firstName', 'firstname'],
-        'last_name': ['family_name', 'familyName', 'last_name', 'lastName', 'lastname'],
+        'last_name': ['family_name', 'familyName', 'last_name', 'lastName', 'lastname', 'surname'],
         'full_name': ['name', 'displayName', 'full_name', 'fullName'],
         'picture_url': ['picture', 'avatar_url', 'avatarUrl', 'photoURL', 'profilePicture'],
         'locale': ['locale', 'language', 'preferred_language'],

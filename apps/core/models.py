@@ -115,6 +115,7 @@ IDENTITY_PROVIDER_CHOICES = [
 ]
 
 class UserProfile(TimeStampedModel):
+    extra_data = models.JSONField(default=dict, blank=True, null=True, verbose_name=_('Extra Data'), help_text=_('Arbitrary metadata for profile'))
     """Extended user profile with SSO and organizational information"""
     user = models.OneToOneField(
         User,

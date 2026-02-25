@@ -11,7 +11,7 @@ from django.conf.urls.static import static
 
 # Import the well-known view directly to avoid including the whole oidc URLconf
 from apps.oidc.views.discovery import WellKnownConfigurationView
-from apps.core.views import OrganizationLoginView
+from apps.users.views import OrganizationLoginView
 
 urlpatterns = [
     # Admin

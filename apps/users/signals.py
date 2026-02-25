@@ -91,7 +91,7 @@ def handle_user_creation(sender, instance: User, created: bool, **kwargs):
                     email_attempted=instance.email,
                     success=True,
                     extra_data={
-                        'action': 'user_created',
+                        'action': 'account_created',
                         'signup_method': 'local',
                         'profile_created': profile_created
                     }
@@ -99,8 +99,9 @@ def handle_user_creation(sender, instance: User, created: bool, **kwargs):
             
             else:
                 # Handle user updates
-                update_fields = kwargs.get('update_fields', set())
-                
+                update_fields = kwargs.get('update_fields')
+                if update_fields is None:
+                    update_fields = set()
                 # Check if email was updated (requires verification)
                 if 'email' in update_fields and instance.email:
                     old_user = User.objects.get(pk=instance.pk)
@@ -110,23 +111,19 @@ def handle_user_creation(sender, instance: User, created: bool, **kwargs):
                             profile = instance.profile
                             profile.email_verified = False
                             profile.save(update_fields=['email_verified', 'updated_at'])
-                            
                             # Send verification email
                             if getattr(settings, 'REQUIRE_EMAIL_VERIFICATION', True):
                                 send_email_verification(instance)
-                            
                             logger.info(
                                 f"User {instance.id} changed email from "
                                 f"{old_user.email} to {instance.email}"
                             )
                         except UserProfile.DoesNotExist:
                             pass
-                
                 # Check if user was activated/deactivated
                 if 'is_active' in update_fields:
                     action = "activated" if instance.is_active else "deactivated"
                     logger.info(f"User {instance.id} {action}")
-                    
                     # Create audit event for activation/deactivation
                     SocialLoginEvent.objects.create(
                         user=instance,
@@ -214,19 +211,35 @@ def handle_profile_update(sender, instance: UserProfile, created: bool, **kwargs
     Handle UserProfile updates and synchronize with User model
     """
     try:
-        update_fields = kwargs.get('update_fields', set())
+        update_fields = kwargs.get('update_fields')
+        if update_fields is None:
+            update_fields = set()
         
         if created:
             logger.info(f"UserProfile created for user {instance.user.id}")
             
             # Set default avatar if available
-            if not instance.avatar and getattr(settings, 'DEFAULT_AVATAR_URL', None):
+            if (
+                not instance.avatar
+                and getattr(settings, 'DEFAULT_AVATAR_URL', None)
+                and (instance.extra_data or {}).get('default_avatar') != settings.DEFAULT_AVATAR_URL
+            ):
                 # In production, you might want to download and save the avatar
                 instance.extra_data = instance.extra_data or {}
                 instance.extra_data['default_avatar'] = settings.DEFAULT_AVATAR_URL
                 instance.save(update_fields=['extra_data'])
         
         else:
+            # Ensure default avatar metadata remains set when avatar is empty
+            if (
+                not instance.avatar
+                and getattr(settings, 'DEFAULT_AVATAR_URL', None)
+                and (instance.extra_data or {}).get('default_avatar') != settings.DEFAULT_AVATAR_URL
+            ):
+                instance.extra_data = instance.extra_data or {}
+                instance.extra_data['default_avatar'] = settings.DEFAULT_AVATAR_URL
+                instance.save(update_fields=['extra_data'])
+
             # Handle specific field updates
             if 'department' in update_fields:
                 # Department changed - log the change
@@ -344,7 +357,7 @@ def handle_user_deletion(sender, instance: User, **kwargs):
             provider='system',
             email_attempted=instance.email,
             success=True,
-            ip_address='system',
+            ip_address=None,  # Use None for system events
             extra_data={
                 'action': 'user_deleted',
                 'user_id': instance.id,
@@ -457,7 +470,14 @@ def send_welcome_email_sync(user: User):
             'support_email': getattr(settings, 'SUPPORT_EMAIL', 'support@example.com'),
         }
         
-        html_message = render_to_string(template, context)
+        try:
+            html_message = render_to_string(template, context)
+        except Exception:
+            html_message = (
+                f"<p>Welcome {user.get_full_name() or user.username},</p>"
+                f"<p>Welcome to {context['site_name']}.</p>"
+                f"<p>Contact support at {context['support_email']}.</p>"
+            )
         
         send_mail(
             subject=subject,
@@ -499,13 +519,21 @@ def send_email_verification(user: User):
         template = getattr(settings, 'VERIFICATION_EMAIL_TEMPLATE', 'users/emails/verify.html')
         from_email = getattr(settings, 'DEFAULT_FROM_EMAIL', 'noreply@example.com')
         
+        frontend_url = getattr(settings, 'FRONTEND_URL', 'http://localhost:3000')
         context = {
             'user': user,
-            'verification_url': f"{settings.FRONTEND_URL}/verify-email/{verification_token}/",
+            'verification_url': f"{frontend_url}/verify-email/{verification_token}/",
             'site_name': getattr(settings, 'SITE_NAME', 'Our Platform'),
         }
-        
-        html_message = render_to_string(template, context)
+
+        try:
+            html_message = render_to_string(template, context)
+        except Exception:
+            html_message = (
+                f"<p>Hello {user.get_full_name() or user.username},</p>"
+                f"<p>Please verify your email by visiting:</p>"
+                f"<p><a href='{context['verification_url']}'>{context['verification_url']}</a></p>"
+            )
         
         send_mail(
             subject=subject,

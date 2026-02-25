@@ -10,6 +10,9 @@ from .views import (
     MetricsView,
     ClientRegistrationView,
     ClientManagementView,
+    BFFLoginView,
+    BFFTokenRefreshView,
+    BFFLogoutView,
     robots_txt,
     security_txt,
 )
@@ -27,6 +30,11 @@ urlpatterns = [
     path('clients/register/', ClientRegistrationView.as_view(), name='client-register'),
     path('clients/', ClientManagementView.as_view(), name='client-list'),
     path('clients/<str:client_id>/', ClientManagementView.as_view(), name='client-detail'),
+
+    # BFF Auth Endpoints (DRF-compatible)
+    path('auth/login/sso/', BFFLoginView.as_view(), name='bff-login-sso'),
+    path('auth/refresh/', BFFTokenRefreshView.as_view(), name='bff-refresh'),
+    path('auth/logout/', BFFLogoutView.as_view(), name='bff-logout'),
     
     # Well-known endpoints
     path('robots.txt', robots_txt, name='robots-txt'),

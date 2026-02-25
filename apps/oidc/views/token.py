@@ -14,7 +14,7 @@ from ..serializers import (
     SessionSerializer
 )
 from ..throttles import IntrospectionThrottle
-from ..permissions_refactored import IsClientAuthenticated
+from ..permissions import IsClientAuthenticated
 
 logger = logging.getLogger(__name__)
 
@@ -43,7 +43,10 @@ class OIDCUserInfoView(APIView):
             if access_token is None:
                 access_token = getattr(request, 'auth', None)
             if access_token is None:
-                raise Exception('No access token found on request')
+                return Response(
+                    {"error": "unauthorized", "error_description": "No access token provided."},
+                    status=status.HTTP_401_UNAUTHORIZED
+                )
             scopes = access_token.scope.split()
 
             class MockRequest:
@@ -248,21 +251,36 @@ class SessionManagementView(APIView):
     """OIDC Session Management"""
     permission_classes = [IsAuthenticated]
     
-    def get(self, request):
-        """Get user's active sessions"""
-        active_tokens = AccessToken.objects.filter(
-            user=request.user,
-            expires__gt=timezone.now()
-        ).select_related('application').order_by('-created')
-        
-        serializer = SessionSerializer(active_tokens, many=True)
-        
-        return Response({
-            'user_id': request.user.id,
-            'email': request.user.email,
-            'active_sessions': serializer.data,
-            'total_sessions': len(active_tokens),
-        })
+    def get(self, request, session_id=None):
+        """Get user's active sessions or session detail"""
+        if session_id:
+            # Return details for a specific session
+            try:
+                token = AccessToken.objects.get(id=session_id, user=request.user)
+                serializer = SessionSerializer(token)
+                return Response({
+                    'user_id': request.user.id,
+                    'email': request.user.email,
+                    'session': serializer.data,
+                })
+            except AccessToken.DoesNotExist:
+                return Response(
+                    {'error': 'session_not_found'},
+                    status=status.HTTP_404_NOT_FOUND
+                )
+        else:
+            # Return all active sessions
+            active_tokens = AccessToken.objects.filter(
+                user=request.user,
+                expires__gt=timezone.now()
+            ).select_related('application').order_by('-created')
+            serializer = SessionSerializer(active_tokens, many=True)
+            return Response({
+                'user_id': request.user.id,
+                'email': request.user.email,
+                'active_sessions': serializer.data,
+                'total_sessions': len(active_tokens),
+            })
     
     def delete(self, request, session_id=None):
         """End a specific session or all sessions"""

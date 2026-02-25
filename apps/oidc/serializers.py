@@ -21,10 +21,10 @@ class IntrospectionRequestSerializer(serializers.Serializer):
         try:
             app = Application.objects.get(client_id=data['client_id'])
             if app.client_secret != data['client_secret']:
-                raise serializers.ValidationError("Invalid client credentials")
+                raise serializers.ValidationError({'non_field_errors': ['Invalid client credentials']})
             data['application'] = app
         except Application.DoesNotExist:
-            raise serializers.ValidationError("Invalid client credentials")
+            raise serializers.ValidationError({'non_field_errors': ['Invalid client credentials']})
         return data
 
 
@@ -90,6 +90,7 @@ class ClientRegistrationSerializer(serializers.ModelSerializer):
         required=False
     )
     
+    client_name = serializers.CharField(required=True, help_text="Human-readable client name")
     class Meta:
         model = Application
         fields = [
@@ -98,34 +99,25 @@ class ClientRegistrationSerializer(serializers.ModelSerializer):
             'client_uri', 'logo_uri', 'tos_uri', 'policy_uri', 
             'jwks_uri', 'jwks', 'contacts'
         ]
-        extra_kwargs = {
-            'client_name': {'source': 'name'}
-        }
-    
-    def validate_redirect_uris(self, value):
-        """Validate redirect URIs"""
-        if len(value) == 0:
-            raise serializers.ValidationError("At least one redirect URI is required")
-        
-        validator = URLValidator()
-        for uri in value:
-            try:
-                validator(uri)
-            except:
-                raise serializers.ValidationError(f"Invalid URL: {uri}")
-        
-        return value
-    
+
+    def validate(self, data):
+        # Map client_name to name for Application model
+        if 'client_name' in self.initial_data:
+            data['name'] = self.initial_data['client_name']
+        return super().validate(data)
+
     def create(self, validated_data):
-        """Create application with dynamic registration"""
         request = self.context.get('request')
-        
+        # Robust mapping: ensure client_name is present
+        client_name = validated_data.pop('client_name', None)
+        if not client_name:
+            raise serializers.ValidationError({'client_name': 'This field is required.'})
+        validated_data['name'] = client_name
         # Extract list fields
-        redirect_uris = ' '.join(validated_data.pop('redirect_uris'))
+        redirect_uris = ' '.join(validated_data.pop('redirect_uris', []))
         grant_types = validated_data.pop('grant_types', [])
         response_types = validated_data.pop('response_types', [])
         contacts = validated_data.pop('contacts', [])
-        
         # Determine grant type
         if 'authorization_code' in grant_types:
             authorization_grant_type = 'authorization-code'
@@ -135,12 +127,9 @@ class ClientRegistrationSerializer(serializers.ModelSerializer):
             authorization_grant_type = 'password'
         elif 'client_credentials' in grant_types:
             authorization_grant_type = 'client-credentials'
-        else:
-            authorization_grant_type = 'authorization-code'
-        
         # Create the application
         application = Application.objects.create(
-            name=validated_data.pop('client_name'),
+            name=validated_data.pop('name'),
             user=request.user if request and request.user.is_authenticated else None,
             client_type='confidential' if validated_data.get('token_endpoint_auth_method') != 'none' else 'public',
             authorization_grant_type=authorization_grant_type,
@@ -148,12 +137,10 @@ class ClientRegistrationSerializer(serializers.ModelSerializer):
             skip_authorization=False,
             **{k: v for k, v in validated_data.items() if hasattr(Application, k)}
         )
-        
         # Store additional metadata in JSON field if available
         if contacts:
             application.data = json.dumps({'contacts': contacts})
             application.save()
-        
         return application
 
 

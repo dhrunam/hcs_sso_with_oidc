@@ -341,11 +341,16 @@ class UserCreateSerializer(serializers.ModelSerializer):
         )
         
         # Update profile with additional data if provided
-        # (signal handler already created the UserProfile instance)
+        # Ensure userprofile exists (get or create)
+        from apps.core.models import UserProfile
+        profile, _ = UserProfile.objects.get_or_create(user=user)
+        # Always set employee_id if present in profile_data
+        if 'employee_id' in profile_data:
+            profile.employee_id = profile_data['employee_id']
         if profile_data:
-            profile = user.userprofile
             for key, value in profile_data.items():
                 setattr(profile, key, value)
+        if profile_data or 'employee_id' in profile_data:
             profile.save()
         
         # Assign default group if configured
