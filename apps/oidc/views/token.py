@@ -125,18 +125,35 @@ class TokenIntrospectionView(APIView):
         if not token:
             return Response({"active": False})
         
-        # Verify client owns the token (or is admin)
-        # The introspecting client must match the token's application
+        # Verify client owns the token OR is a designated trusted resource server.
+        #
+        # Standard OAuth2 pattern (RFC 7662): a backend API (resource server)
+        # authenticates with its own client credentials and introspects tokens
+        # that were originally issued to the frontend client.
+        #
+        # The flag is managed per-application in the Django admin:
+        #   Application → Resource server settings → is_trusted_resource_server
         token_client = token.application
         caller_client = getattr(request, 'client_app', None)
-        
+
         if caller_client and token_client and caller_client.id != token_client.id:
-            # Client trying to introspect a token they didn't issue
-            logger.warning(
-                f"Unauthorized introspection attempt: client {caller_client.client_id} "
-                f"trying to introspect token from client {token_client.client_id}"
+            from apps.oidc.models import OAuthApplicationExtension
+            try:
+                is_trusted = caller_client.extension.is_trusted_resource_server
+            except OAuthApplicationExtension.DoesNotExist:
+                is_trusted = False
+
+            if not is_trusted:
+                logger.warning(
+                    f"Unauthorized introspection attempt: client {caller_client.client_id} "
+                    f"trying to introspect token from client {token_client.client_id}"
+                )
+                return Response({"active": False})
+
+            logger.info(
+                f"Trusted resource server {caller_client.client_id} "
+                f"introspecting token from client {token_client.client_id}"
             )
-            return Response({"active": False})
         
         # Check if token is expired
         now = timezone.now()

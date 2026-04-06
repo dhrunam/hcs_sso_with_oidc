@@ -3,3 +3,37 @@ WARNING 2026-02-07 11:10:57,343 log 16884 6178336768 Forbidden (CSRF token from 
 WARNING 2026-02-10 11:03:26,488 log 81028 6168408064 Forbidden (CSRF cookie not set.): /logout
 WARNING 2026-02-10 11:04:27,123 log 81028 6303019008 Forbidden (CSRF cookie not set.): /o/authorize/logout/
 WARNING 2026-02-25 06:46:16,388 log 55848 123145536315392 Forbidden (CSRF token from POST incorrect.): /admin/logout/
+WARNING 2026-03-18 05:34:08,330 log 91005 6159429632 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 05:34:34,676 log 91005 6159429632 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 05:35:23,339 log 91005 6159429632 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 06:33:21,590 log 91005 6142603264 Forbidden (CSRF token from POST incorrect.): /accounts/logout/
+WARNING 2026-03-18 11:04:59,494 log 91005 6142029824 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 11:05:15,040 log 91005 6125203456 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 11:06:04,413 log 91005 6125203456 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-03-18 12:37:26,890 log 91005 6142029824 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:47:16,557 log 25036 6211186688 Forbidden (CSRF token from POST incorrect.): /admin/logout/
+WARNING 2026-04-06 05:52:27,463 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:52:43,499 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:53:02,405 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:53:54,352 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:55:53,934 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:56:07,060 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:56:17,851 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 05:57:53,341 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 06:00:09,006 log 25036 6211186688 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 06:24:29,956 log 25014 6154416128 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 07:54:17,167 log 64278 6234648576 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:05:41,810 log 64278 6166769664 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:16:30,125 log 64278 6251474944 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:16:49,769 log 64278 6251474944 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:21:40,154 log 64278 6251474944 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:22:06,213 log 64278 6251474944 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:25:05,130 log 64278 6251474944 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:44:15,538 log 64278 6183596032 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:46:31,855 log 64278 6183596032 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 08:47:42,124 log 64278 6183596032 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 09:07:45,128 log 64278 6166769664 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 09:07:57,280 log 64278 6166769664 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 09:09:07,236 log 64278 6166769664 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 09:26:02,670 log 64278 6252621824 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-06 09:27:06,774 log 64278 6252621824 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/

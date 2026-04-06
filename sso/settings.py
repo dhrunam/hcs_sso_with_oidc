@@ -90,8 +90,8 @@ if DEBUG:
             'NAME':  'hcs_sso_oidc_db',
             'USER': 'postgres',
             'PASSWORD':  'postgres',
-            'HOST':  'localhost',
-            'PORT':  '5435', 
+            'HOST':  '10.182.144.24',
+            'PORT':  '5433', 
         }      
         
     }
@@ -273,6 +273,14 @@ OAUTH2_PROVIDER = {
     # PKCE methods
     'PKCE_METHODS': ['S256', 'plain'],
 }
+
+# Trusted resource-server clients are now managed per-application in the
+# Django admin (Application → Resource server settings → is_trusted_resource_server).
+# No static list needed here.
+
+# Required by django-oauth-toolkit swappable model machinery so that migrations
+# that FK to oauth2_provider.Application can resolve their dependency.
+OAUTH2_PROVIDER_APPLICATION_MODEL = 'oauth2_provider.Application'
 
 # REST Framework
 REST_FRAMEWORK = {
