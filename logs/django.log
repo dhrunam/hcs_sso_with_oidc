@@ -11651,3 +11651,2022 @@ INFO 2026-04-06 09:27:07,097 log 64278 6252621824 "GET /o/authorize/?response_ty
 INFO 2026-04-06 09:27:08,660 log 64278 6252621824 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DbTJMWmdxSGViVDFHMEFkUHV2X2M4eVd5dU1yTmVweDFlLW0tbFJ1Q2V6dzBk%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DB4f_W-O_cKl0wnJxNqqU7SbL9lwmkCn_kL7f7FmsIcA%26code_challenge_method%3DS256%26nonce%3DbTJMWmdxSGViVDFHMEFkUHV2X2M4eVd5dU1yTmVweDFlLW0tbFJ1Q2V6dzBk HTTP/1.1" 200 8720
 WARNING 2026-04-06 09:27:08,956 log 64278 6252621824 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2026-04-06 09:27:08,956 log 64278 6252621824 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+ERROR 2026-04-08 10:54:33,181 apps 19706 140704432482816 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-08 10:54:33,181 apps 19706 140704432482816 Enabled providers: Google, Facebook
+INFO 2026-04-08 10:54:33,181 apps 19706 140704432482816 ✅ Social authentication app initialized successfully
+ERROR 2026-04-08 10:54:34,260 apps 19748 140704432482816 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-08 10:54:34,261 apps 19748 140704432482816 Enabled providers: Google, Facebook
+INFO 2026-04-08 10:54:34,261 apps 19748 140704432482816 ✅ Social authentication app initialized successfully
+INFO 2026-04-08 10:54:34,273 autoreload 19748 140704432482816 Watching for file changes with StatReloader
+INFO 2026-04-08 10:54:46,198 log 19748 123145366450176 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-08 10:54:46,312 log 19748 123145366450176 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-08 10:54:46,433 log 19748 123145383239680 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=eVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=fSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ&code_challenge_method=S256&nonce=eVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 302 0
+INFO 2026-04-08 10:54:46,533 log 19748 123145383239680 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DfSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ%26code_challenge_method%3DS256%26nonce%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 200 8720
+INFO 2026-04-08 10:54:49,152 log 19748 123145383239680 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DfSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ%26code_challenge_method%3DS256%26nonce%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 200 9264
+ERROR 2026-04-08 11:00:14,451 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:14,603 log 19748 123145366450176 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DfSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ%26code_challenge_method%3DS256%26nonce%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 500 229686
+ERROR 2026-04-08 11:00:26,425 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:26,513 log 19748 123145366450176 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DfSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ%26code_challenge_method%3DS256%26nonce%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 500 229686
+ERROR 2026-04-08 11:00:28,295 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:28,369 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DfSH2oyrs6WzRKI0QhdCyCkwzOQtYZez8MDXQTCJe2nQ%26code_challenge_method%3DS256%26nonce%3DeVpGRTFyS01WdFFwQjN3TjFMWWNscDRyQ3drZDZ0U0J0bXF5ZGN1WEd0THU1 HTTP/1.1" 500 227447
+INFO 2026-04-08 11:00:29,604 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=eGVlNEg4cUxrfk5IazlJaE1oMUxvMEpTMkR2fnRJd05iT0Rrb3h6a3hCLlFP&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=DpjYWDbaqkhMvAN2eu_koVkuXxMKbVdf8BjLvSYaT2s&code_challenge_method=S256&nonce=eGVlNEg4cUxrfk5IazlJaE1oMUxvMEpTMkR2fnRJd05iT0Rrb3h6a3hCLlFP HTTP/1.1" 302 0
+ERROR 2026-04-08 11:00:29,813 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:29,895 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DeGVlNEg4cUxrfk5IazlJaE1oMUxvMEpTMkR2fnRJd05iT0Rrb3h6a3hCLlFP%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DDpjYWDbaqkhMvAN2eu_koVkuXxMKbVdf8BjLvSYaT2s%26code_challenge_method%3DS256%26nonce%3DeGVlNEg4cUxrfk5IazlJaE1oMUxvMEpTMkR2fnRJd05iT0Rrb3h6a3hCLlFP HTTP/1.1" 500 227447
+ERROR 2026-04-08 11:00:31,517 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:31,597 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227447
+ERROR 2026-04-08 11:00:39,301 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:39,374 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:00:40,274 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:40,349 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:00:40,619 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:00:40,921 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:01:03,628 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:03,705 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:01:04,692 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:04,762 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:01:05,103 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:05,176 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DronjVwtsFUXYcD799KL_iiQhTps8PzJwSfyc7lQqpI8%26code_challenge_method%3DS256%26nonce%3DeVl4VktjOUtzbn5nMX5Tbm91Zk1NQlhwdEliTkNwa2U1aWptTlFFeEh1ZjNK HTTP/1.1" 500 227715
+INFO 2026-04-08 11:01:08,173 log 19748 123145400029184 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-08 11:01:08,256 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=aHBuVFZmSDh3WnA4NVpoeGJtU0cudURJVDhZSVNGT0V4aXR6WEFNSkkwd2lf&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=OVujjULG9WWWhmg9IDqI6BSsYZiTeyoOVKlRQ5CjcEE&code_challenge_method=S256&nonce=aHBuVFZmSDh3WnA4NVpoeGJtU0cudURJVDhZSVNGT0V4aXR6WEFNSkkwd2lf HTTP/1.1" 302 0
+ERROR 2026-04-08 11:01:08,339 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:08,411 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DaHBuVFZmSDh3WnA4NVpoeGJtU0cudURJVDhZSVNGT0V4aXR6WEFNSkkwd2lf%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DOVujjULG9WWWhmg9IDqI6BSsYZiTeyoOVKlRQ5CjcEE%26code_challenge_method%3DS256%26nonce%3DaHBuVFZmSDh3WnA4NVpoeGJtU0cudURJVDhZSVNGT0V4aXR6WEFNSkkwd2lf HTTP/1.1" 500 227591
+INFO 2026-04-08 11:01:08,969 log 19748 123145400029184 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-08 11:01:09,058 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Qm5iYUNfQno0dXlRWWRUbDhwQ190SF96VlRhTDJxVWNWeXlTWE5VdGlRRU52&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=TLNes3IKCjwIreoIS6cglxWOvGFTwCBRZj2FfZU-7v4&code_challenge_method=S256&nonce=Qm5iYUNfQno0dXlRWWRUbDhwQ190SF96VlRhTDJxVWNWeXlTWE5VdGlRRU52 HTTP/1.1" 302 0
+ERROR 2026-04-08 11:01:09,139 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:09,218 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DQm5iYUNfQno0dXlRWWRUbDhwQ190SF96VlRhTDJxVWNWeXlTWE5VdGlRRU52%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DTLNes3IKCjwIreoIS6cglxWOvGFTwCBRZj2FfZU-7v4%26code_challenge_method%3DS256%26nonce%3DQm5iYUNfQno0dXlRWWRUbDhwQ190SF96VlRhTDJxVWNWeXlTWE5VdGlRRU52 HTTP/1.1" 500 227447
+INFO 2026-04-08 11:01:21,594 log 19748 123145400029184 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-08 11:01:21,664 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=ZDRfSk1nRFF6SWxBN0p5M2tac05-LXFWbUpQM0tZeFU5czRYVW52Uy5nWnY2&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=olot_ZEHEre3NH33Ex6geRAK1KjdSxxMbHCZAR1vXzM&code_challenge_method=S256&nonce=ZDRfSk1nRFF6SWxBN0p5M2tac05-LXFWbUpQM0tZeFU5czRYVW52Uy5nWnY2 HTTP/1.1" 302 0
+ERROR 2026-04-08 11:01:21,749 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:01:21,818 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DZDRfSk1nRFF6SWxBN0p5M2tac05-LXFWbUpQM0tZeFU5czRYVW52Uy5nWnY2%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dolot_ZEHEre3NH33Ex6geRAK1KjdSxxMbHCZAR1vXzM%26code_challenge_method%3DS256%26nonce%3DZDRfSk1nRFF6SWxBN0p5M2tac05-LXFWbUpQM0tZeFU5czRYVW52Uy5nWnY2 HTTP/1.1" 500 227591
+INFO 2026-04-08 11:01:21,831 basehttp 19748 123145366450176 - Broken pipe from ('127.0.0.1', 65327)
+INFO 2026-04-08 11:02:29,422 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=d0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=x6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM&code_challenge_method=S256&nonce=d0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 302 0
+ERROR 2026-04-08 11:02:29,568 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:02:29,639 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227447
+ERROR 2026-04-08 11:03:23,373 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:23,454 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227778
+ERROR 2026-04-08 11:03:29,546 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:29,635 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227778
+ERROR 2026-04-08 11:03:36,955 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:37,028 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:03:37,794 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:37,877 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:03:38,302 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:38,378 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:03:38,726 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:38,849 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:03:39,098 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:39,186 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:03:39,479 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:39,559 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+INFO 2026-04-08 11:03:55,501 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 200 8720
+ERROR 2026-04-08 11:03:59,517 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:03:59,594 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dx6c8EGs8VAEdE5w2YGCfHGWtSfu59D8prSQ94kaSbbM%26code_challenge_method%3DS256%26nonce%3Dd0FoZGFCTzI1cW1kTWdvLVlBdEVMaWhSdXdfb0FiWTRLVUlZcFBrdURaUGNM HTTP/1.1" 500 227715
+INFO 2026-04-08 11:04:01,061 log 19748 123145366450176 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=MnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU&code_challenge_method=S256&nonce=MnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 302 0
+ERROR 2026-04-08 11:04:01,148 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:04:01,224 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 500 227447
+ERROR 2026-04-08 11:04:15,098 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:04:15,175 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:04:42,288 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:04:42,359 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 500 227715
+ERROR 2026-04-08 11:04:52,068 log 19748 123145366450176 Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 577, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'else'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 221, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 186, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 157, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 199, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 994, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 585, in parse
+    raise self.error(token, e)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 583, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 894, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 579, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/venv/lib/python3.12/site-packages/django/template/base.py", line 634, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Template: /Users/sagarsigdel/Desktop/Sagar Projects/hcs_sso_with_oidc/templates/registration/login.html, Invalid block tag on line 129: 'else', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2026-04-08 11:04:52,188 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 500 227715
+INFO 2026-04-08 11:05:58,548 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8720
+INFO 2026-04-08 11:06:14,059 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8874
+INFO 2026-04-08 11:07:01,107 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8845
+INFO 2026-04-08 11:07:14,049 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8867
+INFO 2026-04-08 11:07:29,501 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8962
+INFO 2026-04-08 11:07:56,068 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 8988
+INFO 2026-04-08 11:08:33,114 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 9173
+INFO 2026-04-08 11:09:40,318 log 19748 123145366450176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3D4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7%26state%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D6QM4fx2wP8f9i835N73hu-3TcyzbA1GM4awaJLxZfqU%26code_challenge_method%3DS256%26nonce%3DMnJJLnJHWHlzVm9qenJNWWFjNHl4WjQwc29ObmU4VURZT2N6OS5Say1XU2dx HTTP/1.1" 200 9582
