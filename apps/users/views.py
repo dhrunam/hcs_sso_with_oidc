@@ -1,8 +1,8 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.views import LoginView as DjangoLoginView
 from django.urls import reverse_lazy
-from django.contrib.auth.forms import AuthenticationForm
 from django.http import HttpResponseRedirect
+from .forms import PhoneNumberAuthenticationForm
 
 # ...existing code...
 
@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 class OrganizationLoginView(DjangoLoginView):
     """
     Organization account login view.
-    Handles username/password authentication for organization SSO.
+    Handles phone-number/password authentication for organization SSO.
     
     Flow:
     1. User arrives at /o/authorize/ (OAuth2 endpoint)
@@ -23,7 +23,7 @@ class OrganizationLoginView(DjangoLoginView):
     6. On success, redirects back to OAuth2 authorization
     """
     template_name = 'registration/login.html'
-    form_class = AuthenticationForm
+    form_class = PhoneNumberAuthenticationForm
     success_url = reverse_lazy('home')
     
     def form_valid(self, form):

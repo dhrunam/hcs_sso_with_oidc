@@ -104,21 +104,21 @@
                             <div id="alertContainer"></div>
                             
                             <!-- Registration Form -->
-                            <form id="registrationForm" novalidate>
+                            <form id="registrationForm" novalidate enctype="multipart/form-data">
                                 
-                                <!-- Username Field -->
+                                <!-- Phone Number Field -->
                                 <div class="mb-3">
-                                    <label for="username" class="form-label">
-                                        <i class="fas fa-user me-2"></i>Username
+                                    <label for="phone_number" class="form-label">
+                                        <i class="fas fa-phone me-2"></i>Phone Number <span class="text-danger">*</span>
                                     </label>
-                                    <input type="text" class="form-control" id="username" name="username" 
-                                           placeholder="Choose a username (e.g., john.doe)" required>
+                                    <input type="tel" class="form-control" id="phone_number" name="phone_number" 
+                                           placeholder="+1234567890 or 1234567890" required>
                                     <small class="form-text text-muted">
-                                        Letters, numbers, dots, hyphens, and underscores allowed
+                                        Format: +1234567890 or 1234567890 (9-15 digits)
                                     </small>
-                                    <div class="invalid-feedback" id="usernameError"></div>
+                                    <div class="invalid-feedback" id="phone_numberError"></div>
                                 </div>
-                                
+
                                 <!-- Email Field -->
                                 <div class="mb-3">
                                     <label for="email" class="form-label">
@@ -129,10 +129,50 @@
                                     <div class="invalid-feedback" id="emailError"></div>
                                 </div>
                                 
+                                <!-- User Type Field -->
+                                <div class="mb-3">
+                                    <label for="user_type" class="form-label">
+                                        <i class="fas fa-user-tag me-2"></i>User Type <span class="text-danger">*</span>
+                                    </label>
+                                    <select class="form-select" id="user_type" name="user_type" required>
+                                        <option value="" disabled selected>Select your user type...</option>
+                                        <option value="party_in_person">Party in Person</option>
+                                        <option value="advocate">Advocate</option>
+                                    </select>
+                                    <div class="invalid-feedback" id="userTypeError"></div>
+                                </div>
+                                
+                                <!-- Bar ID Field (Advocate only) -->
+                                <div class="mb-3" id="barIdContainer" style="display: none;">
+                                    <label for="bar_id" class="form-label">
+                                        <i class="fas fa-id-card me-2"></i>Bar ID <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" id="bar_id" name="bar_id" 
+                                           placeholder="Your Bar/License ID">
+                                    <small class="form-text text-muted">
+                                        Your professional Bar or License ID number
+                                    </small>
+                                    <div class="invalid-feedback" id="barIdError"></div>
+                                </div>
+                                
+                                <!-- Advocate Document Upload (Advocate only) -->
+                                <div class="mb-3" id="documentContainer" style="display: none;">
+                                    <label for="advocate_document" class="form-label">
+                                        <i class="fas fa-file-upload me-2"></i>Professional Document <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="file" class="form-control" id="advocate_document" name="advocate_document" 
+                                           accept=".pdf,.jpg,.jpeg,.png,.gif">
+                                    <small class="form-text text-muted">
+                                        Upload your license/professional document (PDF or image, max 5MB)
+                                    </small>
+                                    <div id="filePreview" class="mt-2"></div>
+                                    <div class="invalid-feedback" id="documentError"></div>
+                                </div>
+                                
                                 <!-- First Name Field -->
                                 <div class="mb-3">
                                     <label for="first_name" class="form-label">
-                                        <i class="fas fa-info-circle me-2"></i>First Name
+                                        <i class="fas fa-user me-2"></i>First Name
                                     </label>
                                     <input type="text" class="form-control" id="first_name" name="first_name" 
                                            placeholder="John" required>
@@ -142,7 +182,7 @@
                                 <!-- Last Name Field -->
                                 <div class="mb-3">
                                     <label for="last_name" class="form-label">
-                                        <i class="fas fa-info-circle me-2"></i>Last Name
+                                        <i class="fas fa-user me-2"></i>Last Name
                                     </label>
                                     <input type="text" class="form-control" id="last_name" name="last_name" 
                                            placeholder="Doe" required>
@@ -210,8 +250,9 @@
                                 <i class="fas fa-info-circle me-2"></i>Registration Help
                             </h6>
                             <ul class="list-unstyled mb-0">
-                                <li><i class="fas fa-check text-success me-2"></i>Username must be unique</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Phone number must be unique</li>
                                 <li><i class="fas fa-check text-success me-2"></i>Email verification may be required</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Advocates must provide Bar ID and document</li>
                                 <li><i class="fas fa-check text-success me-2"></i>Strong password recommended</li>
                                 <li><i class="fas fa-check text-success me-2"></i>After registration, sign in with OAuth2</li>
                             </ul>
@@ -316,31 +357,43 @@
                 }
                 
                 // Prepare form data
-                const formData = {
-                    username: document.getElementById('username').value.trim(),
-                    email: document.getElementById('email').value.trim(),
-                    first_name: document.getElementById('first_name').value.trim(),
-                    last_name: document.getElementById('last_name').value.trim(),
-                    password: password,
-                    password2: password2
-                };
+                const formData = new FormData();
+                formData.append('email', document.getElementById('email').value.trim());
+                formData.append('phone_number', document.getElementById('phone_number').value.trim());
+                formData.append('user_type', document.getElementById('user_type').value);
+                formData.append('first_name', document.getElementById('first_name').value.trim());
+                formData.append('last_name', document.getElementById('last_name').value.trim());
+                formData.append('password', password);
+                formData.append('password2', password2);
+                
+                // Add advocate fields if applicable
+                const userType = document.getElementById('user_type').value;
+                if (userType === 'advocate') {
+                    formData.append('bar_id', document.getElementById('bar_id').value.trim());
+                    const documentFile = document.getElementById('advocate_document').files[0];
+                    if (documentFile) {
+                        formData.append('advocate_document', documentFile);
+                    }
+                }
                 
                 // Submit to API
                 const response = await fetch(API_REGISTER_URL, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
                         'X-CSRFToken': getCookie('csrftoken')
                     },
-                    body: JSON.stringify(formData)
+                    body: formData
                 });
                 
                 const data = await response.json();
                 
                 if (!response.ok) {
                     // Handle field-specific errors
-                    if (data.username) showFieldError('username', data.username[0]);
                     if (data.email) showFieldError('email', data.email[0]);
+                    if (data.phone_number) showFieldError('phone_number', data.phone_number[0]);
+                    if (data.user_type) showFieldError('user_type', data.user_type[0]);
+                    if (data.bar_id) showFieldError('bar_id', data.bar_id[0]);
+                    if (data.advocate_document) showFieldError('advocate_document', data.advocate_document[0]);
                     if (data.password) showFieldError('password', data.password[0]);
                     if (data.password2) showFieldError('password2', data.password2[0]);
                     if (data.first_name) showFieldError('first_name', data.first_name[0]);
@@ -368,6 +421,57 @@
             }
         });
 
+        // Toggle advocate fields based on user type
+        document.getElementById('user_type').addEventListener('change', function() {
+            const userType = this.value;
+            const barIdContainer = document.getElementById('barIdContainer');
+            const documentContainer = document.getElementById('documentContainer');
+            const barIdInput = document.getElementById('bar_id');
+            const documentInput = document.getElementById('advocate_document');
+            
+            if (userType === 'advocate') {
+                barIdContainer.style.display = 'block';
+                documentContainer.style.display = 'block';
+                barIdInput.required = true;
+                documentInput.required = true;
+            } else {
+                barIdContainer.style.display = 'none';
+                documentContainer.style.display = 'none';
+                barIdInput.required = false;
+                documentInput.required = false;
+                // Clear values
+                barIdInput.value = '';
+                documentInput.value = '';
+                document.getElementById('filePreview').innerHTML = '';
+            }
+        });
+
+        // File preview for advocate document
+        document.getElementById('advocate_document').addEventListener('change', function() {
+            const file = this.files[0];
+            const preview = document.getElementById('filePreview');
+            
+            if (file) {
+                // Check file size (5MB max)
+                if (file.size > 5 * 1024 * 1024) {
+                    showFieldError('advocate_document', 'File size must not exceed 5MB');
+                    this.value = '';
+                    preview.innerHTML = '';
+                    return;
+                }
+                
+                // Show file preview
+                const fileSize = (file.size / 1024 / 1024).toFixed(2);
+                const fileType = file.type.startsWith('image/') ? 'Image' : 'Document';
+                preview.innerHTML = `
+                    <div class="alert alert-info alert-sm py-2 small">
+                        <i class="fas fa-file me-2"></i>
+                        <strong>${file.name}</strong> (${fileType}, ${fileSize}MB)
+                    </div>
+                `;
+            }
+        });
+
         // Get CSRF token
         function getCookie(name) {
             let cookieValue = null;
@@ -387,9 +491,9 @@
         // Event listeners
         document.getElementById('password').addEventListener('input', updatePasswordStrength);
         
-        // Autofocus on username
+        // Autofocus on phone number
         document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('username').focus();
+            document.getElementById('phone_number').focus();
         });
     </script>
 </body>

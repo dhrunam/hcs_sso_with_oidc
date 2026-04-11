@@ -11651,3 +11651,770 @@ INFO 2026-04-06 09:27:07,097 log 64278 6252621824 "GET /o/authorize/?response_ty
 INFO 2026-04-06 09:27:08,660 log 64278 6252621824 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DVEd9ZSHfK3m99blkADk5mkeUT99Ly0rpfaiJT987%26state%3DbTJMWmdxSGViVDFHMEFkUHV2X2M4eVd5dU1yTmVweDFlLW0tbFJ1Q2V6dzBk%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DB4f_W-O_cKl0wnJxNqqU7SbL9lwmkCn_kL7f7FmsIcA%26code_challenge_method%3DS256%26nonce%3DbTJMWmdxSGViVDFHMEFkUHV2X2M4eVd5dU1yTmVweDFlLW0tbFJ1Q2V6dzBk HTTP/1.1" 200 8720
 WARNING 2026-04-06 09:27:08,956 log 64278 6252621824 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2026-04-06 09:27:08,956 log 64278 6252621824 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+ERROR 2026-04-10 23:53:44,107 apps 95008 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-10 23:53:44,107 apps 95008 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-10 23:53:44,107 apps 95008 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-10 23:53:44,563 apps 95009 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-10 23:53:44,563 apps 95009 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-10 23:53:44,563 apps 95009 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-10 23:53:44,568 autoreload 95009 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-10 23:53:58,446 log 95009 6158790656 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-10 23:54:01,648 log 95009 6158790656 "GET /accounts/login/ HTTP/1.1" 200 8200
+INFO 2026-04-10 23:54:26,512 log 95009 6158790656 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-10 23:54:26,563 log 95009 6158790656 "GET / HTTP/1.1" 200 4427
+INFO 2026-04-10 23:54:30,552 log 95009 6158790656 "GET /admin/ HTTP/1.1" 200 14585
+INFO 2026-04-10 23:54:30,578 log 95009 6158790656 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,580 log 95009 6175617024 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,581 log 95009 6192443392 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,582 log 95009 6158790656 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,582 log 95009 6209269760 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,583 log 95009 6226096128 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,587 log 95009 6259748864 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,588 log 95009 6226096128 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,593 log 95009 6209269760 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,594 log 95009 6226096128 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:30,594 log 95009 6259748864 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,847 log 95009 6226096128 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 16633
+INFO 2026-04-10 23:54:41,873 log 95009 6209269760 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,873 log 95009 6158790656 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,874 log 95009 6192443392 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,876 log 95009 6175617024 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,877 log 95009 6242922496 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,878 log 95009 6158790656 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,880 log 95009 6175617024 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,881 log 95009 6192443392 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,882 log 95009 6209269760 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,883 log 95009 6259748864 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,886 log 95009 6259748864 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,887 log 95009 6259748864 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,887 log 95009 6276575232 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,888 log 95009 6209269760 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,888 log 95009 6293401600 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,891 log 95009 6293401600 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,892 log 95009 6276575232 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,897 log 95009 6209269760 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,899 log 95009 6276575232 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,924 log 95009 6226096128 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-10 23:54:41,936 log 95009 6226096128 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:41,936 log 95009 6209269760 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:42,056 log 95009 6293401600 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:42,092 log 95009 6276575232 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-10 23:54:45,147 log 95009 6209269760 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 29640
+INFO 2026-04-10 23:54:45,168 log 95009 6175617024 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,169 log 95009 6226096128 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,173 log 95009 6276575232 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,174 log 95009 6226096128 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,177 log 95009 6192443392 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2026-04-10 23:54:45,180 log 95009 6276575232 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+INFO 2026-04-10 23:54:45,181 log 95009 6192443392 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,194 log 95009 6276575232 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2026-04-10 23:54:45,202 log 95009 6209269760 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-10 23:54:45,226 log 95009 6209269760 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 651
+INFO 2026-04-11 00:05:08,085 log 95009 6158790656 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:05:08,230 log 95009 6158790656 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+WARNING 2026-04-11 00:05:08,407 log 95009 6175617024 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:05:08,407 log 95009 6175617024 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=VnZnZnFNTG1DRk42cHZIZEdfeVNjV3FHTTd2ODBIcENsU2JVbG5ZM1Yzb1BG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=KyHRklZ-rINqTtZegBpsFxnkrk5389ONhZeRelRtyGE&code_challenge_method=S256&nonce=VnZnZnFNTG1DRk42cHZIZEdfeVNjV3FHTTd2ODBIcENsU2JVbG5ZM1Yzb1BG HTTP/1.1" 400 1337
+INFO 2026-04-11 00:05:09,657 log 95009 6158790656 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-04-11 00:05:09,723 log 95009 6175617024 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:05:09,723 log 95009 6175617024 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=rAY5sn9DAkBfj8Z38MUCRI8PjwNHVAZypsOrOQ-j8VA&code_challenge_method=S256&nonce=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG HTTP/1.1" 400 1337
+INFO 2026-04-11 00:06:13,573 log 95009 6175617024 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 200 29876
+INFO 2026-04-11 00:06:13,650 log 95009 6175617024 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:07:01,938 log 95009 6158790656 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-04-11 00:07:02,031 log 95009 6158790656 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 18922
+INFO 2026-04-11 00:07:02,114 log 95009 6158790656 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:07:02,130 log 95009 6158790656 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2026-04-11 00:07:04,125 log 95009 6158790656 "GET /admin/oauth2_provider/application/1/change/ HTTP/1.1" 200 30110
+INFO 2026-04-11 00:07:04,178 log 95009 6158790656 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+WARNING 2026-04-11 00:08:03,196 log 95009 6158790656 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:08:03,197 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=rAY5sn9DAkBfj8Z38MUCRI8PjwNHVAZypsOrOQ-j8VA&code_challenge_method=S256&nonce=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG HTTP/1.1" 400 1337
+WARNING 2026-04-11 00:08:04,172 log 95009 6158790656 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:08:04,173 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=rAY5sn9DAkBfj8Z38MUCRI8PjwNHVAZypsOrOQ-j8VA&code_challenge_method=S256&nonce=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG HTTP/1.1" 400 1337
+WARNING 2026-04-11 00:08:04,717 log 95009 6158790656 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:08:04,717 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=rAY5sn9DAkBfj8Z38MUCRI8PjwNHVAZypsOrOQ-j8VA&code_challenge_method=S256&nonce=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG HTTP/1.1" 400 1337
+WARNING 2026-04-11 00:08:04,922 log 95009 6158790656 Bad Request: /o/authorize/
+WARNING 2026-04-11 00:08:04,923 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=4T0KMegeS4cY55z21J4pKP9RCHyuX5KpNUWDdiP7&state=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=rAY5sn9DAkBfj8Z38MUCRI8PjwNHVAZypsOrOQ-j8VA&code_challenge_method=S256&nonce=Z3haMGFVRU54U2x4a1pjaUpqTmxuQWZSRW9ZeG8yQ0ZqUTJkT2I3ZlVCUVBG HTTP/1.1" 400 1337
+INFO 2026-04-11 00:08:10,384 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:10,548 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=c29INWhoeDhaQ0JwWkNvSExSV352Y1dpYXN4cVItSkd4ck9SZmh4SmhGd2F5&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=3MdJd2Tmc6FUKbhLDuA6A8wulvv3dwvyDYb0Av-Mc9I&code_challenge_method=S256&nonce=c29INWhoeDhaQ0JwWkNvSExSV352Y1dpYXN4cVItSkd4ck9SZmh4SmhGd2F5 HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:10,625 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:10,700 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=ZFg0WXN5QmFyc1ZxSHFXcVlhM19hM0RRV3RwSWdnbmdaZWVhMkp4NTR6QX5J&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=spOIxq9P83IkawFLClumma0C5e8ly9309EH87MV-HtQ&code_challenge_method=S256&nonce=ZFg0WXN5QmFyc1ZxSHFXcVlhM19hM0RRV3RwSWdnbmdaZWVhMkp4NTR6QX5J HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:10,772 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:10,836 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=bF95djg1OFBNeGpqdmJfNVFMb0JGTmVuTWVfZ3RGaEstc2NxREpIampwSC1J&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=5n0_04aypj0hNGV9uhwhngyhsVvtzus6pEnGvBNpUow&code_challenge_method=S256&nonce=bF95djg1OFBNeGpqdmJfNVFMb0JGTmVuTWVfZ3RGaEstc2NxREpIampwSC1J HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:10,898 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:10,955 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=WG9yWGYzN0tnelBVN21-SFF3VGtoaFQ4T0xGYkx5MEpkcXRyLS5odWh3RHdD&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=0c8rwRquF25q3ny7knSfAP1GmRTXevkPuB1cOV_Km4k&code_challenge_method=S256&nonce=WG9yWGYzN0tnelBVN21-SFF3VGtoaFQ4T0xGYkx5MEpkcXRyLS5odWh3RHdD HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,021 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,091 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=aXhpcDhncTROa0dQQWFJU3N5YVc4dDYwZUMuQVptNjJyTUN-SDI1eVJXcHNk&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=EC9yAO5sHn7rgIRIKkZVBloxT2J79bb0bOCFnIBYhUw&code_challenge_method=S256&nonce=aXhpcDhncTROa0dQQWFJU3N5YVc4dDYwZUMuQVptNjJyTUN-SDI1eVJXcHNk HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,165 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,236 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=eFl0OVNIMmU5LkdIMHNzNy1Qc2V2MXgwQlJ0a1lZWGdjajIwT0dwbUVIS1Bj&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=5eejSWPspFQmoPiB5Y0TF-f9dzuEafZm4hH8vln-Yjc&code_challenge_method=S256&nonce=eFl0OVNIMmU5LkdIMHNzNy1Qc2V2MXgwQlJ0a1lZWGdjajIwT0dwbUVIS1Bj HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,303 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,374 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=TmxiNU11NVV4WkRSNXNsdkp0LlBLWGFPc2Nic3RvYXNSUVdIYjR-WmNmWVRk&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=ryqodcb0NtZQD-uXF8Gr04mAH-hHpE1mgXaWS7i9ETU&code_challenge_method=S256&nonce=TmxiNU11NVV4WkRSNXNsdkp0LlBLWGFPc2Nic3RvYXNSUVdIYjR-WmNmWVRk HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,456 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,540 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=N1RMb0g0bWhlTThHNkFtR2drMkFtMDZzdWVHakkzQm9lUkw4cUZGLkJXb193&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=qAZJCoBaj-cbz2a6UqUPzztpy4Ur0hXSBZKudXe_DBk&code_challenge_method=S256&nonce=N1RMb0g0bWhlTThHNkFtR2drMkFtMDZzdWVHakkzQm9lUkw4cUZGLkJXb193 HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,614 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,697 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=OFJXS1l-aGo5LkhjcmxVM3NyUnJLdlVZbUtCTWpVaElkSDNqUGVXYjJXVWYt&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=Hhax6aOZKCY0v8pGfWTM-LrxsTB_Q15j3lCZ2SRpyoU&code_challenge_method=S256&nonce=OFJXS1l-aGo5LkhjcmxVM3NyUnJLdlVZbUtCTWpVaElkSDNqUGVXYjJXVWYt HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,770 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,847 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=QlJRaX5QMzFjOTV6TklYakFtUDVTLjEtVElncEZ-RW84SmJES3Y5RkpRUU5z&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=6XImTDfH-XTEStRX4A1Fq9K5nPlDaSXgeV5OJnIMMEo&code_challenge_method=S256&nonce=QlJRaX5QMzFjOTV6TklYakFtUDVTLjEtVElncEZ-RW84SmJES3Y5RkpRUU5z HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:11,913 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:11,964 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=TnVJT1hkMFJURXh1SUc2OWpGenFMcGpFX3Q1QUxLX3JXaXl-SmVCWGRJaG5-&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=RXCeRzAipvgbgzufezTboX80pqVwwQk-C6a9dgJm-f0&code_challenge_method=S256&nonce=TnVJT1hkMFJURXh1SUc2OWpGenFMcGpFX3Q1QUxLX3JXaXl-SmVCWGRJaG5- HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:12,027 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:12,094 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=OUNPU3B2cEJNclVPVGNxVTBiOF94YjhoUzAxMjZ-LmdWR200aHpHQ3V6R3Ay&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=ht34xbo3JS-jx3FFGmlRg9jjDtMARjvoXDZsI443u9Y&code_challenge_method=S256&nonce=OUNPU3B2cEJNclVPVGNxVTBiOF94YjhoUzAxMjZ-LmdWR200aHpHQ3V6R3Ay HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:12,159 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:12,228 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=djIwYjk1dFJRZGJMNkZESWdKa3FxWGZVcC41SFZMaFZYeUVSRmZBbzU5NVg1&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=IFcOyvsl4GKLE1RW-SealgsSUEBv6b_g4eezHqnDU-8&code_challenge_method=S256&nonce=djIwYjk1dFJRZGJMNkZESWdKa3FxWGZVcC41SFZMaFZYeUVSRmZBbzU5NVg1 HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:12,315 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:12,389 log 95009 6158790656 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=UUhCZWlMWnhsZmdLQmEyVEpZMTc0MjVuZUNZTVlnTWdmZlh1Y3JNTFVQTjFZ&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=BMQp-vzjrxBJi_K9Mhdg_eehzjUBi7XZ_I67551SCYU&code_challenge_method=S256&nonce=UUhCZWlMWnhsZmdLQmEyVEpZMTc0MjVuZUNZTVlnTWdmZlh1Y3JNTFVQTjFZ HTTP/1.1" 302 0
+INFO 2026-04-11 00:08:12,471 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:12,741 validators 95009 6175617024 Token issued for user 1 via local
+INFO 2026-04-11 00:08:12,754 signals 95009 6175617024 Access token created for user 1 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 00:08:12,813 log 95009 6175617024 "POST /o/token/ HTTP/1.1" 200 1458
+INFO 2026-04-11 00:08:12,822 log 95009 6175617024 "OPTIONS /o/.well-known/openid-configuration HTTP/1.1" 200 0
+INFO 2026-04-11 00:08:12,858 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:12,864 log 95009 6175617024 "OPTIONS /o/.well-known/jwks.json HTTP/1.1" 200 0
+INFO 2026-04-11 00:08:12,892 log 95009 6175617024 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 00:08:12,970 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-04-11 00:08:13,048 permissions 95009 6242922496 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:08:13,048 permissions 95009 6259748864 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:08:13,049 permissions 95009 6226096128 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:08:13,049 permissions 95009 6209269760 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:08:13,061 log 95009 6259748864 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:08:13,062 log 95009 6259748864 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:08:13,062 log 95009 6226096128 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:08:13,062 log 95009 6209269760 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:08:13,062 log 95009 6242922496 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:08:13,062 log 95009 6226096128 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:08:13,062 log 95009 6209269760 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:08:13,063 log 95009 6242922496 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+INFO 2026-04-11 00:08:36,447 log 95009 6175617024 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:08:36,494 log 95009 6175617024 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 00:09:23,546 log 95009 6158790656 "GET /admin/oauth2_provider/application/add/ HTTP/1.1" 200 29640
+INFO 2026-04-11 00:09:23,625 log 95009 6158790656 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:10:30,644 log 95009 6158790656 "POST /admin/oauth2_provider/application/add/ HTTP/1.1" 302 0
+INFO 2026-04-11 00:10:30,748 log 95009 6158790656 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 19382
+INFO 2026-04-11 00:10:30,815 log 95009 6158790656 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:10:33,235 log 95009 6158790656 "GET /admin/oauth2_provider/application/2/change/ HTTP/1.1" 200 30107
+INFO 2026-04-11 00:10:33,291 log 95009 6158790656 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:12:15,041 log 95009 6158217216 "POST /admin/oauth2_provider/application/2/change/ HTTP/1.1" 302 0
+INFO 2026-04-11 00:12:15,118 log 95009 6158217216 "GET /admin/oauth2_provider/application/ HTTP/1.1" 200 19384
+INFO 2026-04-11 00:12:15,212 log 95009 6158217216 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 00:12:24,918 log 95009 6191869952 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:12:25,376 log 95009 6191869952 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+ERROR 2026-04-11 00:14:42,200 apps 6095 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:14:42,200 apps 6095 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:14:42,200 apps 6095 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 00:14:42,633 apps 6110 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:14:42,633 apps 6110 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:14:42,633 apps 6110 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:14:42,638 autoreload 6110 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:14:52,408 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:14:52,594 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:33:36,351 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:33:39,438 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:34:05,928 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:34:07,280 log 6110 6140702720 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=Si00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=R9tw9KfQaP4p-VveGclKBgQfC-i-0TCw9arlwaps-vI&code_challenge_method=S256&nonce=Si00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv HTTP/1.1" 302 0
+INFO 2026-04-11 00:34:07,464 log 6110 6140702720 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DSi00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DR9tw9KfQaP4p-VveGclKBgQfC-i-0TCw9arlwaps-vI%26code_challenge_method%3DS256%26nonce%3DSi00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv HTTP/1.1" 200 8720
+WARNING 2026-04-11 00:34:07,535 log 6110 6140702720 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 00:34:07,535 log 6110 6140702720 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 00:34:20,740 log 6110 6140702720 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DSi00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DR9tw9KfQaP4p-VveGclKBgQfC-i-0TCw9arlwaps-vI%26code_challenge_method%3DS256%26nonce%3DSi00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv HTTP/1.1" 302 0
+INFO 2026-04-11 00:34:20,876 log 6110 6140702720 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=Si00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=R9tw9KfQaP4p-VveGclKBgQfC-i-0TCw9arlwaps-vI&code_challenge_method=S256&nonce=Si00cWloMWExVXRmRFJCTWNzTDFBc2NUdWtIQXdMbTE1QzJxUVJTUUV6SHpv HTTP/1.1" 302 0
+INFO 2026-04-11 00:34:23,577 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:34:26,356 validators 6110 6123876352 Token issued for user 1 via local
+INFO 2026-04-11 00:34:26,390 signals 6110 6123876352 Access token created for user 1 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 00:34:26,476 log 6110 6123876352 "POST /o/token/ HTTP/1.1" 200 1458
+INFO 2026-04-11 00:34:31,938 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:34:33,181 log 6110 6123876352 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 00:34:35,220 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-04-11 00:34:37,008 permissions 6110 6325039104 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:34:37,021 log 6110 6325039104 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:34:37,021 log 6110 6325039104 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:34:38,828 permissions 6110 6325039104 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:34:38,841 log 6110 6325039104 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:34:38,842 log 6110 6325039104 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:34:40,115 permissions 6110 6325039104 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:34:40,128 log 6110 6325039104 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:34:40,129 log 6110 6325039104 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+WARNING 2026-04-11 00:34:42,426 permissions 6110 6325039104 Unknown client_id e0fHKkeBUgsnr67J5eK1rfcchOnKezAnJqQJY6pT from 127.0.0.1
+WARNING 2026-04-11 00:34:42,436 log 6110 6325039104 Unauthorized: /api/oidc/introspect/
+WARNING 2026-04-11 00:34:42,437 log 6110 6325039104 "POST /api/oidc/introspect/ HTTP/1.1" 401 58
+INFO 2026-04-11 00:41:19,099 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:41:20,185 log 6110 6123876352 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 00:41:22,160 log 6110 6123876352 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+ERROR 2026-04-11 00:42:49,691 apps 18327 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:42:49,692 apps 18327 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:42:49,692 apps 18327 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 00:42:50,125 apps 18329 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:42:50,126 apps 18329 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:42:50,126 apps 18329 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:42:50,131 autoreload 18329 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:43:01,315 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:43:04,202 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:43:49,035 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:43:50,452 log 18329 6211416064 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=UHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=B44qZRfRf87_Dabxvpnc1NRkT_awcGNL2MrNt6zh32k&code_challenge_method=S256&nonce=UHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w HTTP/1.1" 302 0
+INFO 2026-04-11 00:43:50,513 log 18329 6211416064 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DUHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DB44qZRfRf87_Dabxvpnc1NRkT_awcGNL2MrNt6zh32k%26code_challenge_method%3DS256%26nonce%3DUHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w HTTP/1.1" 200 8720
+WARNING 2026-04-11 00:43:50,585 log 18329 6211416064 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 00:43:50,585 log 18329 6211416064 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 00:44:06,903 log 18329 6211416064 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DUHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DB44qZRfRf87_Dabxvpnc1NRkT_awcGNL2MrNt6zh32k%26code_challenge_method%3DS256%26nonce%3DUHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w HTTP/1.1" 302 0
+INFO 2026-04-11 00:44:06,979 log 18329 6211416064 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=UHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=B44qZRfRf87_Dabxvpnc1NRkT_awcGNL2MrNt6zh32k&code_challenge_method=S256&nonce=UHFiUTRvNEVvMGJDWlkuQUM2Sk1lVlJlQ052ZFBHYmVscEMxcHFvaUxScm0w HTTP/1.1" 302 0
+INFO 2026-04-11 00:44:08,916 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:44:12,245 validators 18329 6194589696 Token issued for user 1 via local
+INFO 2026-04-11 00:44:12,252 signals 18329 6194589696 Access token created for user 1 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 00:44:12,303 log 18329 6194589696 "POST /o/token/ HTTP/1.1" 200 1458
+INFO 2026-04-11 00:44:13,509 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:44:14,301 log 18329 6194589696 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 00:44:16,338 log 18329 6194589696 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 00:44:17,731 permissions 18329 6245068800 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 00:44:17,746 token 18329 6245068800 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 00:44:17,782 log 18329 6245068800 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 00:44:17,849 log 18329 6245068800 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 00:52:52,413 autoreload 18329 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 00:52:53,290 apps 22591 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:52:53,290 apps 22591 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:52:53,290 apps 22591 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:52:53,299 autoreload 22591 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:52:56,641 autoreload 22591 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 00:52:57,167 apps 22634 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:52:57,167 apps 22634 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:52:57,167 apps 22634 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:52:57,173 autoreload 22634 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:52:58,422 autoreload 22634 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 00:52:58,933 apps 22658 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:52:58,933 apps 22658 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:52:58,933 apps 22658 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:52:58,938 autoreload 22658 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:04,421 autoreload 22658 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 00:53:04,962 apps 22703 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:04,962 apps 22703 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:04,962 apps 22703 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:04,967 autoreload 22703 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:10,519 autoreload 22703 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 00:53:11,085 apps 22756 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:11,085 apps 22756 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:11,085 apps 22756 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:11,090 autoreload 22756 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:31,302 autoreload 22756 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 00:53:31,991 apps 22916 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:31,991 apps 22916 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:31,991 apps 22916 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:31,997 autoreload 22916 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:33,288 autoreload 22916 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 00:53:33,828 apps 22937 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:33,828 apps 22937 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:33,828 apps 22937 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:33,833 autoreload 22937 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:40,450 autoreload 22937 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 00:53:40,985 apps 22994 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:40,985 apps 22994 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:40,985 apps 22994 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:40,991 autoreload 22994 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 00:53:42,268 autoreload 22994 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 00:53:42,809 apps 23014 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 00:53:42,809 apps 23014 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 00:53:42,809 apps 23014 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 00:53:42,814 autoreload 23014 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:01:25,181 autoreload 23014 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 01:01:25,964 apps 27200 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 01:01:25,964 apps 27200 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 01:01:25,964 apps 27200 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 01:01:25,973 autoreload 27200 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:04:45,675 autoreload 27200 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/migrations/0003_add_user_type_and_advocate_fields.py changed, reloading.
+ERROR 2026-04-11 01:04:46,583 apps 28635 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 01:04:46,583 apps 28635 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 01:04:46,583 apps 28635 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 01:04:46,592 autoreload 28635 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:19:37,816 permissions 28635 6136524800 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 01:19:37,839 token 28635 6136524800 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:19:37,936 log 28635 6136524800 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 01:19:38,019 log 28635 6136524800 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 01:19:39,499 log 28635 6153351168 "OPTIONS /accounts/logout/ HTTP/1.1" 200 0
+WARNING 2026-04-11 01:19:39,548 log 28635 6170177536 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-11 01:19:39,561 log 28635 6170177536 "POST /accounts/logout/ HTTP/1.1" 403 2554
+INFO 2026-04-11 01:19:39,661 log 28635 6170177536 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=aUlSTUt1eU5tMW9Wc0VVZFRuVERvTWVsRUN-eHNNY0xYZ25mNXBFTmdDTHk1&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=cg3jxK4EL25V64OFfkSMD7qNNDCAutY5jTIAzgAWluc&code_challenge_method=S256&nonce=aUlSTUt1eU5tMW9Wc0VVZFRuVERvTWVsRUN-eHNNY0xYZ25mNXBFTmdDTHk1 HTTP/1.1" 302 0
+INFO 2026-04-11 01:19:39,715 log 28635 6170177536 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DaUlSTUt1eU5tMW9Wc0VVZFRuVERvTWVsRUN-eHNNY0xYZ25mNXBFTmdDTHk1%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dcg3jxK4EL25V64OFfkSMD7qNNDCAutY5jTIAzgAWluc%26code_challenge_method%3DS256%26nonce%3DaUlSTUt1eU5tMW9Wc0VVZFRuVERvTWVsRUN-eHNNY0xYZ25mNXBFTmdDTHk1 HTTP/1.1" 200 8720
+WARNING 2026-04-11 01:19:40,152 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:19:40,153 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:20:36,398 log 28635 6170177536 "GET /api/users/register-form/ HTTP/1.1" 200 25410
+WARNING 2026-04-11 01:20:36,550 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:20:36,551 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+WARNING 2026-04-11 01:24:21,955 log 28635 6170177536 Bad Request: /api/users/register/
+WARNING 2026-04-11 01:24:21,956 log 28635 6170177536 "POST /api/users/register/ HTTP/1.1" 400 50
+INFO 2026-04-11 01:28:29,489 log 28635 6170177536 "POST /api/users/register/ HTTP/1.1" 201 946
+INFO 2026-04-11 01:28:31,564 log 28635 6170177536 "GET /accounts/login/ HTTP/1.1" 200 8200
+WARNING 2026-04-11 01:28:31,727 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:28:31,728 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+WARNING 2026-04-11 01:32:01,580 log 28635 6170177536 Forbidden (CSRF token from POST incorrect.): /admin/logout/
+WARNING 2026-04-11 01:32:01,604 log 28635 6170177536 "POST /admin/logout/ HTTP/1.1" 403 2503
+INFO 2026-04-11 01:32:10,086 log 28635 6187003904 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:32:10,291 log 28635 6187003904 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 01:32:10,323 log 28635 6170177536 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=RTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=Bs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA&code_challenge_method=S256&nonce=RTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 302 0
+INFO 2026-04-11 01:32:10,351 log 28635 6170177536 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 200 8720
+INFO 2026-04-11 01:32:41,764 log 28635 6170177536 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 200 9253
+INFO 2026-04-11 01:33:01,812 log 28635 6170177536 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 200 9253
+INFO 2026-04-11 01:33:22,138 log 28635 6170177536 "POST /accounts/login/ HTTP/1.1" 200 8733
+WARNING 2026-04-11 01:33:22,244 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:33:22,247 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:33:43,510 log 28635 6170177536 "POST /accounts/login/ HTTP/1.1" 200 8745
+WARNING 2026-04-11 01:33:43,616 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:33:43,634 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:03,523 log 28635 6170177536 "POST /accounts/login/ HTTP/1.1" 200 8733
+WARNING 2026-04-11 01:34:03,604 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:03,605 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:28,870 log 28635 6170177536 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:34:28,953 log 28635 6170177536 "GET / HTTP/1.1" 200 4427
+WARNING 2026-04-11 01:34:29,109 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:29,110 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:30,908 log 28635 6170177536 "GET /admin/ HTTP/1.1" 200 15726
+WARNING 2026-04-11 01:34:30,971 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:30,973 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:32,921 log 28635 6170177536 "GET /admin/auth/user/ HTTP/1.1" 200 19051
+INFO 2026-04-11 01:34:33,023 log 28635 6153351168 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 645
+WARNING 2026-04-11 01:34:33,062 log 28635 6203830272 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:33,063 log 28635 6203830272 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:33,068 log 28635 6170177536 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 01:34:33,113 log 28635 6170177536 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1761
+INFO 2026-04-11 01:34:50,521 log 28635 6170177536 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:34:50,561 log 28635 6170177536 "GET / HTTP/1.1" 200 3981
+WARNING 2026-04-11 01:34:50,701 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:50,701 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:34:53,077 log 28635 6170177536 "GET /accounts/login/ HTTP/1.1" 200 8200
+WARNING 2026-04-11 01:34:53,150 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:34:53,151 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:35:09,625 log 28635 6170177536 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:35:09,674 log 28635 6170177536 "GET / HTTP/1.1" 200 4270
+WARNING 2026-04-11 01:35:09,780 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:35:09,784 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:35:25,625 log 28635 6170177536 "POST /accounts/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:35:25,666 log 28635 6170177536 "GET / HTTP/1.1" 200 3981
+WARNING 2026-04-11 01:35:25,748 log 28635 6170177536 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:35:25,750 log 28635 6170177536 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:37:43,173 autoreload 28635 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-04-11 01:37:44,119 apps 43961 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 01:37:44,119 apps 43961 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 01:37:44,119 apps 43961 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 01:37:44,127 autoreload 43961 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:37:46,474 autoreload 43961 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/views.py changed, reloading.
+ERROR 2026-04-11 01:37:46,992 apps 44001 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 01:37:46,992 apps 44001 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 01:37:46,992 apps 44001 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 01:37:46,997 autoreload 44001 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:43:42,490 autoreload 44001 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/core/models.py changed, reloading.
+ERROR 2026-04-11 01:43:43,297 apps 48866 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 01:43:43,297 apps 48866 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 01:43:43,297 apps 48866 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 01:43:43,307 autoreload 48866 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 01:43:51,796 log 48866 6168195072 "GET /accounts/login/ HTTP/1.1" 200 8229
+WARNING 2026-04-11 01:43:51,896 log 48866 6168195072 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:43:51,897 log 48866 6168195072 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:44:02,248 log 48866 6168195072 "POST /accounts/login/ HTTP/1.1" 200 8762
+WARNING 2026-04-11 01:44:02,405 log 48866 6168195072 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:44:02,405 log 48866 6168195072 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:45:33,522 log 48866 6168195072 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:45:33,592 log 48866 6168195072 "GET / HTTP/1.1" 200 4427
+WARNING 2026-04-11 01:45:33,751 log 48866 6168195072 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:45:33,751 log 48866 6168195072 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:45:35,623 log 48866 6168195072 "GET /admin/ HTTP/1.1" 200 15726
+WARNING 2026-04-11 01:45:35,684 log 48866 6168195072 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:45:35,684 log 48866 6168195072 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:45:40,098 log 48866 6168195072 "GET /admin/auth/user/ HTTP/1.1" 200 19051
+WARNING 2026-04-11 01:45:40,153 log 48866 6168195072 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:45:40,154 log 48866 6168195072 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:45:40,161 log 48866 6185021440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 01:45:42,764 log 48866 6185021440 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 36254
+INFO 2026-04-11 01:45:42,813 log 48866 6168195072 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9159
+INFO 2026-04-11 01:45:42,820 log 48866 6201847808 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19698
+WARNING 2026-04-11 01:45:42,845 log 48866 6218674176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:45:42,845 log 48866 6218674176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:45:42,852 log 48866 6185021440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 01:45:42,920 log 48866 6185021440 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1112
+INFO 2026-04-11 01:45:42,921 log 48866 6218674176 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 805
+INFO 2026-04-11 01:46:14,701 log 48866 6218674176 "POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:46:14,789 log 48866 6218674176 "GET /admin/auth/user/ HTTP/1.1" 200 19245
+WARNING 2026-04-11 01:46:14,896 log 48866 6185021440 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:46:14,897 log 48866 6185021440 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+INFO 2026-04-11 01:46:14,924 log 48866 6218674176 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 01:46:18,974 log 48866 6218674176 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 01:46:19,009 log 48866 6218674176 "GET / HTTP/1.1" 200 3981
+WARNING 2026-04-11 01:46:19,116 log 48866 6218674176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2026-04-11 01:46:19,116 log 48866 6218674176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4842
+WARNING 2026-04-11 01:46:32,641 log 48866 6218674176 Forbidden (CSRF token from POST incorrect.): /accounts/login/
+WARNING 2026-04-11 01:46:32,662 log 48866 6218674176 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 403 2503
+INFO 2026-04-11 01:46:39,551 log 48866 6218674176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 200 8749
+INFO 2026-04-11 01:46:50,117 log 48866 6218674176 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DBs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA%26code_challenge_method%3DS256%26nonce%3DRTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 302 0
+INFO 2026-04-11 01:46:50,195 log 48866 6218674176 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=RTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=Bs95646_pWGmwEPBBRMO52aAsy1U0zlFBdg0scxysGA&code_challenge_method=S256&nonce=RTN-QkRNdzcyen40Smh4cWRpLWp1cjNSTUUyUnh4YWJxWnVQVGRnTU5vd2Za HTTP/1.1" 302 0
+INFO 2026-04-11 01:46:50,369 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:46:50,625 validators 48866 6236073984 Token issued for user 4 via local
+INFO 2026-04-11 01:46:50,634 signals 48866 6236073984 Access token created for user 4 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:46:50,685 log 48866 6236073984 "POST /o/token/ HTTP/1.1" 200 1504
+INFO 2026-04-11 01:46:50,694 log 48866 6236073984 "OPTIONS /o/.well-known/openid-configuration HTTP/1.1" 200 0
+INFO 2026-04-11 01:46:50,726 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:46:50,729 log 48866 6236073984 "OPTIONS /o/.well-known/jwks.json HTTP/1.1" 200 0
+INFO 2026-04-11 01:46:50,753 log 48866 6236073984 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 01:46:50,818 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:46:51,078 permissions 48866 6286553088 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 01:46:51,078 permissions 48866 6252900352 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 01:46:51,078 permissions 48866 6269726720 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 01:46:51,097 token 48866 6269726720 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:46:51,097 permissions 48866 6303379456 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 01:46:51,097 token 48866 6286553088 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:46:51,097 token 48866 6252900352 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:46:51,105 token 48866 6303379456 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 01:46:51,222 log 48866 6269726720 "POST /api/oidc/introspect/ HTTP/1.1" 200 380
+INFO 2026-04-11 01:46:51,222 log 48866 6252900352 "POST /api/oidc/introspect/ HTTP/1.1" 200 380
+INFO 2026-04-11 01:46:51,289 log 48866 6303379456 "POST /api/oidc/introspect/ HTTP/1.1" 200 380
+INFO 2026-04-11 01:46:51,290 log 48866 6286553088 "POST /api/oidc/introspect/ HTTP/1.1" 200 380
+INFO 2026-04-11 01:46:51,325 log 48866 6269726720 "GET /api/oidc/userinfo/ HTTP/1.1" 200 216
+INFO 2026-04-11 01:46:51,326 log 48866 6252900352 "GET /api/oidc/userinfo/ HTTP/1.1" 200 216
+INFO 2026-04-11 01:46:51,335 log 48866 6303379456 "GET /api/oidc/userinfo/ HTTP/1.1" 200 216
+INFO 2026-04-11 01:46:51,335 log 48866 6286553088 "GET /api/oidc/userinfo/ HTTP/1.1" 200 216
+INFO 2026-04-11 01:47:01,812 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+WARNING 2026-04-11 01:47:48,529 log 48866 6218674176 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-11 01:47:48,547 log 48866 6218674176 "POST /accounts/logout/ HTTP/1.1" 403 2554
+INFO 2026-04-11 01:47:48,590 log 48866 6218674176 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=LlI2VmxrT1VlRXRQdndiZl9RRHZxYnVjNGh0WU5SMGlrQXQyRzZLdjRTTHpi&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=MsXKangAbROJeKzzPX0xLmKZLBoz87inQdTvkKRydbw&code_challenge_method=S256&nonce=LlI2VmxrT1VlRXRQdndiZl9RRHZxYnVjNGh0WU5SMGlrQXQyRzZLdjRTTHpi HTTP/1.1" 302 0
+INFO 2026-04-11 01:47:48,618 log 48866 6218674176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DLlI2VmxrT1VlRXRQdndiZl9RRHZxYnVjNGh0WU5SMGlrQXQyRzZLdjRTTHpi%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DMsXKangAbROJeKzzPX0xLmKZLBoz87inQdTvkKRydbw%26code_challenge_method%3DS256%26nonce%3DLlI2VmxrT1VlRXRQdndiZl9RRHZxYnVjNGh0WU5SMGlrQXQyRzZLdjRTTHpi HTTP/1.1" 200 8749
+INFO 2026-04-11 01:47:52,282 log 48866 6218674176 "GET /api/users/register-form/ HTTP/1.1" 200 25410
+INFO 2026-04-11 01:48:23,563 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:48:23,596 log 48866 6236073984 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 01:48:23,632 log 48866 6218674176 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=RXV6a3p2TlBJNlMtTWF2RUZ5WHd6VE5pMGp3cWgwRzFxTXAxUXhadV9JeH56&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=NEaRy4X0TfRLCCUef93pcltG6O3KRdWBjZppeypKQr4&code_challenge_method=S256&nonce=RXV6a3p2TlBJNlMtTWF2RUZ5WHd6VE5pMGp3cWgwRzFxTXAxUXhadV9JeH56 HTTP/1.1" 302 0
+INFO 2026-04-11 01:48:23,667 log 48866 6218674176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DRXV6a3p2TlBJNlMtTWF2RUZ5WHd6VE5pMGp3cWgwRzFxTXAxUXhadV9JeH56%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DNEaRy4X0TfRLCCUef93pcltG6O3KRdWBjZppeypKQr4%26code_challenge_method%3DS256%26nonce%3DRXV6a3p2TlBJNlMtTWF2RUZ5WHd6VE5pMGp3cWgwRzFxTXAxUXhadV9JeH56 HTTP/1.1" 200 8749
+INFO 2026-04-11 01:48:29,978 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:48:30,019 log 48866 6218674176 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=WmFGaXBWNndVSXlKcWhSUFd1MkxYb3pxS2dpWUp6NFZkc1ozOUpJUFRwNE1j&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=pQ-aPdiOjHhn0_dtjLBYF11BSSo5zIyMlG1qe63IU2o&code_challenge_method=S256&nonce=WmFGaXBWNndVSXlKcWhSUFd1MkxYb3pxS2dpWUp6NFZkc1ozOUpJUFRwNE1j HTTP/1.1" 302 0
+INFO 2026-04-11 01:48:30,050 log 48866 6218674176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DWmFGaXBWNndVSXlKcWhSUFd1MkxYb3pxS2dpWUp6NFZkc1ozOUpJUFRwNE1j%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DpQ-aPdiOjHhn0_dtjLBYF11BSSo5zIyMlG1qe63IU2o%26code_challenge_method%3DS256%26nonce%3DWmFGaXBWNndVSXlKcWhSUFd1MkxYb3pxS2dpWUp6NFZkc1ozOUpJUFRwNE1j HTTP/1.1" 200 8749
+INFO 2026-04-11 01:48:30,972 log 48866 6236073984 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:48:31,009 log 48866 6218674176 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=Q0pucnR3X0F-MnkwWVd4SnZvWnNuTWFBeVJFNnlxSU1mNGxGNXlYfk9TS0lj&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=uyXa05hY6hSHz2_Fb5IhE38Q-QB_KkWTTE3x4cpZdVM&code_challenge_method=S256&nonce=Q0pucnR3X0F-MnkwWVd4SnZvWnNuTWFBeVJFNnlxSU1mNGxGNXlYfk9TS0lj HTTP/1.1" 302 0
+INFO 2026-04-11 01:48:31,041 log 48866 6218674176 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DQ0pucnR3X0F-MnkwWVd4SnZvWnNuTWFBeVJFNnlxSU1mNGxGNXlYfk9TS0lj%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DuyXa05hY6hSHz2_Fb5IhE38Q-QB_KkWTTE3x4cpZdVM%26code_challenge_method%3DS256%26nonce%3DQ0pucnR3X0F-MnkwWVd4SnZvWnNuTWFBeVJFNnlxSU1mNGxGNXlYfk9TS0lj HTTP/1.1" 200 8749
+INFO 2026-04-11 01:56:28,155 log 48866 6168195072 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:56:28,260 log 48866 6185021440 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=U2dsTmRqMXFvODEwMGNpZVh0Z1JhQXVrM0NoLTBJWDE0T2pRZFpQfmttb05f&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=pPrOwFklrE9w3D2senfhzECPkoEk0zh_IRBzxOJf2aE&code_challenge_method=S256&nonce=U2dsTmRqMXFvODEwMGNpZVh0Z1JhQXVrM0NoLTBJWDE0T2pRZFpQfmttb05f HTTP/1.1" 302 0
+INFO 2026-04-11 01:56:28,299 log 48866 6185021440 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DU2dsTmRqMXFvODEwMGNpZVh0Z1JhQXVrM0NoLTBJWDE0T2pRZFpQfmttb05f%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DpPrOwFklrE9w3D2senfhzECPkoEk0zh_IRBzxOJf2aE%26code_challenge_method%3DS256%26nonce%3DU2dsTmRqMXFvODEwMGNpZVh0Z1JhQXVrM0NoLTBJWDE0T2pRZFpQfmttb05f HTTP/1.1" 200 8749
+INFO 2026-04-11 01:56:28,773 log 48866 6168195072 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 01:56:28,813 log 48866 6185021440 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=dHg2LmpxamE4QXd1cWZQMTNXTDF1b2JEYzByemc3N2ZPT0NlMkxreWQ0cUxT&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=mLOfOyxLn9yUPtUO9OiGS7EtuGxC3nUByLK0wsNe5X8&code_challenge_method=S256&nonce=dHg2LmpxamE4QXd1cWZQMTNXTDF1b2JEYzByemc3N2ZPT0NlMkxreWQ0cUxT HTTP/1.1" 302 0
+INFO 2026-04-11 01:56:28,857 log 48866 6185021440 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DdHg2LmpxamE4QXd1cWZQMTNXTDF1b2JEYzByemc3N2ZPT0NlMkxreWQ0cUxT%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DmLOfOyxLn9yUPtUO9OiGS7EtuGxC3nUByLK0wsNe5X8%26code_challenge_method%3DS256%26nonce%3DdHg2LmpxamE4QXd1cWZQMTNXTDF1b2JEYzByemc3N2ZPT0NlMkxreWQ0cUxT HTTP/1.1" 200 8749
+INFO 2026-04-11 01:56:32,150 log 48866 6185021440 "GET /api/users/register-form/ HTTP/1.1" 200 25410
+WARNING 2026-04-11 01:56:48,594 log 48866 6185021440 Bad Request: /api/users/register/
+WARNING 2026-04-11 01:56:48,595 log 48866 6185021440 "POST /api/users/register/ HTTP/1.1" 400 223
+INFO 2026-04-11 01:58:30,161 log 48866 6185021440 "POST /api/users/register/ HTTP/1.1" 201 958
+INFO 2026-04-11 01:58:32,245 log 48866 6185021440 "GET /accounts/login/ HTTP/1.1" 200 8229
+INFO 2026-04-11 01:59:18,346 log 48866 6185021440 "POST /accounts/login/ HTTP/1.1" 200 8762
+INFO 2026-04-11 01:59:42,509 log 48866 6185021440 "POST /accounts/login/ HTTP/1.1" 200 8762
+INFO 2026-04-11 02:00:07,995 log 48866 6185021440 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:00:08,038 log 48866 6185021440 "GET / HTTP/1.1" 200 4427
+INFO 2026-04-11 02:00:09,876 log 48866 6185021440 "GET /admin/ HTTP/1.1" 200 16073
+INFO 2026-04-11 02:00:12,414 log 48866 6185021440 "GET /admin/auth/user/ HTTP/1.1" 200 19539
+INFO 2026-04-11 02:00:12,474 log 48866 6185021440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:00:36,860 log 48866 6185021440 "GET /admin/auth/user/7/change/ HTTP/1.1" 200 36228
+INFO 2026-04-11 02:00:36,955 log 48866 6185021440 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:00:41,045 log 48866 6185021440 "GET /admin/auth/user/ HTTP/1.1" 200 19539
+INFO 2026-04-11 02:03:48,038 log 48866 6185021440 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:03:48,072 log 48866 6185021440 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 02:03:50,237 log 48866 6185021440 "GET /accounts/login/ HTTP/1.1" 200 8229
+INFO 2026-04-11 02:04:22,750 log 48866 6185021440 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:04:22,800 log 48866 6185021440 "GET / HTTP/1.1" 200 4270
+INFO 2026-04-11 02:04:26,792 log 48866 6185021440 "POST /accounts/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:04:26,822 log 48866 6185021440 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 02:04:29,660 log 48866 6185021440 "GET /accounts/login/ HTTP/1.1" 200 8229
+INFO 2026-04-11 02:04:35,984 autoreload 48866 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:04:37,326 apps 58805 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:04:37,326 apps 58805 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:04:37,326 apps 58805 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:04:37,343 autoreload 58805 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:04:40,851 autoreload 58805 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:04:41,525 apps 58851 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:04:41,525 apps 58851 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:04:41,525 apps 58851 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:04:41,531 autoreload 58851 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:07:17,424 autoreload 58851 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:07:18,203 apps 60968 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:07:18,203 apps 60968 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:07:18,203 apps 60968 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:07:18,211 autoreload 60968 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:07:24,748 autoreload 60968 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:07:25,434 apps 61043 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:07:25,434 apps 61043 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:07:25,434 apps 61043 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:07:25,440 autoreload 61043 8285974784 Watching for file changes with StatReloader
+ERROR 2026-04-11 02:13:34,763 apps 66098 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:13:34,763 apps 66098 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:13:34,763 apps 66098 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:14:33,157 apps 66799 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:14:33,157 apps 66799 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:14:33,157 apps 66799 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:19:07,478 log 61043 6169309184 "POST /accounts/login/ HTTP/1.1" 200 9020
+INFO 2026-04-11 02:19:41,634 log 61043 6169309184 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:19:41,708 log 61043 6169309184 "GET / HTTP/1.1" 200 4427
+INFO 2026-04-11 02:19:45,308 log 61043 6169309184 "GET /admin/ HTTP/1.1" 200 16073
+INFO 2026-04-11 02:19:47,212 log 61043 6169309184 "GET /admin/auth/user/ HTTP/1.1" 200 19539
+INFO 2026-04-11 02:19:47,269 log 61043 6169309184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:19:52,942 log 61043 6169309184 "GET /admin/auth/user/7/change/ HTTP/1.1" 200 36264
+INFO 2026-04-11 02:19:53,020 log 61043 6169309184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:20:14,177 log 61043 6169309184 "POST /admin/auth/user/7/change/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:20:14,256 log 61043 6169309184 "GET /admin/auth/user/ HTTP/1.1" 200 19731
+INFO 2026-04-11 02:20:14,337 log 61043 6169309184 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:20:20,856 log 61043 6169309184 "POST /admin/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:20:20,908 log 61043 6169309184 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 02:20:23,271 log 61043 6169309184 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 02:20:33,986 log 61043 6169309184 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:20:34,041 log 61043 6169309184 "GET / HTTP/1.1" 200 4270
+INFO 2026-04-11 02:20:50,393 log 61043 6169309184 "GET / HTTP/1.1" 200 4270
+INFO 2026-04-11 02:21:49,018 log 61043 6169309184 "POST /accounts/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:21:49,065 log 61043 6169309184 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 02:21:52,090 log 61043 6169309184 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 02:21:54,150 log 61043 6169309184 "GET /api/users/register-form/ HTTP/1.1" 200 25410
+INFO 2026-04-11 02:22:53,549 log 61043 6169309184 "POST /api/users/register/ HTTP/1.1" 201 966
+INFO 2026-04-11 02:22:55,627 log 61043 6169309184 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 02:23:10,953 log 61043 6202961920 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 02:23:10,992 log 61043 6169309184 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=M2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=d6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc&code_challenge_method=S256&nonce=M2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 302 0
+INFO 2026-04-11 02:23:11,033 log 61043 6169309184 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dd6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc%26code_challenge_method%3DS256%26nonce%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 200 9007
+INFO 2026-04-11 02:23:27,135 log 61043 6169309184 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dd6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc%26code_challenge_method%3DS256%26nonce%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 200 9540
+INFO 2026-04-11 02:23:58,865 log 61043 6169309184 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dd6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc%26code_challenge_method%3DS256%26nonce%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 200 9540
+ERROR 2026-04-11 02:29:02,381 apps 73555 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:29:02,381 apps 73555 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:29:02,381 apps 73555 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:29:19,103 apps 73865 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:29:19,103 apps 73865 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:29:19,103 apps 73865 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:29:51,410 autoreload 61043 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 02:29:52,255 apps 74161 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:29:52,255 apps 74161 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:29:52,255 apps 74161 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:29:52,264 autoreload 74161 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:29:57,754 autoreload 74161 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 02:29:58,437 apps 74217 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:29:58,437 apps 74217 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:29:58,437 apps 74217 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:29:58,443 autoreload 74217 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:30:05,009 autoreload 74217 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:30:05,725 apps 74288 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:30:05,725 apps 74288 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:30:05,725 apps 74288 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:30:05,732 autoreload 74288 8285974784 Watching for file changes with StatReloader
+ERROR 2026-04-11 02:31:27,488 apps 74985 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:31:27,488 apps 74985 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:31:27,488 apps 74985 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:32:05,514 apps 75452 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:32:05,515 apps 75452 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:32:05,515 apps 75452 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:32:21,406 autoreload 74288 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:32:22,105 apps 75635 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:32:22,105 apps 75635 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:32:22,105 apps 75635 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:32:22,114 autoreload 75635 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:32:26,581 autoreload 75635 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/forms.py changed, reloading.
+ERROR 2026-04-11 02:32:27,132 apps 75691 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:32:27,132 apps 75691 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:32:27,132 apps 75691 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:32:27,137 autoreload 75691 8285974784 Watching for file changes with StatReloader
+ERROR 2026-04-11 02:32:52,750 apps 76020 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:32:52,750 apps 76020 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:32:52,750 apps 76020 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:33:29,764 apps 76470 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:33:29,764 apps 76470 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:33:29,764 apps 76470 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:34:03,287 apps 76908 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:34:03,287 apps 76908 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:34:03,288 apps 76908 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:35:18,567 apps 77605 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:35:18,567 apps 77605 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:35:18,567 apps 77605 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:36:35,706 apps 78327 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:36:35,706 apps 78327 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:36:35,706 apps 78327 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:37:24,116 apps 78842 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:37:24,116 apps 78842 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:37:24,116 apps 78842 8285974784 ✅ Social authentication app initialized successfully
+ERROR 2026-04-11 02:38:20,421 apps 79405 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:38:20,422 apps 79405 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:38:20,422 apps 79405 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:43:04,939 log 75691 6128857088 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dd6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc%26code_challenge_method%3DS256%26nonce%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 200 9540
+INFO 2026-04-11 02:43:22,922 log 75691 6128857088 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Dd6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc%26code_challenge_method%3DS256%26nonce%3DM2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 302 0
+INFO 2026-04-11 02:43:23,040 log 75691 6128857088 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=M2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=d6zQacpOhFTZrYQxtvXfXLKpuPDuxI0D1vrYVaqpdUc&code_challenge_method=S256&nonce=M2N4N3Nsb29iQWJ4TnppU0Iwc2U5LUs0ZkhjRlB3T1E0djFEZG1-NURYSFkw HTTP/1.1" 302 0
+INFO 2026-04-11 02:43:23,313 log 75691 6162509824 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 02:43:23,560 validators 75691 6162509824 Token issued for user 1 via local
+INFO 2026-04-11 02:43:23,570 signals 75691 6162509824 Access token created for user 1 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 02:43:23,613 log 75691 6162509824 "POST /o/token/ HTTP/1.1" 200 1458
+INFO 2026-04-11 02:43:23,622 log 75691 6162509824 "OPTIONS /o/.well-known/openid-configuration HTTP/1.1" 200 0
+INFO 2026-04-11 02:43:23,644 log 75691 6162509824 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 02:43:23,646 log 75691 6162509824 "OPTIONS /o/.well-known/jwks.json HTTP/1.1" 200 0
+INFO 2026-04-11 02:43:23,668 log 75691 6162509824 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 02:43:23,780 log 75691 6162509824 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 02:43:23,900 permissions 75691 6179336192 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 02:43:23,961 permissions 75691 6196162560 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 02:43:23,996 token 75691 6196162560 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 02:43:23,996 token 75691 6179336192 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 02:43:24,013 permissions 75691 6212988928 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 02:43:24,014 permissions 75691 6229815296 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 02:43:24,024 token 75691 6212988928 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 02:43:24,025 token 75691 6229815296 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 02:43:24,033 log 75691 6196162560 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 02:43:24,034 log 75691 6179336192 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 02:43:24,058 log 75691 6212988928 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 02:43:24,058 log 75691 6229815296 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 02:43:24,096 log 75691 6196162560 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 02:43:24,096 log 75691 6179336192 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 02:43:24,115 log 75691 6229815296 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 02:43:24,115 log 75691 6212988928 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 02:43:29,215 log 75691 6162509824 "OPTIONS /accounts/logout/ HTTP/1.1" 200 0
+WARNING 2026-04-11 02:43:29,255 log 75691 6128857088 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-11 02:43:29,267 log 75691 6128857088 "POST /accounts/logout/ HTTP/1.1" 403 2554
+INFO 2026-04-11 02:43:29,316 log 75691 6128857088 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=VUc3eUZUZzVnQmlyWHNWTFJzUHFKZnAudGVVaWFudHlMYnItLVVCYk0uTVZP&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=dYSRheOu7HjMI6i-qTV_rFn4wI7TYYWhMEuqLllMAgQ&code_challenge_method=S256&nonce=VUc3eUZUZzVnQmlyWHNWTFJzUHFKZnAudGVVaWFudHlMYnItLVVCYk0uTVZP HTTP/1.1" 302 0
+INFO 2026-04-11 02:43:29,352 log 75691 6128857088 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DVUc3eUZUZzVnQmlyWHNWTFJzUHFKZnAudGVVaWFudHlMYnItLVVCYk0uTVZP%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DdYSRheOu7HjMI6i-qTV_rFn4wI7TYYWhMEuqLllMAgQ%26code_challenge_method%3DS256%26nonce%3DVUc3eUZUZzVnQmlyWHNWTFJzUHFKZnAudGVVaWFudHlMYnItLVVCYk0uTVZP HTTP/1.1" 200 9007
+INFO 2026-04-11 02:43:31,377 log 75691 6128857088 "GET /api/users/register-form/ HTTP/1.1" 200 25410
+INFO 2026-04-11 02:43:44,517 log 75691 6162509824 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 02:43:44,539 log 75691 6162509824 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 02:43:44,571 log 75691 6128857088 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=LVR5VkZVcWdlQUl1RFpIYzNBS1NvTEVNaWhsQW1XSUxvdXpMaElRSnRRU0J3&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=mtQgkf7gDxhKm-ZoWQ0t-4RTKg8s5uad467Av4b5DF8&code_challenge_method=S256&nonce=LVR5VkZVcWdlQUl1RFpIYzNBS1NvTEVNaWhsQW1XSUxvdXpMaElRSnRRU0J3 HTTP/1.1" 302 0
+INFO 2026-04-11 02:43:44,606 log 75691 6128857088 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DLVR5VkZVcWdlQUl1RFpIYzNBS1NvTEVNaWhsQW1XSUxvdXpMaElRSnRRU0J3%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DmtQgkf7gDxhKm-ZoWQ0t-4RTKg8s5uad467Av4b5DF8%26code_challenge_method%3DS256%26nonce%3DLVR5VkZVcWdlQUl1RFpIYzNBS1NvTEVNaWhsQW1XSUxvdXpMaElRSnRRU0J3 HTTP/1.1" 200 9007
+INFO 2026-04-11 02:43:49,092 log 75691 6128857088 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 02:43:52,543 log 75691 6128857088 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 02:43:58,891 log 75691 6128857088 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 02:44:11,691 log 75691 6128857088 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:44:11,752 log 75691 6128857088 "GET / HTTP/1.1" 200 4427
+INFO 2026-04-11 02:44:13,209 log 75691 6128857088 "GET /admin/ HTTP/1.1" 200 16420
+INFO 2026-04-11 02:44:15,815 log 75691 6128857088 "GET /admin/auth/user/ HTTP/1.1" 200 20530
+INFO 2026-04-11 02:44:15,871 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:29,403 log 75691 6128857088 "GET /admin/auth/user/12/change/ HTTP/1.1" 200 36240
+INFO 2026-04-11 02:44:29,461 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:33,660 log 75691 6128857088 "GET /admin/auth/user/12/delete/ HTTP/1.1" 200 14136
+INFO 2026-04-11 02:44:33,703 log 75691 6128857088 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2026-04-11 02:44:36,753 log 75691 6128857088 "POST /admin/auth/user/12/delete/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:44:36,850 log 75691 6128857088 "GET /admin/auth/user/ HTTP/1.1" 200 20198
+INFO 2026-04-11 02:44:36,921 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:39,059 log 75691 6128857088 "GET /admin/auth/user/11/change/ HTTP/1.1" 200 36241
+INFO 2026-04-11 02:44:39,116 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:42,831 log 75691 6128857088 "GET /admin/auth/user/11/delete/ HTTP/1.1" 200 14129
+INFO 2026-04-11 02:44:44,390 log 75691 6128857088 "POST /admin/auth/user/11/delete/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:44:44,435 log 75691 6128857088 "GET /admin/auth/user/ HTTP/1.1" 200 19695
+INFO 2026-04-11 02:44:44,482 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:47,211 log 75691 6128857088 "GET /admin/auth/user/7/change/ HTTP/1.1" 200 36252
+INFO 2026-04-11 02:44:47,278 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:49,701 log 75691 6128857088 "GET /admin/auth/user/7/delete/ HTTP/1.1" 200 14109
+INFO 2026-04-11 02:44:51,870 log 75691 6128857088 "POST /admin/auth/user/7/delete/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:44:51,919 log 75691 6128857088 "GET /admin/auth/user/ HTTP/1.1" 200 19204
+INFO 2026-04-11 02:44:51,971 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:53,452 log 75691 6128857088 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 36246
+INFO 2026-04-11 02:44:53,510 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:44:55,991 log 75691 6128857088 "GET /admin/auth/user/4/delete/ HTTP/1.1" 200 14568
+INFO 2026-04-11 02:44:57,789 log 75691 6128857088 "POST /admin/auth/user/4/delete/ HTTP/1.1" 302 0
+INFO 2026-04-11 02:44:57,868 log 75691 6128857088 "GET /admin/auth/user/ HTTP/1.1" 200 18723
+INFO 2026-04-11 02:44:57,938 log 75691 6128857088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 02:47:46,270 autoreload 75691 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 02:47:47,407 apps 83769 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:47:47,408 apps 83769 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:47:47,408 apps 83769 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:47:47,420 autoreload 83769 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 02:47:50,860 autoreload 83769 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 02:47:51,472 apps 83808 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 02:47:51,472 apps 83808 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 02:47:51,472 apps 83808 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 02:47:51,478 autoreload 83808 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 03:08:13,632 log 83808 6165573632 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:08:13,866 log 83808 6182400000 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=VFAuOXByMXhsdlNncEdPMlJtNzJUZ0hPfjdCTExJY3pwU3RGQjdteXV6bTBv&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=yfLJFFBrC5YjCcjUj7wnxnER5bTwLwrZg0NC6Uw3Qiw&code_challenge_method=S256&nonce=VFAuOXByMXhsdlNncEdPMlJtNzJUZ0hPfjdCTExJY3pwU3RGQjdteXV6bTBv HTTP/1.1" 302 0
+INFO 2026-04-11 03:08:14,018 log 83808 6165573632 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:08:14,131 log 83808 6182400000 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=SmIyQkJiS2t5bE9idWc4fnZYaHJMb3hKfll0dWwxMEpQZmpPem1uckJpMHk5&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=-Dz1_tdVtDdqe8yrXg0BGuV87ivBmLSsyCgETgwzjy4&code_challenge_method=S256&nonce=SmIyQkJiS2t5bE9idWc4fnZYaHJMb3hKfll0dWwxMEpQZmpPem1uckJpMHk5 HTTP/1.1" 302 0
+INFO 2026-04-11 03:08:14,202 log 83808 6165573632 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:08:14,486 validators 83808 6165573632 Token issued for user 1 via local
+INFO 2026-04-11 03:08:14,501 signals 83808 6165573632 Access token created for user 1 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:08:14,564 log 83808 6165573632 "POST /o/token/ HTTP/1.1" 200 1458
+INFO 2026-04-11 03:08:14,572 log 83808 6165573632 "OPTIONS /o/.well-known/openid-configuration HTTP/1.1" 200 0
+INFO 2026-04-11 03:08:14,594 log 83808 6165573632 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:08:14,598 log 83808 6165573632 "OPTIONS /o/.well-known/jwks.json HTTP/1.1" 200 0
+INFO 2026-04-11 03:08:14,629 log 83808 6165573632 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 03:08:14,730 log 83808 6165573632 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:08:14,815 permissions 83808 6216052736 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:08:14,816 permissions 83808 6232879104 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:08:14,816 permissions 83808 6266531840 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:08:14,816 permissions 83808 6249705472 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:08:14,833 token 83808 6249705472 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:08:14,833 token 83808 6216052736 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:08:14,833 token 83808 6232879104 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:08:14,833 token 83808 6266531840 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:08:14,875 log 83808 6249705472 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 03:08:14,875 log 83808 6232879104 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 03:08:14,875 log 83808 6266531840 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 03:08:14,875 log 83808 6216052736 "POST /api/oidc/introspect/ HTTP/1.1" 200 346
+INFO 2026-04-11 03:08:14,959 log 83808 6232879104 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 03:08:14,959 log 83808 6266531840 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 03:08:14,980 log 83808 6216052736 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 03:08:14,981 log 83808 6249705472 "GET /api/oidc/userinfo/ HTTP/1.1" 200 181
+INFO 2026-04-11 03:08:17,669 log 83808 6165573632 "OPTIONS /accounts/logout/ HTTP/1.1" 200 0
+WARNING 2026-04-11 03:08:17,712 log 83808 6182400000 Forbidden (Origin checking failed - http://localhost:4200 does not match any trusted origins.): /accounts/logout/
+WARNING 2026-04-11 03:08:17,724 log 83808 6182400000 "POST /accounts/logout/ HTTP/1.1" 403 2554
+INFO 2026-04-11 03:08:17,772 log 83808 6182400000 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=bjNvamRvQm9jaVF5THdQVlZaeWJlaTFQaUFyQ3dUYjUxQ1BPNTdZX2RZeUla&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=P1Db2rayUfyQZYR9jXgL3OPp6K1LEKmZRMxwEurKtn8&code_challenge_method=S256&nonce=bjNvamRvQm9jaVF5THdQVlZaeWJlaTFQaUFyQ3dUYjUxQ1BPNTdZX2RZeUla HTTP/1.1" 302 0
+INFO 2026-04-11 03:08:17,811 log 83808 6182400000 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DbjNvamRvQm9jaVF5THdQVlZaeWJlaTFQaUFyQ3dUYjUxQ1BPNTdZX2RZeUla%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3DP1Db2rayUfyQZYR9jXgL3OPp6K1LEKmZRMxwEurKtn8%26code_challenge_method%3DS256%26nonce%3DbjNvamRvQm9jaVF5THdQVlZaeWJlaTFQaUFyQ3dUYjUxQ1BPNTdZX2RZeUla HTTP/1.1" 200 9007
+INFO 2026-04-11 03:08:22,280 log 83808 6182400000 "GET /api/users/register-form/ HTTP/1.1" 200 25393
+INFO 2026-04-11 03:09:14,633 log 83808 6182400000 "POST /api/users/register/ HTTP/1.1" 201 963
+INFO 2026-04-11 03:09:16,713 log 83808 6182400000 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 03:09:39,712 log 83808 6182400000 "POST /accounts/login/ HTTP/1.1" 200 9020
+INFO 2026-04-11 03:10:00,164 log 83808 6182400000 "POST /accounts/login/ HTTP/1.1" 200 9020
+INFO 2026-04-11 03:10:13,664 log 83808 6182400000 "GET /admin/auth/user/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:10:13,733 log 83808 6182400000 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4100
+INFO 2026-04-11 03:10:13,765 log 83808 6182400000 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2026-04-11 03:10:25,363 log 83808 6182400000 "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:10:25,443 log 83808 6182400000 "GET /admin/auth/user/ HTTP/1.1" 200 19062
+INFO 2026-04-11 03:10:25,502 log 83808 6182400000 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:10:28,303 log 83808 6182400000 "GET /admin/auth/user/ HTTP/1.1" 200 19062
+INFO 2026-04-11 03:10:28,359 log 83808 6182400000 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:13:41,055 autoreload 83808 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/oidc/validators.py changed, reloading.
+ERROR 2026-04-11 03:13:42,279 apps 94884 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 03:13:42,279 apps 94884 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 03:13:42,279 apps 94884 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 03:13:42,288 autoreload 94884 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 03:13:47,807 autoreload 94884 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 03:13:48,545 apps 94950 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 03:13:48,545 apps 94950 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 03:13:48,545 apps 94950 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 03:13:48,551 autoreload 94950 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 03:14:00,414 autoreload 94950 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 03:14:01,095 apps 95046 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 03:14:01,095 apps 95046 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 03:14:01,095 apps 95046 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 03:14:01,102 autoreload 95046 8285974784 Watching for file changes with StatReloader
+INFO 2026-04-11 03:14:07,298 log 95046 6126039040 "GET /admin/auth/user/15/change/ HTTP/1.1" 200 36229
+INFO 2026-04-11 03:14:07,387 log 95046 6126039040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:14:14,971 log 95046 6126039040 "POST /admin/auth/user/15/change/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:14:15,066 log 95046 6126039040 "GET /admin/auth/user/ HTTP/1.1" 200 19257
+INFO 2026-04-11 03:14:15,130 log 95046 6126039040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:14:17,802 log 95046 6126039040 "GET /admin/auth/user/15/change/ HTTP/1.1" 200 36221
+INFO 2026-04-11 03:14:17,859 log 95046 6126039040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:14:20,378 log 95046 6126039040 "GET /admin/auth/user/15/delete/ HTTP/1.1" 200 14114
+INFO 2026-04-11 03:14:21,911 log 95046 6126039040 "POST /admin/auth/user/15/delete/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:14:21,962 log 95046 6126039040 "GET /admin/auth/user/ HTTP/1.1" 200 18723
+INFO 2026-04-11 03:14:22,004 log 95046 6126039040 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2026-04-11 03:14:26,438 log 95046 6126039040 "GET /api/users/register-form/ HTTP/1.1" 200 25393
+INFO 2026-04-11 03:15:17,661 log 95046 6126039040 "POST /api/users/register/ HTTP/1.1" 201 961
+INFO 2026-04-11 03:15:19,735 log 95046 6126039040 "GET /accounts/login/ HTTP/1.1" 200 8487
+INFO 2026-04-11 03:15:40,486 log 95046 6126039040 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:15:40,530 log 95046 6126039040 "GET / HTTP/1.1" 200 4270
+INFO 2026-04-11 03:16:48,065 log 95046 6126039040 "POST /accounts/logout/ HTTP/1.1" 302 0
+INFO 2026-04-11 03:16:48,113 log 95046 6126039040 "GET / HTTP/1.1" 200 3981
+INFO 2026-04-11 03:16:51,733 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:16:51,856 log 95046 6159691776 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 03:16:51,892 log 95046 6126039040 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=WERHb1lIWnkxUWZIaDAwSTBMOTMzdkZ6SGhpRF9hTzJPekN5aGhaRWdEUDF3&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=47Oqxpbu0z4K3d48cLrKirZj3quT8LSxbCGItX47Fgg&code_challenge_method=S256&nonce=WERHb1lIWnkxUWZIaDAwSTBMOTMzdkZ6SGhpRF9hTzJPekN5aGhaRWdEUDF3 HTTP/1.1" 302 0
+INFO 2026-04-11 03:16:51,923 log 95046 6126039040 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DWERHb1lIWnkxUWZIaDAwSTBMOTMzdkZ6SGhpRF9hTzJPekN5aGhaRWdEUDF3%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3D47Oqxpbu0z4K3d48cLrKirZj3quT8LSxbCGItX47Fgg%26code_challenge_method%3DS256%26nonce%3DWERHb1lIWnkxUWZIaDAwSTBMOTMzdkZ6SGhpRF9hTzJPekN5aGhaRWdEUDF3 HTTP/1.1" 200 9007
+INFO 2026-04-11 03:16:52,142 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:16:52,193 log 95046 6126039040 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=XzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=o2d07CmEc42UzSbI8VicUnrmZLOu_SIMrmUfz8CuDR0&code_challenge_method=S256&nonce=XzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy HTTP/1.1" 302 0
+INFO 2026-04-11 03:16:52,226 log 95046 6126039040 "GET /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DXzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Do2d07CmEc42UzSbI8VicUnrmZLOu_SIMrmUfz8CuDR0%26code_challenge_method%3DS256%26nonce%3DXzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy HTTP/1.1" 200 9007
+INFO 2026-04-11 03:17:04,440 log 95046 6126039040 "POST /accounts/login/?next=/o/authorize/%3Fresponse_type%3Dcode%26client_id%3DOWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH%26state%3DXzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy%26redirect_uri%3Dhttp%253A%252F%252Flocalhost%253A4200%252F%26scope%3Dopenid%2520profile%2520email%26code_challenge%3Do2d07CmEc42UzSbI8VicUnrmZLOu_SIMrmUfz8CuDR0%26code_challenge_method%3DS256%26nonce%3DXzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy HTTP/1.1" 302 0
+INFO 2026-04-11 03:17:04,510 log 95046 6126039040 "GET /o/authorize/?response_type=code&client_id=OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH&state=XzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy&redirect_uri=http%3A%2F%2Flocalhost%3A4200%2F&scope=openid%20profile%20email&code_challenge=o2d07CmEc42UzSbI8VicUnrmZLOu_SIMrmUfz8CuDR0&code_challenge_method=S256&nonce=XzUzN0Y3NHpGcHh0UVZKa2JzNDliVVluN0JfQ2g1NEtmdGttVGJWRjBGZGJy HTTP/1.1" 302 0
+INFO 2026-04-11 03:17:04,612 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:17:04,767 validators 95046 6159691776 Token issued for user 16 via local
+INFO 2026-04-11 03:17:04,775 signals 95046 6159691776 Access token created for user 16 via client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:17:04,815 log 95046 6159691776 "POST /o/token/ HTTP/1.1" 200 1526
+INFO 2026-04-11 03:17:04,840 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:17:04,865 log 95046 6159691776 "GET /o/.well-known/jwks.json HTTP/1.1" 200 474
+INFO 2026-04-11 03:17:04,936 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:17:04,953 permissions 95046 6176518144 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:17:04,956 permissions 95046 6210170880 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:17:04,956 permissions 95046 6193344512 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:17:04,956 permissions 95046 6226997248 Client lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY authenticated from 127.0.0.1
+INFO 2026-04-11 03:17:04,968 token 95046 6210170880 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:17:04,969 token 95046 6226997248 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:17:04,969 token 95046 6193344512 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:17:04,969 token 95046 6176518144 Trusted resource server lIGeaWgw0gGW1Xrm7WjhaBqyEa3J1GIl01HxhWvY introspecting token from client OWZfeEPGPx94aLmiYKQaFA7eThLKuqGxCrJrZvZH
+INFO 2026-04-11 03:17:05,002 log 95046 6176518144 "POST /api/oidc/introspect/ HTTP/1.1" 200 390
+INFO 2026-04-11 03:17:05,007 log 95046 6210170880 "POST /api/oidc/introspect/ HTTP/1.1" 200 390
+INFO 2026-04-11 03:17:05,010 log 95046 6226997248 "POST /api/oidc/introspect/ HTTP/1.1" 200 390
+INFO 2026-04-11 03:17:05,011 log 95046 6193344512 "POST /api/oidc/introspect/ HTTP/1.1" 200 390
+INFO 2026-04-11 03:17:05,065 log 95046 6210170880 "GET /api/oidc/userinfo/ HTTP/1.1" 200 232
+INFO 2026-04-11 03:17:05,066 log 95046 6176518144 "GET /api/oidc/userinfo/ HTTP/1.1" 200 232
+INFO 2026-04-11 03:17:05,066 log 95046 6193344512 "GET /api/oidc/userinfo/ HTTP/1.1" 200 232
+INFO 2026-04-11 03:17:05,066 log 95046 6226997248 "GET /api/oidc/userinfo/ HTTP/1.1" 200 232
+INFO 2026-04-11 03:17:11,423 log 95046 6159691776 "GET /o/.well-known/openid-configuration HTTP/1.1" 200 787
+INFO 2026-04-11 03:17:23,862 autoreload 95046 8285974784 /Users/dhrubajyotiborah/Documents/Projects/hcs_sso_with_oidc/apps/users/serializers.py changed, reloading.
+ERROR 2026-04-11 03:17:24,710 apps 96551 8285974784 Failed to register custom backends: argument of type 'module' is not iterable
+INFO 2026-04-11 03:17:24,710 apps 96551 8285974784 Enabled providers: Google, Facebook
+INFO 2026-04-11 03:17:24,710 apps 96551 8285974784 ✅ Social authentication app initialized successfully
+INFO 2026-04-11 03:17:24,718 autoreload 96551 8285974784 Watching for file changes with StatReloader

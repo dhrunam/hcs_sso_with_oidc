@@ -114,6 +114,12 @@ IDENTITY_PROVIDER_CHOICES = [
     ('saml', _('SAML')),
 ]
 
+# User type choices
+USER_TYPE_CHOICES = [
+    ('advocate', _('Advocate')),
+    ('party_in_person', _('Party in Person')),
+]
+
 class UserProfile(TimeStampedModel):
     extra_data = models.JSONField(default=dict, blank=True, null=True, verbose_name=_('Extra Data'), help_text=_('Arbitrary metadata for profile'))
     """Extended user profile with SSO and organizational information"""
@@ -145,15 +151,50 @@ class UserProfile(TimeStampedModel):
     # Contact Information
     phone_number = models.CharField(
         max_length=20,
+        unique=True,
+        null=True,
         blank=True,
         verbose_name=_('Phone Number'),
-        help_text=_('Format: +1234567890')
+        help_text=_('Format: +1234567890 or 1234567890')
     )
     job_title = models.CharField(
         max_length=100,
         blank=True,
         verbose_name=_('Job Title')
     )
+    
+    # User Type & Role
+    user_type = models.CharField(
+        max_length=20,
+        choices=USER_TYPE_CHOICES,
+        default='party_in_person',
+        db_index=True,
+        verbose_name=_('User Type'),
+        help_text=_('Classification of user: Advocate or Party in Person')
+    )
+    
+    # Advocate-specific fields
+    bar_id = models.CharField(
+        max_length=50,
+        null=True,
+        blank=True,
+        verbose_name=_('Bar ID'),
+        help_text=_('Licensed Bar/License ID number for advocates')
+    )
+    advocate_document = models.FileField(
+        upload_to='advocate_documents/%Y/%m/%d/',
+        null=True,
+        blank=True,
+        verbose_name=_('Advocate Document'),
+        validators=[
+            FileExtensionValidator(
+                allowed_extensions=['pdf', 'jpg', 'jpeg', 'png', 'gif'],
+                message=_('Only PDF and image files (JPG, PNG, GIF) are allowed')
+            )
+        ],
+        help_text=_('Licensed proof document (PDF or image). Max file size: 5MB')
+    )
+    
     avatar = models.FileField(
         upload_to='avatars/%Y/%m/%d/',
         null=True,
@@ -218,6 +259,8 @@ class UserProfile(TimeStampedModel):
         verbose_name_plural = _('User Profiles')
         indexes = [
             models.Index(fields=['employee_id']),
+            models.Index(fields=['phone_number']),
+            models.Index(fields=['user_type']),
             models.Index(fields=['external_id', 'identity_provider']),
             models.Index(fields=['identity_provider']),
             models.Index(fields=['email_verified']),
@@ -237,6 +280,17 @@ class UserProfile(TimeStampedModel):
     def clean(self):
         """Validate profile data and ensure consistency"""
         super().clean()
+        
+        # Validate advocate-specific fields
+        if self.user_type == 'advocate':
+            if not self.bar_id:
+                raise ValidationError({
+                    'bar_id': _('Bar ID is required for advocates')
+                })
+            if not self.advocate_document:
+                raise ValidationError({
+                    'advocate_document': _('Document proof is required for advocates')
+                })
         
         # Validate SSO data consistency
         if self.external_id and self.identity_provider == 'local':

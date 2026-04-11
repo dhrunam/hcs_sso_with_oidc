@@ -116,6 +116,9 @@ class UserProfileSerializer(serializers.ModelSerializer):
             'id', 'employee_id', 'department', 'department_details',
             'phone_number', 'job_title', 'avatar',
             
+            # User type & classification
+            'user_type', 'bar_id', 'advocate_document',
+            
             # Identity provider info
             'external_id', 'identity_provider', 'email_verified',
             
@@ -246,7 +249,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class UserCreateSerializer(serializers.ModelSerializer):
-    """Serializer for user registration"""
+    """Serializer for user registration with phone number and user type"""
     
     password = serializers.CharField(
         write_only=True,
@@ -261,30 +264,37 @@ class UserCreateSerializer(serializers.ModelSerializer):
         required=True,
         style={'input_type': 'password'}
     )
-    profile = UserProfileSerializer(required=False)
+    
+    # Profile fields mapped to serializer for easier handling
+    phone_number = serializers.CharField(
+        required=True,
+        max_length=20,
+        help_text='Format: +1234567890 or 1234567890'
+    )
+    user_type = serializers.ChoiceField(
+        choices=['advocate', 'party_in_person'],
+        required=True,
+        help_text='User classification: advocate or party_in_person'
+    )
+    bar_id = serializers.CharField(
+        required=False,
+        allow_blank=True,
+        max_length=50,
+        help_text='Bar ID (required if user_type is advocate)'
+    )
+    advocate_document = serializers.FileField(
+        required=False,
+        allow_empty_file=False,
+        help_text='Professional document (PDF or image, required if user_type is advocate)'
+    )
     
     class Meta:
         model = User
         fields = [
-            'username', 'email', 'first_name', 'last_name',
-            'password', 'password2', 'profile'
+            'email', 'first_name', 'last_name',
+            'password', 'password2',
+            'phone_number', 'user_type', 'bar_id', 'advocate_document'
         ]
-    
-    def validate_username(self, value: str) -> str:
-        """Validate username"""
-        if User.objects.filter(username__iexact=value).exists():
-            raise serializers.ValidationError("A user with this username already exists.")
-        
-        # Username validation
-        if not re.match(r'^[a-zA-Z0-9._-]+$', value):
-            raise serializers.ValidationError(
-                "Username can only contain letters, numbers, dots, hyphens, and underscores."
-            )
-        
-        if len(value) < 3:
-            raise serializers.ValidationError("Username must be at least 3 characters long.")
-        
-        return value.lower()
     
     def validate_email(self, value: str) -> str:
         """Validate email"""
@@ -303,6 +313,43 @@ class UserCreateSerializer(serializers.ModelSerializer):
         
         return value.lower()
     
+    def validate_phone_number(self, value: str) -> str:
+        """Validate and normalize phone number to consistent format"""
+        if not value:
+            raise serializers.ValidationError("Phone number is required")
+        
+        # Extract only digits (remove +, spaces, hyphens, etc.)
+        digits_only = re.sub(r'\D', '', value)
+        if len(digits_only) < 9 or len(digits_only) > 15:
+            raise serializers.ValidationError(
+                "Phone number must contain between 9 and 15 digits. Format: +1234567890 or 1234567890"
+            )
+        
+        # Normalize to consistent format: preserve leading + if present, otherwise return digits with +
+        if value.strip().startswith('+'):
+            normalized =  digits_only
+        else:
+            # If no +, add country code prefix if it's 10 digits (assume US +1)
+            if len(digits_only) == 10:
+                normalized =  digits_only
+            else:
+                normalized = digits_only
+        
+        # Check uniqueness against all candidate formats to prevent duplicates
+        existing = UserProfile.objects.filter(phone_number__in=[
+            value.strip(),   # Original
+            normalized,       # Normalized
+            digits_only      # Digits only
+        ])
+        
+        if existing.exists():
+            raise serializers.ValidationError("A user with this phone number already exists.")
+
+        if User.objects.filter(username__iexact=normalized).exists():
+            raise serializers.ValidationError("This phone number is already linked to an account.")
+        
+        return normalized  # Store normalized format
+    
     def validate(self, attrs: Dict[str, Any]) -> Dict[str, Any]:
         """Validate registration data"""
         # Password confirmation
@@ -311,47 +358,65 @@ class UserCreateSerializer(serializers.ModelSerializer):
                 'password': 'Passwords do not match.'
             })
         
-        # Profile validation
-        profile_data = attrs.get('profile', {})
-        if 'employee_id' in profile_data and profile_data['employee_id']:
-            # Check employee ID uniqueness
-            if UserProfile.objects.filter(
-                employee_id=profile_data['employee_id']
-            ).exists():
+        # Validate advocate-specific fields
+        user_type = attrs.get('user_type')
+        if user_type == 'advocate':
+            bar_id = attrs.get('bar_id', '').strip()
+            advocate_document = attrs.get('advocate_document')
+            
+            if not bar_id:
                 raise serializers.ValidationError({
-                    'profile': {'employee_id': 'This employee ID is already in use.'}
+                    'bar_id': 'Bar ID is required for advocates'
+                })
+            
+            if not advocate_document:
+                raise serializers.ValidationError({
+                    'advocate_document': 'Document proof is required for advocates'
+                })
+            
+            # Validate file size (max 5MB)
+            if advocate_document and advocate_document.size > 5 * 1024 * 1024:
+                raise serializers.ValidationError({
+                    'advocate_document': 'Document file size must not exceed 5MB'
                 })
         
         return attrs
     
     @transaction.atomic
     def create(self, validated_data: Dict[str, Any]) -> User:
-        """Create a new user with profile"""
-        profile_data = validated_data.pop('profile', {})
+        """Create a new user with profile and registration data"""
+        # Extract profile data
+        phone_number = validated_data.pop('phone_number')
+        user_type = validated_data.pop('user_type')
+        bar_id = validated_data.pop('bar_id', '')
+        advocate_document = validated_data.pop('advocate_document', None)
         validated_data.pop('password2', None)
+
+        username = phone_number
         
-        # Create user (signal handler will auto-create UserProfile)
+        # Create user with phone number as username
         user = User.objects.create_user(
-            username=validated_data['username'],
+            username=username,
             email=validated_data['email'],
             password=validated_data['password'],
             first_name=validated_data.get('first_name', ''),
             last_name=validated_data.get('last_name', ''),
-            is_active=True  # Auto-activate, or make configurable
+            is_active=True
         )
         
-        # Update profile with additional data if provided
-        # Ensure userprofile exists (get or create)
+        # Update profile with registration data
         from apps.core.models import UserProfile
         profile, _ = UserProfile.objects.get_or_create(user=user)
-        # Always set employee_id if present in profile_data
-        if 'employee_id' in profile_data:
-            profile.employee_id = profile_data['employee_id']
-        if profile_data:
-            for key, value in profile_data.items():
-                setattr(profile, key, value)
-        if profile_data or 'employee_id' in profile_data:
-            profile.save()
+        profile.phone_number = phone_number
+        profile.user_type = user_type
+        
+        # Set advocate-specific fields if applicable
+        if user_type == 'advocate':
+            profile.bar_id = bar_id.strip() if bar_id else None
+            if advocate_document:
+                profile.advocate_document = advocate_document
+        
+        profile.save()
         
         # Assign default group if configured
         default_group = getattr(settings, 'DEFAULT_USER_GROUP', None)
@@ -362,7 +427,7 @@ class UserCreateSerializer(serializers.ModelSerializer):
             except Group.DoesNotExist:
                 logger.warning(f"Default group '{default_group}' not found")
         
-        logger.info(f"User created: {user.username} ({user.email})")
+        logger.info(f"New user registered: {user.username} ({user.email}) - Type: {user_type}")
         
         return user
 

@@ -4,11 +4,76 @@ from django.contrib.auth.models import Group
 from apps.core.models import UserProfile
 from django.utils import timezone
 import logging
+import re
 from django.core.exceptions import ObjectDoesNotExist
 
 logger = logging.getLogger(__name__)
 
 class CustomOAuth2Validator(OAuth2Validator):
+    @staticmethod
+    def _normalize_phone(value: str) -> str:
+        value = (value or '').strip()
+        if value.startswith('+'):
+            return '+' + re.sub(r'\D', '', value[1:])
+        return re.sub(r'\D', '', value)
+
+    def _resolve_username_from_phone(self, candidate: str):
+        """Resolve a Django username from a phone-number candidate with multiple format support."""
+        # Extract only digits
+        digits_only = re.sub(r'\D', '', candidate)
+        
+        # Create all candidate formats to match against database
+        candidates = set()
+        
+        # Add original
+        candidates.add(candidate.strip())
+        
+        # Add plain digits version
+        if digits_only:
+            candidates.add(digits_only)
+            
+            # Add + prefixed version
+            if len(digits_only) == 10:
+                # Could be US (add +1 prefix) or missing country code
+                candidates.add(digits_only)
+            else:
+                # For non-10-digit, always try with +
+                candidates.add( digits_only)
+            
+            # For numbers starting with country code +1, also try without it
+            if digits_only.startswith('1') and len(digits_only) == 11:
+                candidates.add(digits_only[1:])  # Remove country code
+
+        profile = UserProfile.objects.filter(
+            phone_number__in=list(candidates)
+        ).select_related('user').first()
+
+        if profile and profile.user:
+            return profile.user.username
+        return None
+
+    def _is_phone_like(self, candidate: str) -> bool:
+        """Basic phone format guard: 9-15 digits, optional leading +."""
+        normalized = self._normalize_phone(candidate)
+        digits = normalized[1:] if normalized.startswith('+') else normalized
+        return digits.isdigit() and 9 <= len(digits) <= 15
+
+    def validate_user(self, username, password, client, request, *args, **kwargs):
+        """
+        Enforce OAuth2 password grant login by phone number only.
+
+        Non-phone usernames are rejected. Phone numbers are resolved
+        through UserProfile.phone_number to the internal Django username.
+        """
+        if not username or not self._is_phone_like(username):
+            return False
+
+        resolved_username = self._resolve_username_from_phone(username)
+        if not resolved_username:
+            return False
+
+        return super().validate_user(resolved_username, password, client, request, *args, **kwargs)
+
     def filter_scopes_by_user_groups(self, user, requested_scopes):
             """
             Restrict scopes based on user group membership.

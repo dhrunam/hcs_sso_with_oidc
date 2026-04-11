@@ -90,8 +90,8 @@ if DEBUG:
             'NAME':  'hcs_sso_oidc_db',
             'USER': 'postgres',
             'PASSWORD':  'postgres',
-            'HOST':  '10.182.144.24',
-            'PORT':  '5433', 
+            'HOST':  'localhost',
+            'PORT':  '5435', 
         }      
         
     }
