@@ -91,7 +91,7 @@ if DEBUG:
             'USER': 'postgres',
             'PASSWORD':  'postgres',
             'HOST':  'localhost',
-            'PORT':  '5435', 
+            'PORT':  '5434', 
         }      
         
     }
